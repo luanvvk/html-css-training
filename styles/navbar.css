@@ -4,7 +4,7 @@
     
 }
 
-body{
+body {
     background-color: rgb(161, 115, 44);
 }
 nav {
@@ -13,12 +13,13 @@ nav {
     height: 5rem;
     position: fixed;
     top: 0;
-    z-index: 11;
+    z-index: 5;
 }
 .nav__container {
+    background-color: aliceblue;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: ;
     align-items: center;
     padding: 20px;
     
@@ -39,7 +40,7 @@ nav {
   .nav__menu a:hover {
     color: var(--color-bg2);
   }
-  h1{
+  .animal_list {
     color: rgb(107, 32, 150);
     font-family: monospace;
     font-weight: bolder;
@@ -60,15 +61,15 @@ nav {
     font-style: italic;
     text-align: right;
 }
-a{
+.type1, .type2, type3, .type4 {
     border-top: 10px;
     text-transform: uppercase;
     text-decoration: underline;
     padding: 50px;
     font-style: oblique;
-    color: rgb(145, 108, 74);
+    color: rgb(231, 228, 225);
 }
-img{
+img {
     border-radius: 70%;
     width: 400px;
     height: 400px;
