@@ -1,0 +1,40 @@
+1st part
+-Curveline on top right corner
+- Add plain light background with pattern overlay.
+- Header (on the left) use float left
++ left intro ( 2 lines), first line stays on top of second line
++ Paragraph
++ Help me button (yello) with border, add effect to it
++ About us button, no border, add effect to it
+- Logo o the right side : width: 545px;
+height: 537px;
+top: 181px;
+left: 1007px;
+padding: 0px 0px 0.01px 0.02px;
+gap: 0px;
+opacity: 0px;
+
+2nd part:
+Service section:
+- Curve line at top
+- Service text 
+- Blocks of service with images inside: square box with border radius
+- flexbox
+- Help me button (copy from above)
+Testimonials part
+- Add plain light background with pattern overlay.
+- Testimonials text at top
+- flex box
+- Blocks of testimonials : rectangular with border radius
+- Text inside, text align center
+- 5 star image at bottom.
+-helpme button in the middle (same as above)
+Contact section:
+- Grid blog or just float 
+- left part:
++ 3 light brown box no text with gap
++ smaller with box with brown border.
+- right part:
++ icon with text next to it
++ add link or effect , e.g. mail to, phone to...
+- Empty block, color only
