@@ -5,15 +5,27 @@
 Welcome to my first HTML/CSS practice. In this topic, I am trying do recreate a design from figma followed the traning plan. The design is named BearBears. You can find the all the links needed at the end of this file. 
 The  design will be then turned into HTML/CSS code and use PixelPerfect as matching tool to make sure the designs are perfectly matched.
 
-## Description
-Below will be brief outline how I do it:
-First part will be header with some paragraph and logo on the right hand side.
-2 button are added.
-Second part is service section where flexbox is applied.
-Third part contains  testimonials part where 4 sub content cards are displayed. This again applies the flexbox onto design. Same button from above is added.
-Fourth part is Contact Us section. This part include 4 different boxes on the left and icons plus details on the right hand side. 
-Footer at the end of the page
-I will add more effects on some design components to make it livelier.
+## Target
+
+- Understand HTML5/CSS3 properties and use them correctly depending on situation.
+- Recreate and turn FIgma design to HTML/CSS code.
+- Understand the concepts of Flexbox and grid and apply them on thhis practice.
+
+## Technical terms
+
+- HTML5/CSS3
+
+## Requirement
+- The code have to ưork fine on Chrome browser at latest version
+- Use the right HTML tags and CSS properties to achieve the design.
+- Apply Flexbox to the practice
+- CSS Guideline is needed to apply
+- Code needs to be validated by using tools: https://validator.w3.org/
+
+## Prerequisite
+- Visual Studio Code latest version
+- Google Chrome browser latest version
+- Extensions: editorconfig, pixel perfect
 
 ## Contributing
 
