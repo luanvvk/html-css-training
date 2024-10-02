@@ -4,19 +4,26 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Practice 1</title>
+		<link rel="stylesheet" href="./styles/normalize.css" />
+		<link rel="stylesheet" href="./styles/practice1.css" />
 	</head>
 	<body>
-		<header>
+		<header class="header">
 			<div class="banner">
+				<div class="image-top-right">
+					<img src="./images/vector/vector-image-top-right.png" alt="vector-image-top-right"/>
+				</div>
 				<div class="banner-container">
-					<div class="banner-container__title">
-						<div class="banner-container__title__intro">
-							What the
-							<span class="banner-container__title__intro-second"
-								>bear bears</span
-							>
+					<div class="banner-container__intro">
+						<div class="banner-container__intro__title">
+							<div class="banner-container__intro__title-first">
+								what the
+								<div class="banner-container__intro__title-second">
+									bear bears
+								</div>
+							</div>
 						</div>
-						<p class="banner-container__title__desc">
+						<p class="banner-container__intro__desc">
 							Lorem Ipsum is simply dummy text of the printing and typesetting
 							industry. Lo rem Ipsum has been the industry's standard dummy text
 							ever since the
@@ -35,6 +42,9 @@
 
 		<section class="service">
 			<div class="service-container">
+				<div class="serive-container__image">
+					<img src="./images/vector/vector-image-middle.png" alt="vector-image-middle"/>
+				</div>
 				<div class="service-container__heading">services</div>
 
 				<div class="service-list">
@@ -89,7 +99,11 @@
 						</div>
 					</div>
 					<div class="button">
-						<a href="#" class="button button--primary">help me</a>
+						<a
+							href="#"
+							class="button button--primary button--primary-secondlocation"
+							>help me</a
+						>
 					</div>
 				</div>
 			</div>
@@ -159,47 +173,57 @@
 				</div>
 			</div>
 			<div class="button">
-				<a href="#" class="button button--fourth">help me</a>
+				<a href="#" class="button button--primary button--primary-thirdlocation"
+					>help me</a
+				>
 			</div>
 		</section>
 		<section class="contact-us">
 			<div class="contact-us-wrapper">
 				<div class="contact-us-wrapper__header">contact us</div>
-		
-			<div class="contact-us-container">
+
+				<div class="contact-us-container">
 					<div class="contact-us-container__left">
 						<div>
-								<div class="container__left__box"></div> 
+							<div class="container__left__box"></div>
 						</div>
 						<div>
-								<div class="container__left__box"></div>
-						</div>	
-						<div>
-								<div class="container__left__box"></div>
+							<div class="container__left__box"></div>
 						</div>
 						<div>
-								<div class="container__left__final-box"></div>
+							<div class="container__left__box"></div>
+						</div>
+						<div>
+							<div class="container__left__final-box"></div>
 						</div>
 					</div>
 					<div class="contact-us--container__right">
-						<div>
-							<address class="mail-address">
-								<img src="/images/icon--mail.png" alt="address"/>
-								<span>
-									<a class="email" href="mailto:test@gmail.com">test@gmail.com</a>
+						<address class="mail-address">
+							<div class="mail-address__item">
+								<img src="./images/social-icons/icon--mail.png" alt="address" />
+								<span class="email" href="mailto:test@gmail.com"
+									>test@gmail.com
 								</span>
-							</address>
-						</div>
-						<div>
-							<img src="./images/icon--tel.png" alt="(303) 555-0105"/>
-							<span>
-								<a class="tel" href="tel:(303) 555-0105">(303) 555-0105</a>
-							</span>
-						</div>
-						<div>
-							<img src="./images/icon--address.png" alt="address"/>
-								<span class="address">2715 Ash Dr. San Jose, South Dakota 83475</span>
-						</div>
+							</div>
+							<div class="mail-address__item">
+								<img
+									src="./images/social-icons/icon--tel.png"
+									alt="(303) 555-0105"
+								/>
+								<span class="tel" href="tel:(303) 555-0105"
+									>(303) 555-0105
+								</span>
+							</div>
+							<div class="mail-address__item">
+								<img
+									src="./images//social-icons/icon--address.png"
+									alt="address"
+								/>
+								<span class="address"
+									>2715 Ash Dr. San Jose, South Dakota 83475</span
+								>
+							</div>
+						</address>
 					</div>
 				</div>
 			</div>
