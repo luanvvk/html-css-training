@@ -26,6 +26,10 @@
 body {
 	width: 1903px;
 }
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
 .banner {
 	background: url(../images/background-image/background-pattern-second.svg)
 		no-repeat;
