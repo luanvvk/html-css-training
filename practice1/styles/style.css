@@ -23,12 +23,14 @@
 	--font-primary: "Poppins";
 	--font-secondary: "TT Hoves";
 }
-body {
-	width: 1903px;
-}
+
 html, body {
 	max-width: 100%;
 	overflow-x: hidden;
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 1903px;
 }
 .banner {
 	background: url(../images/background-image/background-pattern-second.svg)
@@ -36,37 +38,41 @@ html, body {
 	background-color: var(--yellowwhite);
 	background-size: cover;
 	width: 1903px;
-	height: 958.22px;
+	min-height: 958.22px;
 }
 .image-top-right {
 	top: 0;
 	right: 0;
 	width: 1903px;
-	height: 115px;
+	min-height: 115px;
 }
-.banner-container {
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}	
+.container-banner {
 	display: flex;
 	justify-content: center;
 	gap: 99px;
 }
-.banner-container__intro {
+.container-banner__intro {
 	font-family: var(--font-primary);
 	text-align: left;
 	color: var(--semidarkbrown);
 	width: 556px;
 	margin-top: 206px;
 }
-.banner-container__intro__title {
+.container-banner__intro__title {
 	width: 600px;
-	height: 175px;
+	min-height: 175px;
 }
-.banner-container__intro__title-first {
+.container-banner__intro__title-first {
 	font-size: 115px;
 	font-weight: 900;
 	line-height: 136.27px;
 	text-shadow: 0 4px 4px 0 var(--shadowcolor);
 }
-.banner-container__intro__title-second {
+.container-banner__intro__title-second {
 	font-size: 58px;
 	font-weight: 700;
 	line-height: 58.29px;
@@ -75,12 +81,12 @@ html, body {
 	text-shadow: 0 4px 4px 0 var(--shadowcolor);
 	margin-top: -20px;
 }
-.banner-container__intro__desc {
+.container-banner__intro__desc {
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 24px;
 	width: 552px;
-	height: 72px;
+	min-height: 72px;
 	margin-top: 20px;
 }
 .button {
@@ -96,7 +102,7 @@ html, body {
 }
 .button--primary {
 	width: 210px;
-	height: 66px;
+	min-height: 66px;
 	border-radius: 57px;
 	background: var(--yellow);
 	cursor: pointer;
@@ -122,7 +128,7 @@ html, body {
 }
 .button--secondary {
 	width: 110px;
-	height: 24px;
+	min-height: 24px;
 	font-family: var(--font-primary);
 	font-weight: 500;
 	font-size: 18px;
@@ -153,9 +159,9 @@ html, body {
 	background-color: var(--brown);
 }
 .serive-container__image {
-	position: absolute;
-	width: 1903px;
-	height: 389px;
+	
+	width: 100%;
+	min-height: 389px;
 	top: 724px;
 	z-index: 10;
 }
@@ -175,8 +181,7 @@ html, body {
 	padding: 50px 0 50px 0;
 }
 .service--list {
-	width: 1903px;
-	height: 720px;
+	min-height: 720px;
 }
 .service-list__items {
 	display: flex;
@@ -184,13 +189,10 @@ html, body {
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 16px;
-	margin-left: 352px;
-	margin-right: 351px;
 }
 .service--list__block {
 	width: 288px;
-	height: 269px;
-	top: 1113px;
+	min-height: 269px;
 	border-radius: 20px;
 	background: var(--white);
 	display: flex;
@@ -210,38 +212,33 @@ html, body {
 	background-color: var(--yellowwhite);
 	background-size: cover;
 	width: 1903px;
-	height: 796px;
+	min-height: 796px;
 }
 .heading--testimonials {
-	width: 1903px;
-	height: 196px;
+	min-height: 196px;
 	color: var(--brown);
 	padding-top: 50px;
 }
 .testimonials-wrapper {
-	display: grid;
-	grid-template-columns: auto auto;
-	width: 56.43%;
-	column-gap: 50px;
-	row-gap: 50px;
-	height: 434px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	min-height: 434px;
+	flex-wrap: wrap;
 }
 .testimonials-wrapper--container {
 	text-align: center;
 	width: 512px;
-	height: 192px;
+	min-height: 192px;
 	border-radius: 30px;
 	border: 1px solid var(--brown);
 	background-color: var(--white);
 	transition: 0.5s ease;
 }
-.testimonials-wrapper--container:nth-child(1),
-.testimonials-wrapper--container:nth-child(3) {
-	margin-left: 415px;
-}
 .testimonials-wrapper--container__header {
 	width: 325px;
-	height: 24px;
+	min-height: 24px;
 	font-family: var(--font-primary);
 	font-size: 16px;
 	font-weight: 900;
@@ -252,23 +249,21 @@ html, body {
 }
 .testimonials-container__content {
 	width: 462px;
-	height: 80px;
+	min-height: 80px;
 	font-family: var(--font-primary);
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 20px;
 	text-align: left;
 	color: var(--darkgrey);
-	padding: 30px 0 0 50px;
+	padding: 10px 0 0 50px;
 }
 .testimonials-container__footer {
 	width: 114px;
-	height: 18px;
-	padding: 40px 0 0 50px;
+	min-height: 18px;
+	padding: 20px 0 0 50px;
 }
 .testimonials-wrapper--container:hover {
-	width: 520px;
-	height: 200px;
 	box-shadow: 0 20px 20px rgba(112, 69, 49, 0.5);
 	z-index: 1;
 }
@@ -281,61 +276,51 @@ html, body {
 }
 /*-------------------CONTACT US-------------------------*/
 .contact-us {
-	width: 1903px;
-	height: 504px;
+	min-height: 504px;
 }
 .heading--contact-us {
 	width: 100%;
-	height: 96px;
+	min-height: 96px;
 	color: var(--brown);
 	text-shadow: 0 4px 4px 0 var(--shadowcolor);
-	padding: 42px 0 50px 0;
+	padding: 42px 0 20px 0;
 	text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000,
 		1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
 		1px 1px 1px #000;
 }
 .contact-us-container {
-	width: 100%;
-	height: 316px;
-	display: grid;
-	grid-template-columns: auto auto;
-	width: 41.4%;
-	margin-left: 558px;
-	padding-top: 100px;
+	min-height: 316px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 100px;
 }
 .contact-us-container__left {
 	display: grid;
 	grid-template-columns: auto;
-	width: 374px;
-	height: 266px;
+	min-height: 266px;
+	margin-left: -50px;
 }
 .container__left__box {
 	width: 374px;
-	height: 56px;
+	min-height: 56px;
 	border-radius: 61px;
 	background-color: var(--lightorange);
 }
 .container__left__final-box {
 	justify-content: center;
 	width: 168px;
-	height: 56px;
+	min-height: 56px;
 	margin-left: 100px;
 	border-radius: 61px;
 	border: 3px solid #7c4032;
 }
-.contact-us--container__right {
-	width: 314px;
-	height: 132px;
-}
+
 .mail-address {
 	display: grid;
 	grid-template-columns: auto;
 	row-gap: 30px;
-	width: 400px;
-	height: 132px;
-	padding: 20px 20px 20px 0;
-	margin-right: 557px;
-	margin-left: 100px;
+	min-height: 132px;
 	text-decoration: none;
 	justify-content: center;
 	font-style: normal;
@@ -347,7 +332,6 @@ html, body {
 	line-height: 17.43px;
 	text-align: left;
 	color: var(--darkgrey);
-	padding-left: 20px;
 	text-decoration: none;
 	transition: 0.5s ease-out;
 }
@@ -366,9 +350,7 @@ html, body {
 	line-height: 17.43px;
 	text-align: left;
 	color: var(--darkgrey);
-	padding-left: 20px;
 	text-decoration: none;
-	padding-bottom: 10px;
 	transition: 0.5s ease-out;
 }
 .tel:hover {
@@ -383,7 +365,6 @@ html, body {
 	line-height: 17.43px;
 	text-align: left;
 	color: var(--darkgrey);
-	padding-left: 20px;
 	transition: 0.5s ease-out;
 }
 .address:hover {
@@ -393,7 +374,7 @@ html, body {
 }
 .footer-container {
 	width: 100%;
-	height: 117px;
-	margin-top: 0px;
+	min-height: 117px;
+	bottom: 0;
 	background-color: var(--darkbrown);
 }
