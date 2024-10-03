@@ -33,7 +33,6 @@ body {
 	background-size: cover;
 	width: 1903px;
 	height: 958.22px;
-	opacity: 0.2px;
 }
 .image-top-right {
 	top: 0;
@@ -44,6 +43,7 @@ body {
 .banner-container {
 	display: flex;
 	justify-content: center;
+	gap: 99px;
 }
 .banner-container__intro {
 	font-family: var(--font-primary);
@@ -95,8 +95,8 @@ body {
 	height: 66px;
 	border-radius: 57px;
 	background: var(--yellow);
-	box-shadow: 0 20px 40px 0 var(--yellow);
 	cursor: pointer;
+	transition: 0.5s ease;
 }
 .button--primary {
 	font-family: var(--font-primary);
@@ -106,8 +106,18 @@ body {
 	box-shadow: 0 4px 4px 0 var(--shadowcolor);
 	color: var(--brown);
 }
+.button--primary:hover {
+	background-color: #f1be23;
+	box-shadow: 0 20px 40px 0 var(--shadowcolor);
+	z-index: 10;
+}
+.button--primary:active {
+  background-color: #d6a211;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 .button--secondary {
-	width: 82px;
+	width: 100px;
 	height: 24px;
 	font-family: var(--font-primary);
 	font-weight: 500;
@@ -115,14 +125,24 @@ body {
 	line-height: 24px;
 	text-align: center;
 	color: var(--brown);
-	text-wrap: nowrap;
 	margin-left: 40px;
 	margin-right: 200px;
+	transition: 0.5s ease;
+}
+.button--secondary:hover {
+	color: var(--lightbrown);
+	font-size: 24px;
+}
+.button--secondary:active {
+	color: #04AA6D;
 }
 .logo {
-	margin-left: 99px;
 	padding: 0 0 0.01px 0.02px;
 	margin-top: 60px;
+	transition: 2s ease;
+}
+.logo:hover {
+	transform: scale(1.2);
 }
 /*-----------------------SERVICES---------------------*/
 .service {
@@ -135,16 +155,18 @@ body {
 	top: 724px;
 	z-index: 10;
 }
-.service-container__heading {
-	position: relative;
-	z-index: 100;
+.heading {
 	font-family: var(--font-primary);
 	font-size: 64px;
 	font-weight: 900;
 	line-height: 96px;
 	text-align: center;
-	color: var(--white);
 	text-transform: uppercase;
+}
+.heading--service {
+	position: relative;
+	z-index: 100;
+	color: var(--white);
 	background-color: var(--brown);
 	padding: 50px 0 50px 0;
 }
@@ -171,26 +193,25 @@ body {
 	align-items: center;
 	justify-content: center;
 	z-index: 100;
+	transition: 0.5s ease;
+}
+.service--list__block:hover {
+	box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+	z-index: 1;
 }
 /*---------TESTIMONIALS-----------*/
 .testimonials {
 	background: url(/images/background-image/background-pattern-first.svg)
 		no-repeat;
 	background-color: var(--yellowwhite);
-	background-size: 100% cover;
+	background-size: cover;
 	width: 1903px;
 	height: 796px;
 }
-.testimonials-container__heading {
+.heading--testimonials {
 	width: 1903px;
 	height: 196px;
-	font-family: var(--font-primary);
-	font-size: 64px;
-	font-weight: 900;
-	line-height: 96px;
-	text-align: center;
 	color: var(--brown);
-	text-transform: uppercase;
 	padding-top: 50px;
 }
 .testimonials-wrapper {
@@ -208,6 +229,7 @@ body {
 	border-radius: 30px;
 	border: 1px solid var(--brown);
 	background-color: var(--white);
+	transition: 0.5s ease;
 }
 .testimonials-wrapper--container:nth-child(1),
 .testimonials-wrapper--container:nth-child(3) {
@@ -240,6 +262,12 @@ body {
 	height: 18px;
 	padding: 50px 0 0 50px;
 }
+.testimonials-wrapper--container:hover {
+	width: 520px;
+	height: 200px;
+	box-shadow: 0 20px 20px rgba(131, 50, 13, 0.5);
+	z-index: 1;
+}
 .button--primary-secondlocation {
 	margin-top: 40px;
 	margin-bottom: 50px;
@@ -252,17 +280,10 @@ body {
 	width: 1903px;
 	height: 504px;
 }
-.contact-us-wrapper__header {
+.heading--contact-us {
 	width: 100%;
 	height: 96px;
-	font-family: var(--font-primary);
-	font-size: 64px;
-	font-weight: 900;
-	line-height: 96px;
-	text-align: center;
 	color: var(--brown);
-	text-transform: uppercase;
-	text-align: center;
 	text-shadow: 0 4px 4px 0 var(--shadowcolor);
 	padding: 42px 0 50px 0;
 }
@@ -303,7 +324,7 @@ body {
 	display: grid;
 	grid-template-columns: auto;
 	row-gap: 30px;
-	width: 314px;
+	width: 400px;
 	height: 132px;
 	padding: 20px 20px 20px 0;
 	margin-right: 557px;
@@ -321,6 +342,15 @@ body {
 	color: var(--darkgrey);
 	padding-left: 20px;
 	text-decoration: none;
+	transition: 0.5s ease-out;
+}
+.email:hover {
+	color: var(--darkgrey);
+	font-size: 18px;
+	font-weight: 600;
+}
+.email:visited {
+	color: #22389c;
 }
 .tel {
 	font-family: var(--font-secondary);
@@ -332,6 +362,12 @@ body {
 	padding-left: 20px;
 	text-decoration: none;
 	padding-bottom: 10px;
+	transition: 0.5s ease-out;
+}
+.tel:hover {
+	color: var(--darkgrey);
+	font-size: 18px;
+	font-weight: 600;
 }
 .address {
 	font-family: var(--font-secondary);
@@ -341,6 +377,12 @@ body {
 	text-align: left;
 	color: var(--darkgrey);
 	padding-left: 20px;
+	transition: 0.5s ease-out;
+}
+.address:hover {
+	color: var(--darkgrey);
+	font-size: 18px;
+	font-weight: 600;
 }
 .footer-container {
 	width: 100%;
