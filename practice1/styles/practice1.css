@@ -5,9 +5,9 @@
 }
 @font-face {
 	font-family: "Poppins";
-	src: url("/fonts/poppins/Poppins-BlackItalic.ttf");
+	src: url('../fonts/poppins/Poppins-ExtraBold.ttf');
 	font-family: "TT Hoves";
-	src: url("/fonts/tt_hoves_pro/TT\ Hoves\ Pro\ Trial\ Condensed\ DemiBold.ttf");
+	src: url('../fonts/tt_hoves_pro/TT\ Hoves\ Pro\ Trial\ Condensed\ DemiBold.ttf');
 }
 :root {
 	--yellowwhite: #fef4de;
@@ -175,13 +175,13 @@ body {
 	height: 720px;
 }
 .service-list__items {
-	display: grid;
-	grid-template-columns: auto auto auto auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 	gap: 16px;
-	column-gap: 16px;
-	width: 63%;
 	margin-left: 352px;
-	right: 351px;
+	margin-right: 351px;
 }
 .service--list__block {
 	width: 288px;
