@@ -5,7 +5,6 @@
 }
 @font-face {
 	font-family: "Poppins";
-	src: url('../fonts/poppins/Poppins-ExtraBold.ttf');
 	font-family: "TT Hoves";
 	src: url('../fonts/tt_hoves_pro/TT\ Hoves\ Pro\ Trial\ Condensed\ DemiBold.ttf');
 }
@@ -19,9 +18,10 @@
 	--lightorange: #e5af99;
 	--darkbrown: #55352d;
 	--shadowcolor: #00000040;
+	--semidarkbrown: #663128;
 
-	--font-primary: "Poppins";
-	--font-secondary: "TT Hoves";
+	--font-primary: 'Poppins';
+	--font-secondary: 'TT Hoves';
 }
 body {
 	width: 1903px;
@@ -48,13 +48,13 @@ body {
 .banner-container__intro {
 	font-family: var(--font-primary);
 	text-align: left;
-	color: var(--brown);
+	color: var(--semidarkbrown);
 	text-transform: capitalize;
 	width: 556px;
 	margin-top: 206px;
 }
 .banner-container__intro__title {
-	width: 556px;
+	width: 600px;
 	height: 175px;
 }
 .banner-container__intro__title-first {
@@ -117,7 +117,7 @@ body {
   transform: translateY(4px);
 }
 .button--secondary {
-	width: 100px;
+	width: 110px;
 	height: 24px;
 	font-family: var(--font-primary);
 	font-weight: 500;
