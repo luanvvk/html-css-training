@@ -34,7 +34,7 @@ The  design will be then turned into HTML/CSS code and use PixelPerfect as match
 - Clone source
 
 ```
-git clone (https://github.com/luanvvk/HTML-CSS-training.git)
+git clone https://github.com/luanvvk/HTML-CSS-training.git
 ```
 
 - Git checkout
