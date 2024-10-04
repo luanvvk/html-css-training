@@ -48,7 +48,7 @@ body {
 }
 
 .image-vector__primary {
-	background-image: url(./images/vector/vector-image-top-right.png);
+	background-image: url(../images/vector/vector-image-top-right.png);
 	top: 0;
 	right: 0;
 	min-height: 115px;
