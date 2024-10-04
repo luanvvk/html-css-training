@@ -14,6 +14,7 @@ The  design will be then turned into HTML/CSS code and use PixelPerfect as match
 ## Technical terms
 
 - HTML5/CSS3
+- Vercel
 
 ## Requirement
 - The code have to ưork fine on Chrome browser at latest version
@@ -25,7 +26,33 @@ The  design will be then turned into HTML/CSS code and use PixelPerfect as match
 ## Prerequisite
 - Visual Studio Code latest version
 - Google Chrome browser latest version
-- Extensions: editorconfig, pixel perfect
+- Vercel
+- Extensions: editorconfig, Pixel Perfect, Live Server.
+
+  ## How to run
+
+- Clone source
+
+```
+git clone (https://github.com/luanvvk/HTML-CSS-training.git)
+```
+
+- Git checkout
+
+```
+git checkout feat/practice1
+```
+
+```
+cd practice1
+```
+
+- Run index file
+
+```
+./index.html
+```
+
 
 ## Contributing
 
@@ -35,6 +62,7 @@ I welcome any and all contribution! If you have found or encountered any bugs or
 * [Figma](https://www.figma.com/design/Ir6aHbTgMLN2p1gqcKX8eI/12-FREE-Landing-Pages-(Community)?node-id=30-131&node-type=frame&t=8qjiXl90wsD7VzWR-0)
 * [My training plan](https://docs.google.com/document/d/1TmYnP4evVCyk5F13-RHz-_v7h_Y3GzVAkbjfygDzA7E/edit)
 * [Practice 1 Doc](https://docs.google.com/document/d/1BQY57qm533KxczykLAGgxiN0BAUjohN2/edit)
+* [Vercel] (https://practice1-git-feat-practice1-luanvvks-projects.vercel.app/)
 
 - - -
 Special thanks to Mr. Minh Tran -  my mentor, who provides me all the useful help and support throughout my training session here.
