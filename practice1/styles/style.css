@@ -49,9 +49,8 @@ body {
 
 .image-vector__primary {
 	background-image: url(../images/vector/vector-image-top-right.png);
-	top: 0;
-	right: 0;
 	min-height: 115px;
+	margin-left: auto;
 }
 
 .container {
@@ -157,7 +156,7 @@ body {
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 24px;
-	text-align: center;;
+	text-align: center;
 	justify-content: center;
 	color: var(--brown);
 	transition: 0.5s ease;
@@ -224,7 +223,6 @@ body {
 
 .service--list {
 	min-height: 720px;
-	
 }
 
 .service-list__items {
@@ -265,7 +263,6 @@ body {
 .heading--testimonials {
 	min-height: 196px;
 	color: var(--brown);
-	
 }
 
 .testimonials-wrapper {
@@ -367,7 +364,6 @@ body {
 	min-height: 266px;
 	gap: 15px;
 	margin-top: 2px;
-	
 }
 
 .box__primary {
@@ -375,7 +371,6 @@ body {
 	min-height: 56px;
 	border-radius: 61px;
 	background-color: var(--lightorange);
-
 }
 
 .box__secondary {
@@ -385,6 +380,7 @@ body {
 	margin-left: 100px;
 	border-radius: 61px;
 	border: 3px solid #7c4032;
+	padding-bottom: 50px;
 }
 
 .contact-us--container__info {
@@ -484,4 +480,20 @@ body {
 	min-height: 117px;
 	bottom: 0;
 	background-color: var(--darkbrown);
+}
+
+@media (max-width: 990px) {
+	.contact-us-container {
+		flex-wrap: nowrap;
+	}
+}
+
+@media (max-width:600px) {
+	.container{
+		overflow-x: scroll;
+	}
+
+	.contact-us-container {
+		flex-wrap: nowrap;
+	}
 }
