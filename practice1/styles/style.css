@@ -36,7 +36,7 @@ html, body {
 	max-width: 1903px;
 }
 
-.banner {
+.banner-background {
 	background: url(../images/background-image/background-pattern-second.svg)
 		no-repeat;
 	background-color: var(--yellowwhite);
@@ -64,7 +64,7 @@ html, body {
 	gap: 99px;
 }
 
-.container-banner__intro {
+.banner__intro {
 	font-family: var(--font-primary);
 	text-align: left;
 	color: var(--semidarkbrown);
@@ -72,12 +72,12 @@ html, body {
 	margin-top: -60px;
 }
 
-.container-banner__intro__title {
+.banner__intro__title {
 	width: 600px;
 	min-height: 175px;
 }
 
-.container-banner__intro__title-first {
+.banner__intro__title-first {
 	font-size: 115px;
 	font-weight: 900;
 	line-height: 136.27px;
@@ -85,7 +85,7 @@ html, body {
 	margin-top: 40px;
 }
 
-.container-banner__intro__title-second {
+.banner__intro__title-second {
 	font-size: 58px;
 	font-weight: 700;
 	line-height: 58.29px;
@@ -95,7 +95,7 @@ html, body {
 	margin-top: -20px;
 }
 
-.container-banner__intro__desc {
+.banner__intro__desc {
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 24px;
