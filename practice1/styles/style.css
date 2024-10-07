@@ -43,14 +43,12 @@ html, body {
 	background-size: cover;
 	position: relative;
 	min-height: 958.22px;
-	margin-top: 30px;
 }
 
 .image-vector__primary {
 	background: url(../images/vector/vector-image-top-right.png) no-repeat;
 	background-size: cover;
 	min-height: 115px;
-	margin-left: auto;
 }
 
 .container {
