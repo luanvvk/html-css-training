@@ -26,10 +26,9 @@
 	--font-secondary: "TT Hoves";
 }
 
-html,
-body {
-	max-width: 100%;
-	overflow-x: hidden;
+html, body {
+	width: 100%;
+	overflow-x: hidden ;
 }
 
 .wrapper {
@@ -48,7 +47,8 @@ body {
 }
 
 .image-vector__primary {
-	background-image: url(../images/vector/vector-image-top-right.png);
+	background: url(../images/vector/vector-image-top-right.png) no-repeat;
+	background-size: cover;
 	min-height: 115px;
 	margin-left: auto;
 }
@@ -217,8 +217,8 @@ body {
 	z-index: -100;
 	width: 1903px;
 	height: 389px;
-	left: -352px;
-	top: -195px;
+	margin-left: 0;
+	margin-top: -205px;
 }
 
 .service--list {
