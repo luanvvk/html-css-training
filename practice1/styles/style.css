@@ -60,7 +60,7 @@ html, body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	gap: 99px;
 }
 
@@ -490,8 +490,7 @@ html, body {
 	.container{
 		overflow-x: scroll;
 	}
-
-	.contact-us-container {
-		flex-wrap: nowrap;
+	.container-banner {
+		flex-wrap: wrap;
 	}
 }
