@@ -35,7 +35,7 @@ html, body {
 	margin: 0 auto;
 	max-width: 1903px;
 }
-
+/*----BANNER----*/
 .banner-background {
 	background: url(../images/background-image/background-pattern-second.svg)
 		no-repeat;
@@ -104,7 +104,7 @@ html, body {
 	margin-top: 30px;
 	padding-bottom: 10px;
 }
-
+/*--button--*/
 .button {
 	display: flex;
 	align-items: center;
@@ -116,12 +116,6 @@ html, body {
 }
 
 .button--primary {
-	width: 210px;
-	min-height: 66px;
-	border-radius: 57px;
-	background: var(--yellow);
-	cursor: pointer;
-	transition: 0.5s ease;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -133,6 +127,12 @@ html, body {
 	color: var(--brown);
 	margin-left: -200px;
 	margin-top: 52px;
+	width: 210px;
+	min-height: 66px;
+	border-radius: 57px;
+	background: var(--yellow);
+	cursor: pointer;
+	transition: 0.5s ease;
 }
 
 .button--primary:hover {
@@ -185,16 +185,16 @@ html, body {
 }
 
 .heading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 	font-family: var(--font-primary);
 	font-size: 64px;
 	font-weight: 900;
 	line-height: 96px;
 	text-align: center;
 	text-transform: uppercase;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
 }
 
 .heading--service {
@@ -232,14 +232,14 @@ html, body {
 }
 
 .service--list__block {
-	width: 288px;
-	min-height: 269px;
-	border-radius: 20px;
-	background: var(--white);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	z-index: 100;
+	width: 288px;
+	min-height: 269px;
+	border-radius: 20px;
+	background: var(--white);
 	transition: 0.5s ease;
 }
 
@@ -273,7 +273,6 @@ html, body {
 }
 
 .testimonials-wrapper--container {
-	text-align: center;
 	width: 512px;
 	min-height: 192px;
 	border-radius: 30px;
@@ -283,7 +282,6 @@ html, body {
 }
 
 .testimonials-wrapper--container__header {
-	width: 325px;
 	min-height: 24px;
 	font-family: var(--font-primary);
 	font-size: 16px;
@@ -295,7 +293,6 @@ html, body {
 }
 
 .testimonials-container__content {
-	width: 462px;
 	min-height: 80px;
 	font-family: var(--font-primary);
 	font-size: 14px;
@@ -307,7 +304,6 @@ html, body {
 }
 
 .testimonials-container__footer {
-	width: 114px;
 	min-height: 18px;
 	padding: 20px 0 0 50px;
 }
@@ -399,12 +395,6 @@ html, body {
 	font-style: normal;
 	margin-right: 10px;
 	margin-top: 20px;
-}
-
-.mail-address__item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .icon-image {
