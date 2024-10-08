@@ -29,7 +29,7 @@ The  design will be then turned into HTML/CSS code and use PixelPerfect as match
 - Vercel
 - Extensions: editorconfig, Pixel Perfect, Live Server.
 
-  ## How to run
+## How to run
 
 - Clone source
 
