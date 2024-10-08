@@ -112,7 +112,6 @@ html, body {
 	text-decoration: none;
 	text-transform: capitalize;
 	gap: 35px;
-	margin-top: -35px;
 }
 
 .button--primary {
@@ -126,7 +125,7 @@ html, body {
 	box-shadow: 0 4px 4px 0 var(--shadowcolor);
 	color: var(--brown);
 	margin-left: -200px;
-	margin-top: 52px;
+	margin-top: 20px;
 	width: 210px;
 	min-height: 66px;
 	border-radius: 57px;
@@ -158,7 +157,7 @@ html, body {
 	justify-content: center;
 	color: var(--brown);
 	transition: 0.5s ease;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .button--secondary:hover {
@@ -293,6 +292,7 @@ html, body {
 }
 
 .testimonials-container__content {
+	width: 462px;
 	min-height: 80px;
 	font-family: var(--font-primary);
 	font-size: 14px;
@@ -317,12 +317,12 @@ html, body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 83px;
+	margin-top: 50px;
 	margin-bottom: 50px;
 	margin-left: 0;
 }
 .testimonials .button--primary {
-	margin-top: 83px;
+	margin-top: 50px;
 	margin-bottom: 40px;
 	margin-left: 0;
 }
@@ -397,6 +397,12 @@ html, body {
 	margin-top: 20px;
 }
 
+.mail-address__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .icon-image {
 	padding-right: 18px;
 	margin-top: -5px;
@@ -436,7 +442,6 @@ html, body {
 	color: var(--darkgrey);
 	text-decoration: none;
 	transition: 0.5s ease-out;
-	padding-left: 5px;
 	margin: 5px;
 }
 
