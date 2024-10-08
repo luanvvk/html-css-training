@@ -256,6 +256,7 @@ html, body {
 	background-color: var(--yellowwhite);
 	background-size: cover;
 	min-height: 796px;
+	min-width: auto;
 }
 
 .heading--testimonials {
@@ -341,6 +342,7 @@ html, body {
 	color: var(--brown);
 	text-shadow: 0 4px 4px 0 var(--shadowcolor);
 	padding: 42px 0 20px 0;
+	margin-left: 10px;
 	text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000,
 		1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
 		1px 1px 1px #000;
@@ -375,7 +377,7 @@ html, body {
 	justify-content: center;
 	width: 168px;
 	min-height: 56px;
-	margin-left: 100px;
+	margin-left: 105px;
 	border-radius: 61px;
 	border: 3px solid #7c4032;
 	padding-bottom: 50px;
@@ -395,7 +397,7 @@ html, body {
 	text-decoration: none;
 	justify-content: center;
 	font-style: normal;
-	margin-right: 15px;
+	margin-right: 10px;
 	margin-top: 20px;
 }
 
@@ -407,6 +409,7 @@ html, body {
 
 .icon-image {
 	padding-right: 18px;
+	margin-top: -5px;
 }
 .mail-address__item:last-child {
 	margin-left: -3px;
@@ -444,6 +447,7 @@ html, body {
 	text-decoration: none;
 	transition: 0.5s ease-out;
 	padding-left: 5px;
+	margin: 5px;
 }
 
 .tel:hover {
@@ -464,6 +468,7 @@ html, body {
 	font-style: normal;
 	min-width: 350px;
 	padding-left: 3px;
+	margin-top: -7px;
 }
 
 .address:hover {
