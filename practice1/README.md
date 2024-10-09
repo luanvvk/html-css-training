@@ -61,7 +61,7 @@ I welcome any and all contribution! If you have found or encountered any bugs or
 * [Figma](https://www.figma.com/design/Ir6aHbTgMLN2p1gqcKX8eI/12-FREE-Landing-Pages-(Community)?node-id=30-131&node-type=frame&t=8qjiXl90wsD7VzWR-0)
 * [My training plan](https://docs.google.com/document/d/1TmYnP4evVCyk5F13-RHz-_v7h_Y3GzVAkbjfygDzA7E/edit)
 * [Practice 1 Doc](https://docs.google.com/document/d/1BQY57qm533KxczykLAGgxiN0BAUjohN2/edit)
-* [Vercel] (https://html-css-training-lac.vercel.app/)
+* [Vercel app](https://html-css-training-lac.vercel.app/)
 
 - - -
 Special thanks to Mr. Minh Tran -  my mentor, who provides me all the useful help and support throughout my training session.
