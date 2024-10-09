@@ -17,7 +17,7 @@ The  design will be then turned into HTML/CSS code and use PixelPerfect as match
 - Vercel
 
 ## Requirement
-- The code have to ưork fine on Chrome browser at latest version
+- The code have to work fine on Chrome browser at latest version
 - Use the right HTML tags and CSS properties to achieve the design.
 - Apply Flexbox to the practice
 - CSS Guideline is needed to apply
