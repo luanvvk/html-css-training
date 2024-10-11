@@ -114,7 +114,7 @@ body {
 	text-align: left;
 }
 
-.banner__intro__title-primary {
+.banner__intro__title {
 	height: 115px;
 	margin: 0;
 	
@@ -124,7 +124,7 @@ body {
 	text-shadow: 0 4px 4px 0 var(--shadow-color);
 }
 
-.banner__intro__title-secondary {
+.banner__intro__sub-title {
 	width: 600px;
 	height: 80px;
 	padding-top: 2px;
