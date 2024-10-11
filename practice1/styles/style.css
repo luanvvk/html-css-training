@@ -46,7 +46,6 @@
 	font-style: normal;
 }
 
-
 :root {
 	--yellow-white: #fef4de;
 	--brown: #7c4032;
@@ -67,9 +66,6 @@ html,
 body {
 	width: 100%;
 	overflow-x: hidden;
-}
-
-.wrapper {
 	margin: 0 auto;
 	max-width: 1903px;
 }
@@ -86,22 +82,19 @@ body {
 
 .image-vector__primary {
 	min-height: 115px;
-	
 	background: url(../images/vector/vector-image-top-right.png) no-repeat;
 	background-size: cover;
 }
 
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-.container-banner {
+.container-flex {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	gap: 99px;
+
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .banner__intro {
@@ -109,7 +102,6 @@ body {
 	margin-top: -20px;
 	
 	color: var(--semidarkbrown);
-	
 	font-family: var(--font-primary);
 	text-align: left;
 }
@@ -200,7 +192,6 @@ body {
 	margin-top: 20px;
 
 	color: var(--brown);
-
 	font-family: var(--font-primary);
 	font-weight: 500;
 	font-size: 18px;
@@ -234,11 +225,12 @@ body {
 }
 
 .heading {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
+	position: relative;
+	z-index: 100;
+	width: 100%;
+	margin: 15px 0 50px 0;
 	
+	color: var(--white);
 	font-family: var(--font-primary);
 	font-size: 64px;
 	font-weight: 900;
@@ -247,24 +239,14 @@ body {
 	text-transform: uppercase;
 }
 
-.heading--service {
-	position: relative;
-	z-index: 100;
-	
-	width: 100%;
-	margin: 15px 0 50px 0;
-	
-	color: var(--white);
-}
-
-.heading--service::before {
+.service .heading::before {
 	position: absolute;
 	z-index: -100;
 	
 	width: 1903px;
 	height: 389px;
-	margin-left: 0;
-	margin-top: -205px;
+	left: 0;
+	margin-top: -245px;
 
 	content: "";
 	background-image: url("../images/vector/vector-image-middle.svg");
@@ -273,19 +255,12 @@ body {
 }
 
 .service-list {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
 	gap: 16px;
 	min-height: 720px;
 }
 
 .service--list__block {
 	z-index: 100;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	
 	width: 288px;
 	min-height: 269px;
@@ -312,16 +287,14 @@ body {
 	background-size: cover;
 }
 
-.heading--testimonials {
+.testimonials .heading {
 	min-height: 196px;
 	color: var(--brown);
+	padding-top: 50px;
+	margin: 0;
 }
 
 .testimonials-wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
 	gap: 50px;
 }
 
@@ -340,7 +313,6 @@ body {
 	padding: 20px 50px 0 50px;
 	
 	color: var(--brown);
-
 	font-family: var(--font-primary);
 	font-size: 16px;
 	font-weight: 900;
@@ -352,11 +324,10 @@ body {
 	min-height: 80px;
 	padding: 10px 50px 10px 50px;
 
-	color: var(--dark-grey);
-
 	font-family: var(--font-primary);
 	font-size: 14px;
 	font-weight: 400;
+	color: var(--dark-grey);
 	line-height: 20px;
 	text-align: left;
 }
@@ -384,18 +355,17 @@ body {
 	margin-top: 50px;
 	margin-bottom: 40px;
 }
-
 /*-------------------CONTACT US-------------------------*/
 .contact-us {
 	min-height: 504px;
 }
 
-.heading--contact-us {
+.contact-us .heading {
 	min-height: 180px;
-	margin: 0 0 0 10px;
+	margin: 0 0 0 5px;
+	padding-top: 45px;
 	
 	color: var(--brown);
-	
 	text-shadow: 0 4px 4px 0 var(--shadow-color);
 	text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000,
 		1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
@@ -403,16 +373,10 @@ body {
 }
 
 .contact-us-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
 	gap: 100px;
-
-	
 	width: 100%;
 	min-height: 266px;
-	margin: 5px 0 0 40px;
+	margin: 10px 0 0 390px;
 }
 
 .contact-us-container__empty-box {
@@ -437,7 +401,6 @@ body {
 	padding-bottom: 50px;
 }
 
-
 .contact-us--container__info {
 	display: flex;
 	align-items: self-start;
@@ -454,9 +417,8 @@ body {
 }
 
 .mail-address__item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	gap: 0;
+	margin: 0;
 }
 
 .icon-image {
@@ -468,12 +430,11 @@ body {
 }
 
 .email {
-	color: var(--dark-grey);
-
 	font-family: var(--font-secondary);
 	font-size: 14px;
 	font-weight: 500;
-	
+
+	color: var(--dark-grey);
 	line-height: 17.43px;
 	text-align: left;
 	text-decoration: none;
@@ -495,12 +456,11 @@ body {
 	margin: 5px;
 	padding-left: 5px;
 	
-	color: var(--dark-grey);
-	
 	font-family: var(--font-secondary);
 	font-size: 14px;
 	font-weight: 500;
 
+	color: var(--dark-grey);
 	line-height: 17.43px;
 	text-align: left;
 	text-decoration: none;
@@ -519,13 +479,12 @@ body {
 	margin-top: -7px;
 	padding-left: 3px;
 
-	color: var(--dark-grey);
-
 	font-family: var(--font-secondary);
 	font-size: 14px;
 	font-weight: 500;
 	font-style: normal;
 	
+	color: var(--dark-grey);
 	line-height: 17.43px;
 	text-align: left;
 	transition: 0.5s ease;
