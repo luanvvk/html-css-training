@@ -60,6 +60,7 @@
 
 	--font-primary: Poppins;
 	--font-secondary: TT Hoves;
+	font-size: 10px;
 }
 
 html,
@@ -88,6 +89,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: row;
 	flex-wrap: wrap;
 	gap: 99px;
 
@@ -108,7 +110,7 @@ body {
 	height: 115px;
 	margin: 0;
 
-	font-size: 115px;
+	font-size: 11.5rem;
 	font-weight: 900;
 	line-height: 136.27px;
 	text-shadow: 0 4px 4px 0 var(--shadow-color);
@@ -120,7 +122,7 @@ body {
 	padding-top: 2px;
 
 	font-family: var(--font-primary);
-	font-size: 58px;
+	font-size: 5.8rem;
 	font-weight: 700;
 
 	line-height: 58.29px;
@@ -136,7 +138,7 @@ body {
 	padding-top: 20px;
 	padding-bottom: 10px;
 
-	font-size: 16px;
+	font-size: 1.6rem;
 	font-weight: 600;
 	line-height: 24px;
 }
@@ -163,7 +165,7 @@ body {
 	box-shadow: 0 4px 4px 0 var(--shadow-color);
 
 	font-family: var(--font-primary);
-	font-size: 18px;
+	font-size: 1.8rem;
 	font-weight: 700;
 	line-height: 24px;
 
@@ -192,7 +194,7 @@ body {
 	color: var(--brown);
 	font-family: var(--font-primary);
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 1.8rem;
 	line-height: 24px;
 	text-align: center;
 
@@ -211,17 +213,13 @@ body {
 .logo {
 	max-width: 100%;
 	height: auto;
-	padding: 0 0 200px 0.02px;
+	padding: 0 0 200px 0;
 	margin-top: 70px;
-	transition: 2s ease;
-}
-
-.logo:hover {
-	transform: scale(1.2);
 }
 /*-----------------------SERVICES---------------------*/
 .service {
 	background-color: var(--brown);
+	min-height: 870px;
 }
 
 .heading {
@@ -232,7 +230,7 @@ body {
 
 	color: var(--white);
 	font-family: var(--font-primary);
-	font-size: 4em;
+	font-size: 6.4rem;
 	font-weight: 900;
 	line-height: 96px;
 	text-align: center;
@@ -255,8 +253,8 @@ body {
 }
 
 .service-list {
-	gap: 16px;
-	min-height: 720px;
+	gap: 1.6rem;
+	min-height: 554px;
 }
 
 .service--list__block {
@@ -313,7 +311,7 @@ body {
 
 	color: var(--brown);
 	font-family: var(--font-primary);
-	font-size: 16px;
+	font-size: 1.6rem;
 	font-weight: 900;
 	line-height: 24px;
 	text-align: left;
@@ -324,7 +322,7 @@ body {
 	padding: 2% 10%;
 
 	font-family: var(--font-primary);
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-weight: 400;
 	color: var(--dark-grey);
 	line-height: 20px;
@@ -342,15 +340,12 @@ body {
 	cursor: pointer;
 }
 
-.service .button--primary {
-	position: relative;
-	margin-top: 30px;
-	margin-bottom: 50px;
-}
-
+.service .button--primary,
 .testimonials .button--primary {
-	margin-top: -2px;
-	margin-bottom: 40px;
+	position: relative;
+	max-width: 100%;
+	left: calc(50% - 105px);
+	margin: 50px 0 40px;
 }
 /*-------------------CONTACT US-------------------------*/
 .contact-us {
@@ -372,6 +367,7 @@ body {
 	gap: 100px;
 	width: 100%;
 	min-height: 266px;
+	flex-wrap: wrap;
 }
 
 .contact-us-container__empty-box {
@@ -426,7 +422,7 @@ body {
 
 .email {
 	font-family: var(--font-secondary);
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-weight: 500;
 
 	color: var(--dark-grey);
@@ -452,7 +448,7 @@ body {
 	padding-left: 5px;
 
 	font-family: var(--font-secondary);
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-weight: 500;
 
 	color: var(--dark-grey);
@@ -475,7 +471,7 @@ body {
 	padding-left: 3px;
 
 	font-family: var(--font-secondary);
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-weight: 500;
 	font-style: normal;
 
@@ -499,46 +495,35 @@ body {
 	background-color: var(--dark-brown);
 }
 
-@media (min-width: 981px) and (max-width: 1199px) {
-	.testimonials .button--primary, .service .button--primary {
-		flex-basis: calc(100% / 2);
-	}
-	.service-list {
+@media (min-width: 1025px) and (max-width: 1280px) {
+	.service-list:nth-child(8) {
 		padding-bottom: 5%;
 	}
-}
-
-@media (min-width: 769px) and (max-width: 980px) {
-	.contact-us-container {
-		flex-wrap: wrap;
-	}
+	.service .button--primary,
 	.testimonials .button--primary {
-		margin: 0 20% 5%;
-	}
-	.service .button--primary {
-		margin: 5% 20%;
-	}
-	.testimonials .button--primary, .service .button--primary {
-		flex-basis: calc(100% / 2);
+		display: inline-flex;
 	}
 }
 
-@media (min-width: 401px) and (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+	.service .button--primary,
+	.testimonials .button--primary {
+		display: inline-flex;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
 	.contact-us--container__info {
 		align-items: center;
 	}
 	.testimonials-wrapper--container {
 		margin: 0 5%;
 	}
-	.testimonials .button--primary, 
-	.service .button--primary {
-		width: 80%;
-	}
 	.logo,
 	.banner__intro,
-	.banner__intro__desc { 
+	.banner__intro__desc {
 		text-align: center;
-		margin: 0 10%;
+		margin: 5% 10%;
 		width: 80%;
 	}
 	.banner__intro__title {
@@ -548,23 +533,22 @@ body {
 		font-size: 8vw;
 		width: 100%;
 	}
-	.button {
-		justify-content: center;
+	.service .button--primary,
+	.testimonials .button--primary {
+		display: inline-flex;
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
 	.testimonials-wrapper--container {
 		margin: 0 5%;
 	}
 	.contact-us--container__info {
 		align-items: center;
 	}
-	.testimonials .button--primary, 
-	.service .button--primary {
-		width: 80%;
-	}
 	.logo {
+		width: 80%;
+		height: auto;
 		margin: 5% 10%;
 	}
 	.heading {
@@ -589,5 +573,9 @@ body {
 	}
 	.button {
 		flex-direction: column;
+	}
+	.service .button--primary,
+	.testimonials .button--primary {
+		display: inline-flex;
 	}
 }
