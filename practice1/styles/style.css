@@ -98,7 +98,7 @@ body {
 	margin: 0 auto;
 }
 
-.banner__intro {
+.intro {
 	width: 556px;
 	margin-top: -2rem;
 
@@ -107,7 +107,7 @@ body {
 	text-align: left;
 }
 
-.banner__intro__title {
+.intro__title {
 	height: 115px;
 	margin: 0;
 
@@ -117,7 +117,7 @@ body {
 	text-shadow: 0 4px 4px 0 var(--shadow-color);
 }
 
-.banner__intro__sub-title {
+.intro__sub-title {
 	width: 600px;
 	height: 80px;
 	padding-top: 0.2rem;
@@ -132,7 +132,7 @@ body {
 	text-shadow: 0 4px 4px 0 var(--shadow-color);
 }
 
-.banner__intro__desc {
+.intro__desc {
 	width: 552px;
 	min-height: 72px;
 	margin-top: -1rem;
@@ -363,6 +363,7 @@ body {
 	width: 100%;
 	min-height: 266px;
 	flex-wrap: wrap;
+	margin-top: 1rem;
 }
 
 .contact-us-container__empty-box {
@@ -488,7 +489,8 @@ body {
 	min-height: 11.7rem;
 	background-color: var(--dark-brown);
 }
-
+/*-------Media----------*/
+/*Laptop and small desktop*/
 @media (min-width: 1025px) and (max-width: 1280px) {
 	.service-list:nth-child(8) {
 		padding-bottom: 5%;
@@ -498,14 +500,14 @@ body {
 		display: inline-flex;
 	}
 }
-
+/*Tablet landscape mode*/
 @media (min-width: 769px) and (max-width: 1024px) {
 	.service .button--primary,
 	.testimonials .button--primary {
 		display: inline-flex;
 	}
 }
-
+/*Tablet portrait mode*/
 @media (min-width: 481px) and (max-width: 768px) {
 	.contact-us--container__info {
 		align-items: center;
@@ -514,16 +516,16 @@ body {
 		margin: 0 5%;
 	}
 	.logo,
-	.banner__intro,
-	.banner__intro__desc {
+	.intro,
+	.intro__desc {
 		text-align: center;
 		margin: 5% 10%;
 		width: 80%;
 	}
-	.banner__intro__title {
+	.intro__title {
 		font-size: 15vw;
 	}
-	.banner__intro__sub-title {
+	.intro__sub-title {
 		font-size: 8vw;
 		width: 100%;
 	}
@@ -532,7 +534,7 @@ body {
 		display: inline-flex;
 	}
 }
-
+/*Mobile*/
 @media (max-width: 480px) {
 	.testimonials-wrapper--container {
 		margin: 0 5%;
@@ -548,18 +550,18 @@ body {
 	.heading {
 		font-size: 10vw;
 	}
-	.banner__intro {
+	.intro {
 		text-align: center;
 		align-items: center;
 		margin: 0 10%;
 	}
-	.banner__intro__title {
+	.intro__title {
 		font-size: 20vw;
 	}
-	.banner__intro__sub-title {
+	.intro__sub-title {
 		font-size: 10vw;
 	}
-	.banner__intro__desc {
+	.intro__desc {
 		margin: 0 auto;
 		padding: 0 15%;
 		width: 80%;
