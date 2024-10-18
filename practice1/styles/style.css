@@ -60,7 +60,6 @@
 
 	--font-primary: Poppins;
 	--font-secondary: TT Hoves;
-	font-size: 10px;
 }
 
 html,
@@ -69,6 +68,8 @@ body {
 	overflow-x: hidden;
 	margin: 0 auto;
 	max-width: 1903px;
+	font-size: 62.5%;
+	line-height: 2.4rem;
 }
 /*----BANNER----*/
 .banner {
@@ -112,7 +113,7 @@ body {
 
 	font-size: 11.5rem;
 	font-weight: 900;
-	line-height: 136.27px;
+	line-height: 13.627rem;
 	text-shadow: 0 4px 4px 0 var(--shadow-color);
 }
 
@@ -125,7 +126,7 @@ body {
 	font-size: 5.8rem;
 	font-weight: 700;
 
-	line-height: 58.29px;
+	line-height: 5.829rem;
 	letter-spacing: 0.435em;
 	text-transform: capitalize;
 	text-shadow: 0 4px 4px 0 var(--shadow-color);
@@ -140,7 +141,6 @@ body {
 
 	font-size: 1.6rem;
 	font-weight: 600;
-	line-height: 24px;
 }
 /*--button--*/
 .button {
@@ -167,8 +167,6 @@ body {
 	font-family: var(--font-primary);
 	font-size: 1.8rem;
 	font-weight: 700;
-	line-height: 24px;
-
 	cursor: pointer;
 	transition: 0.5s ease;
 }
@@ -195,15 +193,13 @@ body {
 	font-family: var(--font-primary);
 	font-weight: 500;
 	font-size: 1.8rem;
-	line-height: 24px;
 	text-align: center;
-
 	transition: 0.5s ease;
 }
 
 .button--secondary:hover {
 	color: var(--light-brown);
-	font-size: 24px;
+	font-size: 2.4rem;
 }
 
 .button--secondary:active {
@@ -232,7 +228,7 @@ body {
 	font-family: var(--font-primary);
 	font-size: 6.4rem;
 	font-weight: 900;
-	line-height: 96px;
+	line-height: 9.6rem;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -313,7 +309,6 @@ body {
 	font-family: var(--font-primary);
 	font-size: 1.6rem;
 	font-weight: 900;
-	line-height: 24px;
 	text-align: left;
 }
 
@@ -325,7 +320,7 @@ body {
 	font-size: 1.4rem;
 	font-weight: 400;
 	color: var(--dark-grey);
-	line-height: 20px;
+	line-height: 2rem;
 	text-align: left;
 }
 
@@ -402,7 +397,6 @@ body {
 	min-height: 132px;
 	margin-right: 10px;
 	margin-top: -70px;
-
 	text-decoration: none;
 	font-style: normal;
 }
@@ -426,7 +420,7 @@ body {
 	font-weight: 500;
 
 	color: var(--dark-grey);
-	line-height: 17.43px;
+	line-height: 1.743rem;
 	text-align: left;
 	text-decoration: none;
 	transition: 0.5s ease-out;
@@ -452,7 +446,7 @@ body {
 	font-weight: 500;
 
 	color: var(--dark-grey);
-	line-height: 17.43px;
+	line-height: 1.743rem;
 	text-align: left;
 	text-decoration: none;
 	transition: 0.5s ease-out;
@@ -476,7 +470,7 @@ body {
 	font-style: normal;
 
 	color: var(--dark-grey);
-	line-height: 17.43px;
+	line-height: 1.743rem;
 	text-align: left;
 	transition: 0.5s ease;
 }
