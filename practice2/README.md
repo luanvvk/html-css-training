@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to my second HTML/CSS practice. In this topic, I will recreate a web page from figma following the training plan, named Travlog. This design is displayed in mobile/tablet/desktop mode. You can find the all the links needed at the end of this file. 
+Welcome to my second HTML/CSS practice. In this topic, I will recreate a web page from figma following the training plan, named Travlog. This design is displayed in mobile/tablet/desktop mode. You can find the all the links needed at the end of this file. </br>
 The ultimate objective of this project: end product needs to be rendered and displayed correctly on multiple devices. PixelPerfect is used as matching tool to make sure the designs are perfectly matched.
 
 ## Target
