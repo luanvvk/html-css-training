@@ -1,0 +1,46 @@
+.container {
+	max-width: 120rem;
+	width: 100%;
+	margin: 0 auto;
+}
+.nav-containter {
+	display: flex;
+	justify-content: space-around;
+}
+.nav-menu {
+	display: flex;
+}
+.login-register {
+	display: flex;
+}
+.brand {
+font-family: var(--font-primary);
+font-size: 2.4rem;
+font-weight: 900;
+line-height: 4rem;
+text-align: left;
+color: var(--black-blue);
+text-decoration: none;
+align-items: center;
+}
+.nav-menu {
+	width: 42.8rem;
+	min-height: 1.7rem;
+	gap: 6.4rem;
+}
+.nav-menu__item{
+	width: 87px;
+	min-height: 17px;
+
+	list-style: none;
+	text-decoration: none;
+	font-family: var(--font-primary);
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.68rem;
+	text-align: left;
+	background: var(#222831);
+}
+.nav-menu li {
+	margin-left: 5%;
+}
