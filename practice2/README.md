@@ -60,7 +60,7 @@ I welcome any and all contribution! If you have found or encountered any bugs or
 ## Helpful links
 * [Figma](https://www.figma.com/design/SkuEO6OmYTTEgcIHUyXXko/Responsive-Web-Design-in-Figma-(Community)?node-id=1156-718&node-type=frame&t=NgyBgv6SGWmCixIA-0)
 * [My training plan](https://docs.google.com/document/d/1TmYnP4evVCyk5F13-RHz-_v7h_Y3GzVAkbjfygDzA7E/edit)
-* [Practice 1 Doc](https://docs.google.com/document/d/1oplWbyjz9veQw3jkgNyzYYgAKx9d9bA4fIOySYgMcxM/edit?tab=t.0)
+* [Practice 2 Doc](https://docs.google.com/document/d/1oplWbyjz9veQw3jkgNyzYYgAKx9d9bA4fIOySYgMcxM/edit?tab=t.0)
 * [Vercel app] to be updated....
 
 - - -
