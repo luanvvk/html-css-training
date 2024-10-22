@@ -11,73 +11,71 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<nav>
-				<div class="container nav-containter">
-					<div class="brand-name">Travlog</div>
-					<ul class="nav-menu">
-						<li><a class="nav-menu__item" href="#">home</a></li>
-						<li><a class="nav-menu__item txt-opacity" href="#">discover</a></li>
-						<li><a class="nav-menu__item txt-opacity" href="#">special deals</a></li>
-						<li><a class="nav-menu__item txt-opacity" href="#">contact</a></li>
-					</ul>
-					<ul class="login-register">
-						<li><a class="button button-white" href="#">login</a></li>
-						<li><a class="button button-primary" href="#">signup</a></li>
-					</ul>
-				</div>
+			<nav class="container nav-containter">
+				<a href="#" class="brand-name">Travlog</a>
+				<ul class="nav-menu">
+					<li><a class="nav-menu__item" href="#">home</a></li>
+					<li><a class="nav-menu__item txt-opacity" href="#">discover</a></li>
+					<li><a class="nav-menu__item txt-opacity" href="#">special deals</a></li>
+					<li><a class="nav-menu__item txt-opacity" href="#">contact</a></li>
+				</ul>
+				<ul class="login-register">
+					<li><a class="button button-white" href="#">login</a></li>
+					<li><a class="button button-purple" href="#">signup</a></li>
+				</ul>
 			</nav>
 
-			<section class="container banner">
+			<header class="container banner">
 				<div class="banner-primary">
-					<a class="button button-secondary pink-color" href="#"> explore the world!</a>
-					<h1 class="header">Travel <span class="pink-color">top destination</span> of the world</h1>
-					<p class="desc txt-opacity">
+					<a class="button button-pink" href="#"> explore the world!</a>
+					<h1 class="banner-primary__header">Travel <span class="pink-color">top destination</span> of the world</h1>
+					<p class="banner-primary__desc txt-opacity">
 						We always make our customer happy by providing<br />
 						as many choices as possible
 					</p>
 					<div>
-						<a class="button button-primary" href="#">get started</a>
+						<a class="button button-purple" href="#">get started</a>
 						<a class="button button-white" href="#">watch demo</a>
 					</div>
 				</div>
 				<img class="banner-image" src="./assets/images/banner.png" alt="top destinations in thw world" />
-			</section>
+			</header>
 
 			<article class="container travel-agency">
-				<img class="agency" src="./assets/images/brand-list/tripadvisor.png" alt="Trip Advisor" />
-				<img class="agency" src="./assets/images/brand-list/expedia.png" alt="Expedia" />
-				<img class="agency" src="./assets/images/brand-list/booking.png" alt="Booking.com" />
-				<img class="agency" src="./assets/images/brand-list/airbnb.png" alt="Airbnb" />
-				<img class="agency" src="./assets/images/brand-list/rbitz.png" alt="Rbitz" />
+				<img class="travel-agency__list" src="./assets/images/brand-list/tripadvisor.png" alt="Trip Advisor" />
+				<img class="travel-agency__list" src="./assets/images/brand-list/expedia.png" alt="Expedia" />
+				<img class="travel-agency__list" src="./assets/images/brand-list/booking.png" alt="Booking.com" />
+				<img class="travel-agency__list" src="./assets/images/brand-list/airbnb.png" alt="Airbnb" />
+				<img class="travel-agency__list" src="./assets/images/brand-list/rbitz.png" alt="Rbitz" />
 			</article>
 			<section class="container service">
 				<div class="service-intro">
-					<h2 class="heading service-heading pink-color">services</h2>
-					<h3 class="sub-heading service-desc">Our top value categories for you</h3>
+					<h2 class="heading service-intro__heading">services</h2>
+					<h3 class="sub-heading service-intro__desc">Our top value categories for you</h3>
 				</div>
 				<div class="service-card">
-					<div class="service-card__item">
-						<img class="service-icon" src="./assets/icons/service-destination.svg" alt="destination" />
+					<article class="service-card__item">
+						<img class="service-card__icon" src="./assets/icons/service-destination.svg" alt="destination" />
 						<h4 class="service-card__header">best tour guide</h4>
 						<p class="service-card__desc">What looked like a small patch of purple grass, above five feet.</p>
-					</div>
-					<div class="service-card__item">
-						<img class="service-icon" src="./assets/icons/service-booking.svg" alt="booking" />
+					</article>
+					<article class="service-card__item">
+						<img class="service-card__icon" src="./assets/icons/service-booking.svg" alt="booking" />
 						<h4 class="service-card__header">easy booking</h4>
 						<p class="service-card__desc">Square, was moving across the sand in their direction.</p>
-					</div>
-					<div class="service-card__item">
-						<img class="service-icon" src="./assets/icons/service-cloudy.svg" alt="weather" />
+					</article>
+					<article class="service-card__item">
+						<img class="service-card__icon" src="./assets/icons/service-cloudy.svg" alt="weather" />
 						<h4 class="service-card__header">weather forecast</h4>
 						<p class="service-card__desc">What looked like a small patch of purple grass, above five feet.</p>
-					</div>
+					</article>
 				</div>
 			</section>
 			<section class="container top-destination">
 				<div class="top-destination-header">
 					<div class="top-destinaton__intro">
-						<div class="heading top-destination-heading pink-color">top destination</div>
-						<div class="sub-heading top-destinaton__desc">Explore our top destination</div>
+						<h2 class="heading top-destination-heading pink-color">top destination</h2>
+						<h3 class="sub-heading top-destinaton__desc">Explore our top destination</h3>
 					</div>
 					<div class="arrow-button">
 						<a class="arrow-button-left" href="#"
@@ -87,7 +85,7 @@
 					</div>
 				</div>
 				<div class="destination-card">
-					<div class="destination-card-content">
+					<article class="destination-card-content">
 						<img class="card__image" src="./assets/images/destination/beach.png" alt="Beautiful beach" />
 						<div class="card-content">
 							<h4 class="card-content-header sm-txt">Paradise Beach, Bantayan Island</h4>
@@ -95,8 +93,8 @@
 						</div>
 						<h5 class="card-location">Rome, Italy</h5>
 						<h5 class="card__review">4.8</h5>
-					</div>
-					<div class="destination-card-content">
+					</article>
+					<article class="destination-card-content">
 						<img class="card__image" src="./assets/images/destination/fish.png" alt="Beautiful beach" />
 						<div class="card-content">
 							<h4 class="card-content-header sm-txt">Ocean with full of Colors</h4>
@@ -104,8 +102,8 @@
 						</div>
 						<h5 class="card-location">Maldives</h5>
 						<h5 class="card__review">4.5</h5>
-					</div>
-					<div class="destination-card-content">
+					</article>
+					<article class="destination-card-content">
 						<img class="card__image" src="./assets/images/destination/mountain.png" alt="Beautiful beach" />
 						<div class="card-content">
 							<h4 class="card-content-header sm-txt">Mountain View, Above the cloud</h4>
@@ -113,106 +111,172 @@
 						</div>
 						<h5 class="card-location">United Arab Emeries</h5>
 						<h5 class="card__review">5.0</h5>
-					</div>
+					</article>
 				</div>
 			</section>
 
-			<section class="travel-point">
-				<div class="travel-point-container">
+			<section class="travel-point-container">
+				<img class="travel-point__image" src="./assets/images/travel-point.png" alt="travel-point" />
+				<div class="travel-point-content">
+					<h2 class="heading travel-point__heading pink-color">travel point</h2>
+					<h3 class="sub-heading travel-point__sub-heading">We helping you find your dream location</h3>
+					<p class="desc travel-point__desc txt-opacity">
+						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+						classical Latin literature from 45 BC.
+					</p>
 					<img class="sticker" src="./assets/icons/travel-point.svg" alt="specials" />
-					<img class="travel-point__image" src="./assets/images/travel-point.png" alt="travel-point" />
-					<div class="travel-point-content">
-						<div class="heading travel-point__heading pink-color">travel point</div>
-						<div class="sub-heading travel-point__sub-heading">We helping you find your dream location</div>
-						<p class="desc travel-point__desc txt-opacity">
-							Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-							classical Latin literature from 45 BC.
-						</p>
-						<div class="travel-point__stats">
-							<div class="stats__item">
-								<div class="stats-number">500+</div>
-								<h5 class="desc stats-desc">holiday package</h5>
-							</div>
-							<div class="stats__item">
-								<div class="stats-number">100</div>
-								<h5 class="desc stats-desc">luxury hotel</h5>
-							</div>
-							<div class="stats__item">
-								<div class="stats-number">7</div>
-								<h5 class="desc stats-desc">premium airlines</h5>
-							</div>
-							<div class="stats__item">
-								<div class="stats-number">2k+</div>
-								<h5 class="desc stats-desc">happy custumer</h5>
-							</div>
+					<div class="travel-point__stats">
+						<div class="stats__item">
+							<div class="stats-number">500+</div>
+							<h5 class="desc stats-desc">holiday package</h5>
+						</div>
+						<div class="stats__item">
+							<div class="stats-number">100</div>
+							<h5 class="desc stats-desc">luxury hotel</h5>
+						</div>
+						<div class="stats__item">
+							<div class="stats-number">7</div>
+							<h5 class="desc stats-desc">premium airlines</h5>
+						</div>
+						<div class="stats__item">
+							<div class="stats-number">2k+</div>
+							<h5 class="desc stats-desc">happy custumer</h5>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="key-features">
-				<div class="key-features-container">
-					<img class="key-features__image" src="./assets/images/key-feature.png" alt="key features" />
-					<div class="key-features-content">
-						<div class="heading key-features__heading pink-color">key features</div>
-						<div class="sub-heading key-features__sub-heading">We offer best services</div>
-						<p class="desc key-features__desc txt-opacity">
-							Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-							classical Latin literature <br />
-							from 45 BC.
-						</p>
-						<div class="list__item">
-							<img class="key-features__icon" src="./assets/icons/feature-location.svg" alt="best service" />
-							<div>
-								<h5 class="list-item__header sm-txt">We offer best services</h5>
-								<p class="desc list-item__desc txt-opacity">Lorem Ipsum is not simply random text</p>
-							</div>
+			<section class="key-features-container">
+				<img class="key-features__image" src="./assets/images/key-feature.png" alt="key features" />
+				<div class="key-features-content">
+					<h2 class="heading key-features__heading pink-color">key features</h2>
+					<h3 class="sub-heading key-features__sub-heading">We offer best services</h3>
+					<p class="desc key-features__desc txt-opacity">
+						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+						classical Latin literature <br />
+						from 45 BC.
+					</p>
+					<article class="list__item">
+						<img
+							class="key-features__icon location"
+							src="./assets/icons/feature-location.svg"
+							alt="best service"
+						/>
+						<div>
+							<h4 class="list-item__header sm-txt">We offer best services</h4>
+							<p class="desc list-item__desc txt-opacity">Lorem Ipsum is not simply random text</p>
 						</div>
-						<div class="list__item">
-							<img
-								class="key-features__icon yellow-color"
-								src="./assets/icons/feature-calendar.svg"
-								alt="Plan your trip"
-							/>
-							<div>
-								<h5 class="list-item__header sm-txt">Schedule your trip</h5>
-								<p class="desc list-item__desc txt-opacity">It has roots in a piece of classical</p>
-							</div>
+					</article>
+					<article class="list__item">
+						<img
+							class="key-features__icon schedule"
+							src="./assets/icons/feature-calendar.svg"
+							alt="Plan your trip"
+						/>
+						<div>
+							<h4 class="list-item__header sm-txt">Schedule your trip</h4>
+							<p class="desc list-item__desc txt-opacity">It has roots in a piece of classical</p>
 						</div>
-						<div class="list__item">
-							<img
-								class="key-features__icon pink-color"
-								src="./assets/icons/feature-discount.svg"
-								alt="best discount"
-							/>
-							<div>
-								<h5 class="list-item__header sm-txt">Get discounted coupons</h5>
-								<p class="desc list-item__desc txt-opacity">Lorem Ipsum is not simply random text</p>
-							</div>
+					</article>
+					<article class="list__item">
+						<img
+							class="key-features__icon discount"
+							src="./assets/icons/feature-discount.svg"
+							alt="best discount"
+						/>
+						<div>
+							<h4 class="list-item__header sm-txt">Get discounted coupons</h4>
+							<p class="desc list-item__desc txt-opacity">Lorem Ipsum is not simply random text</p>
 						</div>
-					</div>
+					</article>
 				</div>
 			</section>
 			<sectiom class="container testimonial">
 				<img class="testimonial__background" src="./assets/images/testimonials-layout.png" alt="background" />
-				<a class="arrow-button-left" href="#"
-							><img class="arrow" src="./assets/icons/arrow-left.svg"
-						/></a>
-				<div class="testimonial-card">
-					<div class="heading testimonial-card__heading pink-color">testimonials</div>
-					<div class="sub-heading testimonial-card__sub-heading">Trust our clients</div>
+				<a class="arrow-button-left" href="#"><img class="arrow" src="./assets/icons/arrow-left.svg" /></a>
+				<article class="testimonial-card">
+					<h2 class="heading testimonial-card__heading pink-color">testimonials</h2>
+					<h3 class="sub-heading testimonial-card__sub-heading">Trust our clients</h3>
 					<img class="client__photo" src="./assets/images/client.png" alt="Client photo" />
-					<h5 class="client__name">mark smith <span class="client__hobbie">/ travel enthusiasist</span></h5>
+					<h4 class="client__name">mark smith <span class="client__hobbie">/ travel enthusiasist</span></h4>
 					<img class="client__review" src="./assets/icons/client-review.svg" alt="Client review" />
 					<p class="client-feedback">
 						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
 						classical Latin literature from 45 BC.
 					</p>
-					<img class="swipe-icon" src="./assets/icons/swipe.svg" alt="swipe to move"/>		
-				</div>
+					<img class="swipe-icon" src="./assets/icons/swipe.svg" alt="swipe to move" />
+				</article>
 				<a class="arrow-button-right" href="#"><img class="arrow" src="./assets/icons/arrow.svg" /></a>
 			</sectiom>
+			<section class="containter subscription">
+				<img class="subscription-image" src="./assets/images/subscribe-left.png" alt="Decor image" />
+				<div class="subscription-content">
+					<h2 class="heading subscription__heading pink-color">subcribe to our newsletter</h2>
+					<h3 class="sub-heading subscription__sub-heading">
+						Prepare yourself & let’s explore the beauty of the world
+					</h3>
+					<div class="subscription-box">
+						<div class="form-box">
+							<input class="form-input" type="text" name="email-address" placeholder="your email" />
+							<button class="button button-purple" type="submit">subcribe</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="container footer">
+				<div class="footer__1">
+					<a href="#" class="brand-name">Travlog</a>
+					<p class="brand-desc">
+						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+						classical Latin literature from 45 BC.
+					</p>
+					<ul class="footer-socials">
+						<li class="facebook">
+							<a href="#" class="facebook-logo"
+								><img src="./assets/icons/facebook.svg" alt="facebook icon"
+							/></a>
+						</li>
+						<li class="twitter">
+							<a href="#" class="twitter-logo"><img src="./assets/icons/twitter.svg" alt="twitter icon" /></a>
+						</li>
+						<li class="instagram">
+							<a href="#" class="instagram-logo"
+								><img src="./assets/icons/instagram.svg" alt="instagram icon"
+							/></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__2">
+					<div class="sub-footer__1">
+						<h4 class="footer-heading">company</h4>
+						<ul class="company-info">
+							<li class="info-list"><a href="#">About</a></li>
+							<li class="info-list"><a href="#">Career</a></li>
+							<li class="info-list"><a href="#">Mobile</a></li>
+						</ul>
+					</div>
+					<div class="sub-footer__2">
+						<h4 class="footer-heading">contact</h4>
+						<ul class="company-info">
+							<li class="info-list"><a href="#">Why Travlog?</a></li>
+							<li class="info-list"><a href="#">Partner with us</a></li>
+							<li class="info-list"><a href="#">FAQ's</a></li>
+							<li class="info-list"><a href="#">Blog</a></li>
+						</ul>
+					</div>
+					<div class="sub-footer__3">
+						<h4 class="footer-heading">meet us</h4>
+						<a class="tel" href="tel:(303) 555-0105">+00 92 1234 <br />56789</a>
+						<a class="email" href="mailto:test@gmail.com">info@travlog.com</a>
+						<address class="mail-address">
+							<p class="address">205. R Street, New York</p>
+							<p class="address">BD23200</p>
+						</address>
+						<img class="footer-image" src="./assets/images/subscribe-right.png" alt="Special image" />
+					</div>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>
-\\
