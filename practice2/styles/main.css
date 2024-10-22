@@ -415,6 +415,7 @@
 	flex-wrap: wrap;
 }
 .travel-point__image {
+	position: relative;
 	width: 871px;
 	height: 697px;
 }
@@ -470,10 +471,10 @@
 }
 .sticker {
 	position: absolute;
-	width: 277px;
-	height: 353px;
+	margin: 0 auto;
+
 	top: 2771px;
-	left: 1280px;
+	left:1163px;
 }
 .key-features {
 	width: 1, 312px;
@@ -542,4 +543,72 @@
 .list-item__desc {
 	width: 353px;
 	height: 29px;
+}
+.testimonial {
+	width: 1200px;
+min-height: 645px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.testimonial__background {
+	position: absolute;
+margin: 0 auto;
+top: 4024.88px;
+margin-left: -120px;
+
+opacity: 0.1px;
+}
+
+.testimonial-card {
+width: 872px;
+min-height: 645px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+gap: 56px;
+
+}
+.testimonial-card__heading {
+min-height: 28px;
+}
+.testimonial-card__sub-heading {
+min-height: 53px;
+margin-top: -16px;
+}
+.client__photo {
+	width: 128px;
+min-height: 128px;
+}
+.client__name {
+font-family: var(--font-primary);
+font-size: 28px;
+font-weight: 700;
+line-height: 33.6px;
+text-align: center;
+text-transform: capitalize;
+color: var(--light-coral);
+}
+.client__hobbie {
+	color: rgba(25, 24, 37, 0.75);
+
+}
+.client__review {
+	width: 224px;
+min-height: 32px;
+margin-top: -16px;
+}
+.client-feedback {
+	font-family: var(--font-primary);
+font-size: 23px;
+font-weight: 450;
+line-height: 36.8px;
+text-align: center;
+color: rgba(25, 24, 37, 0.75);
+}
+.testimonial .arrow-button-left {
+	background-color: rgba(255, 255, 255, 1);
+	z-index: 100;
 }
