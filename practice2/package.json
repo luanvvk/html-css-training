@@ -1,0 +1,15 @@
+{
+  "name": "travlog",
+  "version": "1.0.0",
+  "description": "Welcome to my second HTML/CSS practice. In this topic, I will recreate a web page from figma following the training plan, named Travlog. This design is displayed in mobile/tablet/desktop mode. You can find the all the links needed at the end of this file. </br>\r The ultimate objective of this project: end product needs to be rendered and displayed correctly on multiple devices. PixelPerfect is used as matching tool to make sure the designs are perfectly matched.",
+  "source":"src/index.html",
+  "scripts": {
+    "start":"parcel",
+    "build": "parcel build --dist-dir public"
+  },
+  "author": "luanvu",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
