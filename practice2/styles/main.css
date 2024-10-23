@@ -124,13 +124,13 @@
 	min-height: 84.1rem;
 	gap: 3.1rem;
 }
-.banner-primary {
+.banner--first {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	gap: 3rem;
 }
-.banner-primary__header {
+.banner--first__header {
 	width: 41.2rem;
 	height: 24.9rem;
 	margin: 0;
@@ -191,7 +191,7 @@
 	height: 2.4rem;
 	margin-right: 10px;
 }
-.banner-image {
+.banner__image {
 	width: 77.2rem;
 	height: 71.3rem;
 	margin-top: 6.4rem;
@@ -201,7 +201,7 @@
 	height: 16.8rem;
 	justify-content: space-between;
 }
-.travel-agency__list {
+.travel-agency__img {
 	min-width: 10.3rem;
 	height: auto;
 }
@@ -244,7 +244,7 @@
 	margin-top: 0.8rem;
 }
 
-.service-intro__desc {
+.service-intro__sub-heading {
 	width: 44.4rem;
 	min-height: 10.6rem;
 }
@@ -370,18 +370,11 @@
 	min-height: auto;
 }
 
-.card__info {
-	width: 30.933rem;
-	height: 7.22rem;
-	justify-content: space-around;
-	display: flex;
-	margin-left: 3.2rem;
-	margin-top: 3.2rem;
-}
-
 .card__info__header {
 	width: 22.833rem;
 	height: 5.6rem;
+	float: left;
+	margin: 3.2rem 0 3.2rem 3.2rem;
 }
 
 .sm-txt{
@@ -393,17 +386,20 @@
 }
 
 .card__price {
-	width: 8.1rem;
-	height: 2.8rem;
+	display: inline-block;
+	min-width: 8.1rem;
+	min-height: 2.8rem;
 	letter-spacing: 0;
+	margin-top: 3.2rem;
+	
 }
 
 .card__location {
-	display: block;
+	display: inline-block;
 	width: 30.933rem;
 	height: 2.9rem;
 	opacity: 0.75;
-	margin: 0 0 3.2rem 3.2rem;
+	margin: 0 0 6.4rem 3.2rem;
 }
 
 .card__review {
@@ -729,6 +725,7 @@
 	line-height: 2.76rem;
 	color: rgba(25, 24, 37, 0.75);
 }
+
 .form-input::placeholder {
 	width: 65.7rem;
 	margin-left: 7%;
@@ -759,7 +756,7 @@
 	margin-bottom: 6.4rem;
 }
 
-.footer__2 {
+.footer__second {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 3.2rem;
@@ -779,6 +776,10 @@
 	list-style-type: none;
 	gap: 3.2rem;
 }
+.brand-socials__link {
+	max-width: 32px;
+	height: auto;
+}
 
 .footer__heading {
 	font-family: var(--font-primary);
@@ -793,7 +794,7 @@
 	list-style: none;
 }
 
-.info-list {
+.info-link {
 	opacity: 0.75;
 	text-decoration: none;
 	cursor: pointer;
@@ -817,7 +818,7 @@
 	text-decoration: none;
 }
 
-.sub-footer__3 {
+.sub-footer__third {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
