@@ -35,7 +35,7 @@
 }
 
 .brand-name:before {
-  content: url("logo.0ff1e26a.svg");
+  content: url("logo.aed59638.svg");
   width: 4rem;
   min-height: 4rem;
   margin-right: 1.6rem;
@@ -144,7 +144,7 @@
 }
 
 .button-pink:after {
-  content: url("banner-item.65a874e0.svg");
+  content: url("banner-item.73c36f05.svg");
   width: 2rem;
   height: 2rem;
   margin-left: .8rem;
@@ -179,7 +179,7 @@
 }
 
 .banner .button-white:before {
-  content: url("banner-button.97d3d297.svg");
+  content: url("banner-button.f3b29c52.svg");
   width: 2.4rem;
   height: 2.4rem;
   margin-right: 10px;
@@ -405,7 +405,7 @@
 }
 
 .card__review:after {
-  content: url("star.c1d0612a.svg");
+  content: url("destination-rating.885b4d51.svg");
   width: 2rem;
   height: 1.9rem;
   margin-left: 1.6rem;
@@ -694,7 +694,7 @@
 }
 
 .form-input {
-  background: url("email.92675299.svg") 0 no-repeat;
+  background: url("email.6fae9826.svg") 0 no-repeat;
   background-color: var(--white);
   color: #191825bf;
   background-position-x: 5%;

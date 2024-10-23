@@ -39,7 +39,7 @@
 }
 
 .brand-name::before {
-	content: url("../assets/icons/logo.svg");
+	content: url("../assets/images/icons/logo.svg");
 	display: inline-block;
 	margin-right: 1.6rem;
 	width: 4rem;
@@ -152,7 +152,7 @@
 	color: var(--pink);
 }
 .button-pink::after {
-	content: url("../assets/icons/banner-item.svg");
+	content: url("../assets/images/icons/banner-icon/banner-item.svg");
 	width: 2rem;
 	height: 2rem;
 	margin-left: 0.8rem;
@@ -186,7 +186,7 @@
 }
 
 .banner .button-white::before {
-	content: url("../assets/icons/banner-button.svg");
+	content: url("../assets/images/icons/banner-icon/banner-button.svg");
 	width: 2.4rem;
 	height: 2.4rem;
 	margin-right: 10px;
@@ -414,7 +414,7 @@
 }
 
 .card__review::after {
-	content: url("../assets/icons/star.svg");
+	content: url("../assets/images/icons/destination-icon/destination-rating.svg");
 	width: 2rem;
 	height: 1.9rem;
 	margin-left: 1.6rem;
@@ -710,7 +710,7 @@
 }
 
 .form-input {
-	background: url("../assets/icons/email.svg") no-repeat left;
+	background: url("../assets/images/icons/subscription/email.svg") no-repeat left;
 	background-color: var(--white);
 	background-position-x: 5%;
 
