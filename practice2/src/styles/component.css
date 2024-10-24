@@ -1,0 +1,229 @@
+/*---category----*/
+.category__heading {
+	font-family: var(--font-primary);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19.2px;
+	letter-spacing: 0.2em;
+	text-align: center;
+
+	text-transform: uppercase;
+	color: var(--pink);
+}
+.category__sub-heading {
+	font-family: var(--font-primary);
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 38.4px;
+	text-align: center;
+	color: var(--black-blue);
+}
+.category__desc {
+	padding: 0 32px;
+	font-family: var(--font-secondary);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25.6px;
+	text-align: center;
+	opacity: 0.5;
+	color: var(--black-blue);
+}
+/*-----service card-----*/
+.service-card__item {
+	border-radius: 3.2rem;
+	border: 1px solid rgba(25, 24, 37, 0.1);
+}
+
+.service-card__item:hover {
+	box-shadow: 0 4.1rem 839rem 0 #0000001a;
+}
+
+.service-card__icon {
+	display: block;
+	margin: 3.2rem auto;
+	min-width: 6.4rem;
+	height: auto;
+	
+}
+
+.service-card__header {
+	margin-bottom: 4.8rem;
+	font-family: var(--font-primary);
+	font-size: 2.4rem;
+	font-weight: 700;
+
+	line-height: 2.28rem;
+	text-align: center;
+	text-transform: capitalize;
+	color: var(--black-blue);
+}
+
+.service-card__desc {
+	font-family: var(--font-secondary);
+
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 2.88rem;
+	text-align: center;
+
+	margin: 0 3.2rem;
+	padding: 8px;
+	color: var(--black-blue);
+	opacity: 0.5;
+}
+/*---------destination card*/
+.destination-card {
+	max-width: 100%;
+	min-height: 57.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 3.2rem;
+}
+
+.destination-card-content {
+	max-width: 100%;
+	border-radius: 0 0 3.2rem 3.2rem;
+	height: 57.5rem;
+}
+
+.destination-card-content:hover {
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.05), 0 32px 71px 0 rgba(0, 0, 0, 0.05),
+		0 128px 128px 0 rgba(0, 0, 0, 0.04), 0 288px 173px 0 rgba(0, 0, 0, 0.03),
+		0 513px 205px 0 rgba(0, 0, 0, 0.01), 0 801px 224px 0 rgba(0, 0, 0, 0);
+}
+
+.card__image {
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+
+.card__info__header {
+	margin: 3.2rem 0 3.2rem 3.2rem;
+	font-family: var(--font-primary);
+	font-size: 2.3rem;
+	font-weight: 700;
+	line-height: 2.76rem;
+	text-align: left;
+	margin: 0 32px;
+}
+
+.card__price {
+	font-family: var(--font-primary);
+	font-size: 23px;
+	font-weight: 700;
+	line-height: 27.6px;
+	text-align: left;
+	color: var(--pink);
+	margin: 0 32px;
+
+	}
+
+.card__location {
+font-family: var(--font-secondary);
+font-size: 18px;
+font-weight: 400;
+line-height: 28.8px;
+text-align: left;
+	opacity: 0.75;
+	margin: 0 32px;
+}
+
+.card__review {
+	font-family: var(--font-primary);
+	font-size: 2.3rem;
+	font-weight: 700;
+	margin: 0 32px;
+	line-height: 2.76rem;
+	text-align: left;
+	color: var(--light-coral);
+	
+}
+
+.card__review::after {
+	content: url("../assets/images/icons/destination-icon/destination-rating.svg");
+	width: 2rem;
+	height: 1.9rem;
+	margin-left: 1.6rem;
+}
+/*-----travel point stats----*/
+.travel-point__stats {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 1.6rem;
+}
+
+.stats__item {
+	flex-direction: column;
+	border-radius: 3.2rem;
+	border: 1px solid rgba(25, 24, 37, 0.1);
+}
+
+.stats-number {
+	font-family: var(--font-primary);
+	font-size: 3.5rem;
+	font-weight: 700;
+	line-height: 4.2rem;
+	color: var(--light-coral);
+	text-align: center;
+}
+
+.stats-desc {
+	text-transform: capitalize;
+	text-align: center;
+		font-family: var(--font-secondary);
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 2.88rem;
+	color: var(--black-blue);
+}
+/*---------key features list-------*/
+.key-features__list {
+	border-radius: 3.2rem;
+	padding: 32px 0 32px 32px;
+	margin: 0 32px;
+}
+
+.key-features__list:hover {
+	border: 0.1rem solid rgba(25, 24, 37, 0.1);
+}
+
+.list__icon {
+	border-radius: 3.2rem;
+	padding: 3.2rem;
+	max-width: 100px;
+	height: auto;
+}
+
+.location {
+	background-color: var(--light-coral);
+}
+
+.schedule {
+	background-color: var(--yellow);
+}
+
+.discount {
+	background-color: var(--pink);
+}
+
+.list__header {
+	font-family: var(--font-primary);
+	font-size: 2.3rem;
+	font-weight: 700;
+	line-height: 2.76rem;
+	text-align: left;
+}
+
+.list__desc {
+	margin-right: 32px;
+		font-family: var(--font-secondary);
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 2.88rem;
+	text-align: left;
+	color: var(--black-blue);
+	opacity: 0.5;
+	margin-bottom: 0;
+}

@@ -1,0 +1,43 @@
+
+@font-face {
+	font-family: "Inter";
+	src: url("../assets/fonts/inter/inter-regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Circular Stds";
+	src: url("../assets/fonts/circular-std/circular-std-book.ttf");
+	font-weight: 450;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Circular Std";
+	src: url("../assets/fonts/circular-std/circular-std-bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Circular Std";
+	src: url("../assets/fonts/circular-std/circular-std-black.ttf");
+	font-weight: 900;
+	font-style: normal;
+}
+
+:root {
+	--black-blue: #191825;
+	--dark-blue: #222831;
+	--white: #ffffff;
+	--pink: #F85E9F;
+	--black: #000000;
+	--light-coral: #FF5722;
+	--purple: #5D50C6;
+	--yellow: #FACD49;
+  --shadow-color: #0000001A;
+
+	--font-primary: Circular Std;
+	--font-secondary: Inter;
+}
