@@ -24,11 +24,11 @@ body {
 .key-features__image {
 	width: 100%;
 }
-header {
+.header {
 	position: sticky;
 	display: flex;
 	justify-content: space-between;
-	padding: 3.2rem 0;
+	padding-top: 3.2rem;
 }
 .navbar {
 	display: block;
@@ -203,12 +203,14 @@ header {
 	margin-right: 10px;
 }
 .banner__image {
-	margin-top: 6.4rem;
+	margin-top: 3.2rem;
 }
 .travel-agency {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	gap: 2.4rem;
+	margin: 3.2rem 0;
 }
 .travel-agency__img {
 	min-width: 10.3rem;
@@ -218,6 +220,37 @@ header {
 	display: flex;
 	flex-direction: column;
 	gap: 1.6rem;
+}
+/*------Destination---------*/
+.arrow {
+	position: relative;
+	top: 38%;
+	left: 38%;
+}
+
+.arrow-button {
+	display: flex;
+	justify-content: space-between;
+	gap: 3.2rem;
+	margin-bottom: 3.2rem;
+}
+
+.arrow-button__left {
+	min-width: 6.4rem;
+	min-height: 6.4rem;
+	border-radius: 10rem;
+	border: 1px solid rgba(25, 24, 37, 0.1);
+}
+
+.arrow-button__right {
+	min-width: 6.4rem;
+	min-height: 6.4rem;
+	border-radius: 10rem;
+	background: var(--purple);
+}
+.travel-point__image, .key-features__image {
+	margin-top: 3.2rem;
+	padding: 3.2rem 0;
 }
 /*------Testiminials-----------*/
 .card__photo {
@@ -254,13 +287,15 @@ header {
 	display: block;
 	margin: auto;
 }
+.testimonial .arrow-button {
+	margin-top: 6.4rem;
+}
 
 /*-------Subscription------------*/
 .subscription {
 	min-height: 54.7rem;
 	border-radius: 3.2rem;
 	background-color: rgba(250, 205, 71, 0.08);
-	margin-top: 20rem;
 }
 
 .subscription-content {
@@ -270,6 +305,7 @@ header {
 }
 .subscription .category__heading {
 	padding: 06.4rem 4.8rem 0 4.8rem;
+	margin-top: 0;
 }
 
 .subscription .category__sub-heading {
@@ -379,7 +415,7 @@ header {
 }
 
 .sub-footer__heading {
-	margin: 0;
+	margin: 0 0 6.4rem 0;
 	font-family: var(--font-primary);
 	font-size: 2.3rem;
 	font-weight: 700;
@@ -408,6 +444,7 @@ header {
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	
 }
+
 #meet-us-expand:checked ~ .meet-us__content,
 .content-menu, .content-menu li {
 	display: initial;
@@ -417,10 +454,12 @@ header {
 .company-contact-info, .company-contact-info li {
 	display: initial;
 }
+
 #company-expand:checked ~ .company__content,
 .company-info, .company-info li {
 	display: initial;
 }
+
 .company-info {
 	list-style: none;
 	text-align: center;
@@ -428,14 +467,13 @@ header {
 
 }
 
-
 .info-link {
 	display: block;
 	font-family: var(--font-secondary);
 	font-size: 1.8rem;
 	font-weight: 400;
 	line-height: 2.88rem;
-
+	text-align: center;
 	color: var(--black-blue);
 	opacity: 0.75;
 	text-decoration: none;

@@ -50,13 +50,61 @@
 				</div>
 			</section>
 			<article class="travel-agency container">
-				<img class="travel-agency__img" src="./assets/images/brand-list/tripadvisor.png" alt="Trip Advisor" />
-				<img class="travel-agency__img" src="./assets/images/brand-list/expedia.png" alt="Expedia" />
-				<img class="travel-agency__img" src="./assets/images/brand-list/booking.png" alt="Booking.com" />
-				<img class="travel-agency__img" src="./assets/images/brand-list/airbnb.png" alt="Airbnb" />
-				<img class="travel-agency__img" src="./assets/images/brand-list/rbitz.png" alt="Rbitz" />
+				<picture>
+					<source
+						srcset="./assets/images/brand-list/tablet-desktop/tripadvisor.png"
+						media="(min-width: 468px)"
+					/>
+					<source srcset="./assets/images/brand-list/mobile/tripadvisor.png" />
+					<img
+						class="travel-agency__img"
+						src="./assets/images/brand-list/mobile/tripadvisor.png"
+						alt="Trip Advisor"
+						style="width: auto"
+					/>
+				</picture>
+				<picture>
+					<source srcset="./assets/images/brand-list/tablet-desktop/expedia.png" media="(min-width: 468px)" />
+					<source srcset="./assets/images/brand-list/mobile/expedia.png" />
+					<img
+						class="travel-agency__img"
+						src="./assets/images/brand-list/mobile/expedia.png"
+						alt="Expedia"
+						style="width: auto"
+					/>
+				</picture>
+				<picture>
+					<source srcset="./assets/images/brand-list/tablet-desktop/booking.png" media="(min-width: 468px)" />
+					<source srcset="./assets/images/brand-list/mobile/booking.png" />
+					<img
+						class="travel-agency__img"
+						src="./assets/images/brand-list/mobile/booking.png"
+						alt="Booking.com"
+						style="width: auto"
+					/>
+				</picture>
+				<picture>
+					<source srcset="./assets/images/brand-list/tablet-desktop/airbnb.png" media="(min-width: 468px)" />
+					<source srcset="./assets/images/brand-list/mobile/airbnb.png" />
+					<img
+						class="travel-agency__img"
+						src="./assets/images/brand-list/mobile/airbnb.png"
+						alt="Airbnb"
+						style="width: auto"
+					/>
+				</picture>
+				<picture>
+					<source srcset="./assets/images/brand-list/tablet-desktop/rbitz.png" media="(min-width: 468px)" />
+					<source srcset="./assets/images/brand-list/mobile/rbitz.png" />
+					<img
+						class="travel-agency__img"
+						src="./assets/images/brand-list/mobile/rbitz.png"
+						alt="Rbitz"
+						style="width: auto"
+					/>
+				</picture>
 			</article>
-			<section class="service container flex-box">
+			<section class="service container">
 				<div class="category">
 					<h2 class="category__heading">services</h2>
 					<h3 class="category__sub-heading">Our top value categories for you</h3>
@@ -102,29 +150,54 @@
 						<h3 class="category__sub-heading">Explore our top destination</h3>
 					</div>
 					<div class="arrow-button">
-						<a class="arrow-button__left" href="#"
-							><img class="arrow" src="./assets/images/icons/arrow/arrow-left.svg"
-						/></a>
-						<a class="arrow-button__right" href="#"
-							><img class="arrow" src="./assets/images/icons/arrow/arrow-right.svg"
-						/></a>
+						<picture class="arrow-button__left">
+							<source
+								srcset="./assets/images/icons/arrow/tablet-desktop/arrow-left.svg"
+								media="(min-width: 468px)"
+							/>
+							<source srcset="./assets/images/icons/arrow/mobile/arrow-left.svg" />
+							<img
+								class="arrow"
+								src="./assets/images/icons/arrow/mobile/arrow-left.svg"
+								alt="Trip Advisor"
+								style="width: auto"
+							/>
+						</picture>
+						<picture class="arrow-button__right">
+							<source
+								srcset="./assets/images/icons/arrow/tablet-desktop/arrow-right.svg"
+								media="(min-width: 468px)"
+							/>
+							<source srcset="./assets/images/icons/arrow/mobile/arrow-right.svg" />
+							<img
+								class="arrow"
+								src="./assets/images/icons/arrow/mobile/arrow-right.svg"
+								alt="Trip Advisor"
+								style="width: auto"
+							/>
+						</picture>
 					</div>
 				</div>
+
 				<div class="destination-card container">
 					<article class="destination-card-content">
 						<img class="card__image" src="./assets/images/destination/beach.png" alt="Beautiful beach" />
-						<p class="card__price heading">$550.16</p>
-						<h4 class="card__info__header sm-txt">Paradise Beach, Bantayan Island</h4>
+						<div class="card-desc">
+							<p class="card__price heading">$550.16</p>
+							<h4 class="card__info__header">Paradise Beach, Bantayan Island</h4>
 
-						<h5 class="card__location desc">Rome, Italy</h5>
-						<h5 class="card__review">4.8</h5>
+							<h5 class="card__location">Rome, Italy</h5>
+							<h5 class="card__review">4.8</h5>
+						</div>
 					</article>
 					<article class="destination-card-content">
 						<img class="card__image" src="./assets/images/destination/fish.png" alt="Beautiful Ocean" />
-						<p class="card__price heading">$20.99</p>
-						<h4 class="card__info__header sm-txt">Ocean with full of Colors</h4>
-						<h5 class="card__location desc">Maldives</h5>
-						<h5 class="card__review">4.5</h5>
+						<div class="card-desc">
+							<p class="card__price heading">$20.99</p>
+							<h4 class="card__info__header">Ocean with full of Colors</h4>
+							<h5 class="card__location">Maldives</h5>
+							<h5 class="card__review">4.5</h5>
+						</div>
 					</article>
 					<article class="destination-card-content">
 						<img
@@ -132,10 +205,12 @@
 							src="./assets/images/destination/mountain.png"
 							alt="Beautiful Mountain"
 						/>
-						<p class="card__price heading">$150.99</p>
-						<h4 class="card__info__header sm-txt">Mountain View, Above the cloud</h4>
-						<h5 class="card__location desc">United Arab Emeries</h5>
-						<h5 class="card__review">5.0</h5>
+						<div class="card-desc">
+							<p class="card__price heading">$150.99</p>
+							<h4 class="card__info__header">Mountain View, Above the cloud</h4>
+							<h5 class="card__location">United Arab Emeries</h5>
+							<h5 class="card__review">5.0</h5>
+						</div>
 					</article>
 				</div>
 			</section>
@@ -222,11 +297,9 @@
 					</article>
 				</div>
 			</section>
-			<sectiom class="container testimonial flex-box">
-				<a class="arrow-button__left" href="#"
-					><img class="arrow" src="./assets/images/icons/arrow/arrow-left.svg"
-				/></a>
-				<article class="testimonial-card flex-box">
+
+			<sectiom class="testimonial container">
+				<article class="testimonial-card">
 					<h2 class="category__heading">testimonials</h2>
 					<h3 class="category__sub-heading">Trust our clients</h3>
 					<img
@@ -249,10 +322,35 @@
 						src="./assets/images/icons/testimonials-icon/swipe.svg"
 						alt="swipe to move"
 					/>
+					<div class="arrow-button">
+						<picture class="arrow-button__left">
+							<source
+								srcset="./assets/images/icons/arrow/tablet-desktop/arrow-left.svg"
+								media="(min-width: 468px)"
+							/>
+							<source srcset="./assets/images/icons/arrow/mobile/arrow-left.svg" />
+							<img
+								class="arrow"
+								src="./assets/images/icons/arrow/mobile/arrow-left.svg"
+								alt="Trip Advisor"
+								style="width: auto"
+							/>
+						</picture>
+						<picture class="arrow-button__right">
+							<source
+								srcset="./assets/images/icons/arrow/tablet-desktop/arrow-right.svg"
+								media="(min-width: 468px)"
+							/>
+							<source srcset="./assets/images/icons/arrow/mobile/arrow-right.svg" />
+							<img
+								class="arrow"
+								src="./assets/images/icons/arrow/mobile/arrow-right.svg"
+								alt="Trip Advisor"
+								style="width: auto"
+							/>
+						</picture>
+					</div>
 				</article>
-				<a class="arrow-button__right" href="#"
-					><img class="arrow" src="./assets/images/icons/arrow/arrow-right.svg"
-				/></a>
 			</sectiom>
 
 			<section class="subscription containter">

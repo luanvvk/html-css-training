@@ -1,5 +1,6 @@
 /*---category----*/
 .category__heading {
+	margin-top: 6.4rem;
 	font-family: var(--font-primary);
 	font-size: 16px;
 	font-weight: 700;
@@ -83,7 +84,7 @@
 .destination-card-content {
 	max-width: 100%;
 	border-radius: 0 0 3.2rem 3.2rem;
-	height: 57.5rem;
+	min-height: 57.5rem;
 }
 
 .destination-card-content:hover {
@@ -97,7 +98,12 @@
 	display: block;
 	margin: auto;
 }
-
+.card-desc {
+	max-width: 40rem;
+	width: 100%;
+	display: block;
+	margin: auto ;
+}
 .card__info__header {
 	margin: 3.2rem 0 3.2rem 3.2rem;
 	font-family: var(--font-primary);
@@ -105,7 +111,7 @@
 	font-weight: 700;
 	line-height: 2.76rem;
 	text-align: left;
-	margin: 0 32px;
+	margin: 0 3.2rem 1.6rem;
 }
 
 .card__price {
@@ -115,8 +121,7 @@
 	line-height: 27.6px;
 	text-align: left;
 	color: var(--pink);
-	margin: 0 32px;
-
+	margin: 3.2rem 3.2rem 0.8rem;
 	}
 
 .card__location {
@@ -126,7 +131,7 @@ font-weight: 400;
 line-height: 28.8px;
 text-align: left;
 	opacity: 0.75;
-	margin: 0 32px;
+	margin: 0 3.2rem 3.2rem;
 }
 
 .card__review {
@@ -137,7 +142,7 @@ text-align: left;
 	line-height: 2.76rem;
 	text-align: left;
 	color: var(--light-coral);
-	
+	margin-bottom: 3.2rem;
 }
 
 .card__review::after {
