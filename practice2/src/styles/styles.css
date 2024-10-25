@@ -24,6 +24,12 @@ body {
 .key-features__image {
 	width: 100%;
 }
+.banner__image {
+	display: block;
+	min-height: 36.6rem;
+	margin: auto;
+}
+/*--------------------------Header------------------------------*/
 .header {
 	position: sticky;
 	display: flex;
@@ -76,7 +82,7 @@ body {
 	width: 4rem;
 	min-height: 4rem;
 }
-
+/*------------------------------Navbar-----------------------------*/
 .nav-menu {
 	justify-content: space-between;
 	width: 43rem;
@@ -105,11 +111,6 @@ body {
 	text-decoration: none;
 }
 
-.txt-opacity {
-	opacity: 0.5;
-	color: var(--black-blue);
-}
-
 .login-register {
 	list-style: none;
 	padding: 0;
@@ -130,14 +131,15 @@ body {
 	text-decoration: none;
 }
 
-.button-white {
+ .button-white {
 	display: block;
 	color: var(--dark-blue);
 	margin: auto;
 	width: 30%;
 }
 
-.button-purple {
+ .button-purple {
+	position: relative;
 	margin: auto;
 	width: 30%;
 	background-color: var(--purple);
@@ -149,7 +151,7 @@ body {
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 20px 20px 0 rgba(0, 0, 0, 0.09),
 		0 45px 27px 0 rgba(0, 0, 0, 0.05), 0 81px 32px 0 rgba(0, 0, 0, 0.01), 0 126px 35px 0 rgba(0, 0, 0, 0);
 }
-
+/*--------------------------Banner---------------------------*/
 .banner--first {
 	display: flex;
 	flex-direction: column;
@@ -186,7 +188,7 @@ body {
 		0px 308px 185px 0px #0000000a, 0px 548px 219px 0px #00000003, 0px 856px 240px 0px #00000000;
 }
 .banner .button-purple {
-	min-width: 100%;
+	width: 100%;
 	margin-bottom: 1.6rem;
 	padding: 2.4rem 0;
 }
@@ -205,6 +207,7 @@ body {
 .banner__image {
 	margin-top: 3.2rem;
 }
+/*-----------------------travel-agency-------------------------*/
 .travel-agency {
 	display: flex;
 	flex-wrap: wrap;
@@ -224,8 +227,8 @@ body {
 /*------Destination---------*/
 .arrow {
 	position: relative;
-	top: 38%;
-	left: 38%;
+	top: 33%;
+	left: 33%;
 }
 
 .arrow-button {
@@ -236,6 +239,7 @@ body {
 }
 
 .arrow-button__left {
+	background: var(--white);
 	min-width: 6.4rem;
 	min-height: 6.4rem;
 	border-radius: 10rem;
@@ -248,11 +252,20 @@ body {
 	border-radius: 10rem;
 	background: var(--purple);
 }
-.travel-point__image, .key-features__image {
+.travel-point__image,
+.key-features__image {
 	margin-top: 3.2rem;
 	padding: 3.2rem 0;
+	display: block;
+	margin: auto;
 }
-/*------Testiminials-----------*/
+.travel-point__image {
+	min-height: 31.9rem;
+}
+.key-features__image {
+	min-height: 43.9rem;
+}
+/*-----------------------Testiminials-------------------------*/
 .card__photo {
 	display: block;
 	margin: auto;
@@ -290,8 +303,7 @@ body {
 .testimonial .arrow-button {
 	margin-top: 6.4rem;
 }
-
-/*-------Subscription------------*/
+/*--------------------Subscription--------------------*/
 .subscription {
 	min-height: 54.7rem;
 	border-radius: 3.2rem;
@@ -368,7 +380,7 @@ body {
 	text-align: left;
 	text-transform: capitalize;
 }
-/*----------footer-------------*/
+/*-----------------------footer---------------------*/
 .footer {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -423,48 +435,11 @@ body {
 	text-align: left;
 	text-transform: capitalize;
 }
-#meet-us-expand, #contact-expand, #company-expand {
-	display: none;
-}
-
-.content-menu, .company-contact-info, .company-info {
-	display: block;
-	list-style: none;
-	display: hidden;
-	justify-content: space-between;
-}
-
-.meet-us__content, .contact__content, .company__content {
-	position: absolute;
-	margin-top: 3.2rem;
-	display: none;
-	left: 0;
-	right: 0;
-	background: rgba(255, 255, 255, 1);
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	
-}
-
-#meet-us-expand:checked ~ .meet-us__content,
-.content-menu, .content-menu li {
-	display: initial;
-}
-
-#contact-expand:checked ~ .contact__content,
-.company-contact-info, .company-contact-info li {
-	display: initial;
-}
-
-#company-expand:checked ~ .company__content,
-.company-info, .company-info li {
-	display: initial;
-}
 
 .company-info {
 	list-style: none;
 	text-align: center;
 	padding: none;
-
 }
 
 .info-link {
@@ -494,7 +469,214 @@ body {
 	font-style: normal;
 	text-decoration: none;
 }
+/*-------------footer expand feature------------*/
+#meet-us-expand,
+#contact-expand,
+#company-expand {
+	display: none;
+}
 
+.content-menu,
+.company-contact-info,
+.company-info {
+	display: block;
+	list-style: none;
+	display: hidden;
+	justify-content: space-between;
+}
 
+.meet-us__content,
+.contact__content,
+.company__content {
+	position: absolute;
+	margin-top: 3.2rem;
+	display: none;
+	left: 0;
+	right: 0;
+	background: rgba(255, 255, 255, 1);
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
 
+#meet-us-expand:checked ~ .meet-us__content,
+.content-menu,
+.content-menu li {
+	display: initial;
+}
 
+#contact-expand:checked ~ .contact__content,
+.company-contact-info,
+.company-contact-info li {
+	display: initial;
+}
+
+#company-expand:checked ~ .company__content,
+.company-info,
+.company-info li {
+	display: initial;
+}
+@media (min-width: 468px) {
+	.banner__image {
+		max-width: 100%;
+		width: 77.2rem;
+		height: 71.3rem;
+		height: auto;
+	}
+	.travel-point__image {
+		max-width: 100%;
+		width: 87.1rem;
+		height: 69.7rem;
+		height: auto;
+	}
+	.key-features__image {
+		max-width: 100%;
+		width: 69.3rem;
+		height: 86.9rem;
+		height: auto;
+	}
+	.travel-point__stats {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 3.2rem;
+	}
+	.stats__item {
+		min-width: 40rem;
+	}
+	.key-features__list {
+		display: flex;
+		gap: 3.2rem;
+	}
+	.list-info {
+		margin-top: 1.6rem;
+	}
+	.list__header {
+		margin: 0;
+	}
+	.list__desc {
+		margin-top: 1.6rme;
+	}
+	.button-area {
+		display: flex;
+		justify-content: center;
+		gap:0.8rem;
+		margin-bottom: 6.4rem;
+	}
+	.banner .button-purple {
+		margin: 0;
+		width: 14.1rem;
+		padding: 2.4rem 3.2rem 2.4rem;
+		text-align: center;
+	}
+	.banner .button-white {
+		margin: 0;
+		width: 14.1rem;
+		padding: 1.6rem 3.2rem;
+	}
+}
+/*-----tablet portrait mode--------*/
+@media (min-width: 468px) and (max-width: 768px) {
+}
+/*-----tablet lanscape mode or large tablet ----*/
+@media (min-width: 769px) and (max-width: 1023px) {
+	.container {
+		max-width: 102.4rem;
+		max-width: 100%;
+		margin: 0 auto;
+		min-height: auto;
+		padding: 0 6.4rem;
+	}
+	.category__heading {
+		font-size: 2.3rem;
+		line-height: 2.76rem;
+	}
+	.category__sub-heading {
+		font-size: 4rem;
+		line-height: 4.8rem;
+	}
+	.category__desc {
+		font-size: 1.8rem;
+		line-height: 2.88rem;
+	}
+	.destination-card {
+		flex-direction: row;
+		gap: 3.1rem;
+	}
+	.arrow-button {
+		justify-content: center;
+		gap: 3.2rem;
+	}
+	.service-card {
+		display: flex;
+		flex-direction: row;
+		gap: 1.6rem;
+	}
+	.service-card__header {
+		font-size: 2.8rem;
+		line-height: 3.36rem;
+	}
+	.service-card__icon {
+		margin-top: 6.4rem;
+		margin-bottom: 6.4rem;
+	}
+	.service-card__header {
+		padding: 0 6.4rem;
+	}
+	.service-card__desc {
+		padding: 0 6.4rem 1.6rem;
+	}
+	.travel-agency {
+		gap: 2.7rem;
+		margin: 6.4rem 9.6rem;
+	}
+	.testimonial-card {
+		max-width: 60rem;
+		display: block;
+		margin: auto;
+	}
+	.card__feedback {
+		font-size: 2.3rem;
+		line-height: 3.68rem;
+		opacity: 0.75;
+	}
+	.arrow {
+		top: 38%;
+		left: 38%;
+	}
+	.arrow-button {
+		position: relative;
+		justify-content: space-between;
+	}
+	.arrow-button__left, .arrow-button__right {
+		width: 10rem;
+		height: 10rem;;
+	} 
+	.arrow-button__left {
+		
+		margin-top: -400px;
+		margin-left: -150px;
+	}
+	.arrow-button__right {
+		margin-top: -400px;
+		margin-right: -150px;
+	}
+	.testimonial__background {
+		position: absolute;
+		margin: 0 auto;
+		top: 5824.88px;
+		margin-left: -30rem;
+		opacity: 0.1px;
+	}
+	.subscription__form {
+		flex-direction: row;
+		gap: 3.2rem;
+	}
+	.subscription .button-purple {
+		width: 23.5rem;
+		min-height: 9.6rem ;
+		border-radius: 3.2rem;
+	}
+}
+
+/*-----desktop and laptop--------*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+}

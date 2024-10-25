@@ -1,4 +1,4 @@
-/*---category----*/
+/*-------------------category------------------*/
 .category__heading {
 	margin-top: 6.4rem;
 	font-family: var(--font-primary);
@@ -29,7 +29,7 @@
 	opacity: 0.5;
 	color: var(--black-blue);
 }
-/*-----service card-----*/
+/*--------------------------service card-------------------------*/
 .service-card__item {
 	border-radius: 3.2rem;
 	border: 1px solid rgba(25, 24, 37, 0.1);
@@ -67,12 +67,12 @@
 	line-height: 2.88rem;
 	text-align: center;
 
-	margin: 0 3.2rem;
+	padding: 0 3.2rem;
 	padding: 8px;
 	color: var(--black-blue);
 	opacity: 0.5;
 }
-/*---------destination card*/
+/*---------------destination card------------------*/
 .destination-card {
 	max-width: 100%;
 	min-height: 57.5rem;
@@ -151,7 +151,7 @@ text-align: left;
 	height: 1.9rem;
 	margin-left: 1.6rem;
 }
-/*-----travel point stats----*/
+/*------------------travel point stats----------------*/
 .travel-point__stats {
 	display: flex;
 	flex-direction: column;
@@ -183,7 +183,7 @@ text-align: left;
 	line-height: 2.88rem;
 	color: var(--black-blue);
 }
-/*---------key features list-------*/
+/*-------------------key features list-----------------------*/
 .key-features__list {
 	border-radius: 3.2rem;
 	padding: 32px 0 32px 32px;

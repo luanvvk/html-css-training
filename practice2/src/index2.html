@@ -12,28 +12,35 @@
 	<body>
 		<div class="wrapper">
 			<header class="header container">
-				<a href="#" class="logo">Travlog</a>
-				<input type="checkbox" id="menu-bar" />
-				<label for="menu-bar"><img src="./assets/images/icons/navbar-menu.svg" alt="menu bar" /></label>
-				<nav class="navbar">
-					<ul class="nav-menu">
-						<li><a class="nav-menu__item" href="#">home</a></li>
-						<li><a class="nav-menu__item" href="#">discover</a></li>
-						<li><a class="nav-menu__item" href="#">special deals</a></li>
-						<li><a class="nav-menu__item" href="#">contact</a></li>
-					</ul>
-					<ul class="login-register">
-						<li><a class="button button-white" href="#">login</a></li>
-						<li><a class="button button-purple" href="#">signup</a></li>
-					</ul>
-				</nav>
+			
+					<a href="#" class="logo">Travlog</a>
+					<input type="checkbox" id="menu-bar" />
+					<label for="menu-bar"><img src="./assets/images/icons/navbar-menu.svg" alt="menu bar" /></label>
+					<nav class="navbar">
+						<ul class="nav-menu">
+							<li><a class="nav-menu__item" href="#">home</a></li>
+							<li><a class="nav-menu__item" href="#">discover</a></li>
+							<li><a class="nav-menu__item" href="#">special deals</a></li>
+							<li><a class="nav-menu__item" href="#">contact</a></li>
+						</ul>
+						<ul class="login-register">
+							<li><a class="button button-white" href="#">login</a></li>
+							<li><a class="button button-purple" href="#">signup</a></li>
+						</ul>
+					</nav>
+				
+				
 			</header>
 			<section class="banner container">
-				<img
-					class="banner__image"
-					src="./assets/images/background/banner.png"
-					alt="top destinations in thw world"
-				/>
+				<picture>
+					<source srcset="./assets/images/background/mobile/banner.png" media="(max-width: 468px)" />
+					<source srcset="./assets/images/background/tablet-desktop/banner.png" />
+					<img
+						class="banner__image"
+						src="./assets/images/background/tablet-desktop/banner.png"
+						alt="top destinations in thw world"
+					/>
+				</picture>
 				<div class="banner--first">
 					<a class="button button-pink" href="#"> explore the world!</a>
 					<h1 class="banner--first__header">
@@ -43,7 +50,7 @@
 						We always make our customer happy by providing<br />
 						as many choices as possible
 					</p>
-					<div>
+					<div class="button-area">
 						<a class="button button-purple" href="#">get started</a>
 						<a class="button button-white" href="#">watch demo</a>
 					</div>
@@ -179,7 +186,7 @@
 					</div>
 				</div>
 
-				<div class="destination-card container">
+				<div class="destination-card">
 					<article class="destination-card-content">
 						<img class="card__image" src="./assets/images/destination/beach.png" alt="Beautiful beach" />
 						<div class="card-desc">
@@ -216,11 +223,15 @@
 			</section>
 
 			<section class="travel-point container">
-				<img
-					class="travel-point__image"
-					src="./assets/images/background/travel-point.png"
-					alt="travel-point"
-				/>
+				<picture>
+					<source srcset="./assets/images/background/mobile/travel-point.png" media="(max-width: 468px)" />
+					<source srcset="./assets/images/background/tablet-desktop/travel-point.png" />
+					<img
+						class="travel-point__image"
+						src="./assets/images/background/tablet-desktop/travel-point.png"
+						alt="top destinations in thw world"
+					/>
+				</picture>
 				<div class="category">
 					<h2 class="category__heading">travel point</h2>
 					<h3 class="category__sub-heading">We helping you find your dream location</h3>
@@ -250,11 +261,15 @@
 			</section>
 
 			<section class="key-features container">
-				<img
-					class="key-features__image"
-					src="./assets/images/background/key-feature.png"
-					alt="key features"
-				/>
+				<picture>
+					<source srcset="./assets/images/background/mobile/key-feature.png" media="(max-width: 468px)" />
+					<source srcset="./assets/images/background/tablet-desktop/key-feature.png" />
+					<img
+						class="key-features__image"
+						src="./assets/images/background/tablet-desktop/key-feature.png"
+						alt="top destinations in thw world"
+					/>
+				</picture>
 				<div class="category">
 					<h2 class="category__heading">key features</h2>
 					<h3 class="category__sub-heading">We offer best services</h3>
@@ -299,6 +314,7 @@
 			</section>
 
 			<sectiom class="testimonial container">
+				<img class="testimonial__background" src="./assets/images/special-image/testimonials-layout.png" alt="background" />
 				<article class="testimonial-card">
 					<h2 class="category__heading">testimonials</h2>
 					<h3 class="category__sub-heading">Trust our clients</h3>
