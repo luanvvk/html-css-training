@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Inter;
+  src: url("inter-regular.629ea1d1.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Circular Stds;
+  src: url("circular-std-book.44173040.ttf");
+  font-weight: 450;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Circular Std;
+  src: url("circular-std-bold.4359f0e5.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Circular Std;
+  src: url("circular-std-black.30ee0080.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+:root {
+  --black-blue: #191825;
+  --dark-blue: #222831;
+  --white: #fff;
+  --pink: #f85e9f;
+  --black: #000;
+  --light-coral: #ff5722;
+  --purple: #5d50c6;
+  --yellow: #facd49;
+  --shadow-color: #0000001a;
+  --font-primary: Circular Std;
+  --font-secondary: Inter;
+}
+/*# sourceMappingURL=index2.9063ec98.css.map */

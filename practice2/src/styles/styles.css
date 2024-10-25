@@ -5,6 +5,11 @@ body {
 	margin: 0 auto;
 	max-width: 1440px;
 	font-size: 62.5%;
+	min-height: auto;
+}
+.wrapper {
+	width: 100%;
+	height: auto;
 }
 .container {
 	max-width: 40rem;
@@ -13,6 +18,7 @@ body {
 	min-height: auto;
 	padding: 0 1.5rem;
 }
+
 .banner__image,
 .travel-point__image,
 .key-features__image {
@@ -352,7 +358,14 @@ header {
 .footer__second {
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 3.2rem;
+}
+
+.sub-footer__first,
+.sub-footer__second,
+.sub-footer__third {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .brand-socials {
@@ -365,8 +378,8 @@ header {
 	height: auto;
 }
 
-.footer__heading {
-	
+.sub-footer__heading {
+	margin:0;
 	font-family: var(--font-primary);
 	font-size: 2.3rem;
 	font-weight: 700;
@@ -375,49 +388,47 @@ header {
 	text-transform: capitalize;
 }
 
-.sub-footer-expand {
-	display: none;
-}
-.expand {
-	display: block;
-
-}
-
-.company-info {
+.content-menu {
 	display: block;
 	list-style: none;
+	display: none;
 }
-
-.expand {
+.content-menu li {
+	display: none;
+}
+.sub-footer__content {
 	position: absolute;
 	top: 100%;
 	left: 0;
 	right: 0;
 	background: rgba(255, 255, 255, 0.75);
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	
+	display: none;
+}
+.sub-footer-expand:checked ~ .sub-footer-content,
+.content-menu, .content-menu li {
+	display: initial;
 }
 
+.company-info {
+	list-style: none;
+	text-align: center;
+	padding: none;
+}
+.company-info li {
+	text-align: right;
+}
 
 .info-link {
-	width: 100%;
-	display: block;
 	font-family: var(--font-secondary);
 	font-size: 1.8rem;
 	font-weight: 400;
 	line-height: 2.88rem;
-	text-align: left;
+
 	color: var(--black-blue);
 	opacity: 0.75;
 	text-decoration: none;
 	cursor: pointer;
-}
-
-.company-info li {
-	margin: 3.2rem 0;
-}
-.sub-footer-expand:checked ~ .expand, .company-info {
-	display: initial;
 }
 
 .tel,
@@ -428,20 +439,12 @@ header {
 	font-weight: 400;
 
 	line-height: 2.88rem;
-	text-align: left;
+	text-align: right;
 	color: rgba(25, 24, 37, 0.75);
 	font-style: normal;
 	text-decoration: none;
 }
 
-.sub-footer__third {
-	flex-direction: column;
-	height: 30.6rem;
-	gap: 3.2rem;
-}
 
 
-.sub-footer__first, .sub-footer__second, .sub-footer__third {
-	display: flex;
-	
-}
+

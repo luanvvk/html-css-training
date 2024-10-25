@@ -52,6 +52,7 @@ html,
 body {
 	width: 100%;
 	overflow-x: hidden;
+	overflow-y: hidden;
 	margin: 0 auto;
 	max-width: 1440px;
 	font-size: 62.5%;

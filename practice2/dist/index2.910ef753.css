@@ -1,0 +1,220 @@
+.category__heading {
+  font-family: var(--font-primary);
+  letter-spacing: .2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--pink);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+}
+
+.category__sub-heading {
+  font-family: var(--font-primary);
+  text-align: center;
+  color: var(--black-blue);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+}
+
+.category__desc {
+  font-family: var(--font-secondary);
+  text-align: center;
+  opacity: .5;
+  color: var(--black-blue);
+  padding: 0 32px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+
+.service-card__item {
+  border: 1px solid #1918251a;
+  border-radius: 3.2rem;
+}
+
+.service-card__item:hover {
+  box-shadow: 0 4.1rem 839rem #0000001a;
+}
+
+.service-card__icon {
+  min-width: 6.4rem;
+  height: auto;
+  margin: 3.2rem auto;
+  display: block;
+}
+
+.service-card__header {
+  font-family: var(--font-primary);
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--black-blue);
+  margin-bottom: 4.8rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.28rem;
+}
+
+.service-card__desc {
+  font-family: var(--font-secondary);
+  text-align: center;
+  color: var(--black-blue);
+  opacity: .5;
+  margin: 0 3.2rem;
+  padding: 8px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.88rem;
+}
+
+.destination-card {
+  flex-direction: column;
+  gap: 3.2rem;
+  max-width: 100%;
+  min-height: 57.5rem;
+  display: flex;
+}
+
+.destination-card-content {
+  border-radius: 0 0 3.2rem 3.2rem;
+  max-width: 100%;
+  height: 57.5rem;
+}
+
+.destination-card-content:hover {
+  box-shadow: 0 0 #0000000d, 0 32px 71px #0000000d, 0 128px 128px #0000000a, 0 288px 173px #00000008, 0 513px 205px #00000003, 0 801px 224px #0000;
+}
+
+.card__image {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.card__info__header {
+  font-family: var(--font-primary);
+  text-align: left;
+  margin: 0 32px;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 2.76rem;
+}
+
+.card__price {
+  font-family: var(--font-primary);
+  text-align: left;
+  color: var(--pink);
+  margin: 0 32px;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 27.6px;
+}
+
+.card__location {
+  font-family: var(--font-secondary);
+  text-align: left;
+  opacity: .75;
+  margin: 0 32px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+}
+
+.card__review {
+  font-family: var(--font-primary);
+  text-align: left;
+  color: var(--light-coral);
+  margin: 0 32px;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 2.76rem;
+}
+
+.card__review:after {
+  content: url("destination-rating.885b4d51.svg");
+  width: 2rem;
+  height: 1.9rem;
+  margin-left: 1.6rem;
+}
+
+.travel-point__stats {
+  flex-flow: column wrap;
+  gap: 1.6rem;
+  display: flex;
+}
+
+.stats__item {
+  border: 1px solid #1918251a;
+  border-radius: 3.2rem;
+  flex-direction: column;
+}
+
+.stats-number {
+  font-family: var(--font-primary);
+  color: var(--light-coral);
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 4.2rem;
+}
+
+.stats-desc {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: var(--font-secondary);
+  color: var(--black-blue);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.88rem;
+}
+
+.key-features__list {
+  border-radius: 3.2rem;
+  margin: 0 32px;
+  padding: 32px 0 32px 32px;
+}
+
+.key-features__list:hover {
+  border: .1rem solid #1918251a;
+}
+
+.list__icon {
+  border-radius: 3.2rem;
+  max-width: 100px;
+  height: auto;
+  padding: 3.2rem;
+}
+
+.location {
+  background-color: var(--light-coral);
+}
+
+.schedule {
+  background-color: var(--yellow);
+}
+
+.discount {
+  background-color: var(--pink);
+}
+
+.list__header {
+  font-family: var(--font-primary);
+  text-align: left;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 2.76rem;
+}
+
+.list__desc {
+  font-family: var(--font-secondary);
+  text-align: left;
+  color: var(--black-blue);
+  opacity: .5;
+  margin-bottom: 0;
+  margin-right: 32px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.88rem;
+}
+/*# sourceMappingURL=index2.910ef753.css.map */
