@@ -3,11 +3,11 @@ body {
 	width: 100%;
 	overflow-x: hidden;
 	margin: 0 auto;
-	max-width: 1440px;
 	font-size: 62.5%;
 	min-height: auto;
 }
 .wrapper {
+	max-width: 1440px;
 	width: 100%;
 	height: auto;
 }
@@ -831,11 +831,44 @@ body {
 	}
 	.key-features .category {
 		max-width: 54.9rem;
+		
 	}
 	.banner--first {
 		max-width: 41.2rem ;
+		min-height: 57.7rem;
+		justify-content: center;
+		gap: 4.3rem;
 	}
 	.banner__image, .travel-point__image, .key-features__image {
 		min-height: 78rem;
+	}
+	.banner--first__header {
+		font-size: 6.9rem;
+		line-height: 8.28rem;
+		margin: 0;
+	}
+	.button-pink {
+		margin: 0 auto;
+	}
+		.banner-primary__desc {
+			margin: 0;
+	}
+	.service-card__item {
+		max-width: 35rem;
+		min-height: 44.3rem;
+	}
+	.service {
+		max-width: 153.6rem;
+		display: flex;
+		padding-left: 12.8rem;
+		margin: 0;
+	}
+	.service .category {
+		width: 100%;
+		max-width: 44.4rem;
+		min-height: 15rem;
+	}
+	.service .category__heading, .service .category__sub-heading {
+		text-align: left;
 	}
 }
