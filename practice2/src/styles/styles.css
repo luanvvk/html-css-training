@@ -392,7 +392,7 @@ body {
 	color: var(--black-blue);
 	opacity: 0.5;
 }
-.footer__second {
+.footer__permalinks {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -408,9 +408,9 @@ body {
 	padding: 0;
 }
 
-.sub-footer__first,
-.sub-footer__second,
-.sub-footer__third {
+.permalinks--company,
+.permalinks--contact,
+.permalinks--meet-us {
 	display: flex;
 	flex-direction: column;
 }
@@ -425,7 +425,7 @@ body {
 	height: auto;
 }
 
-.sub-footer__heading {
+.permalinks--company-info {
 	margin: 0 0 1.6rem 0;
 	font-family: var(--font-primary);
 	font-size: 2.3rem;
@@ -454,7 +454,7 @@ body {
 	text-decoration: none;
 	cursor: pointer;
 }
-.footer__second li {
+.footer__permalinks li {
 	margin-bottom: 1.6rem;
 }
 .tel,
@@ -502,21 +502,25 @@ body {
 	.nav-menu {
 		display: initial;
 	}
+	.subscription {
+		padding: 0;
+		margin: 0 1.5rem;
+	}
 	.expand-image {
 		display: initial;
 	}
-	.footer__second {
+	.footer__permalinks {
 		flex-direction: column;
 	}
 	.footer {
 		margin-top: 3.2rem;
 	}
-	.sub-footer__heading {
+	.permalinks--company-info {
 		margin-bottom: 6.4rem;
 	}
-	.sub-footer__first,
-	.sub-footer__second,
-	.sub-footer__third {
+	.permalinks--company,
+	.permalinks--contact,
+	.permalinks--meet-us {
 		flex-direction: row;
 		justify-content: space-between;
 	}
@@ -739,6 +743,7 @@ body {
 	.testimonial {
 		background: url("../assets/images/special-image/testimonials-layout.png") no-repeat;
 		background-position: 50% 60%;
+		margin-bottom: 12.8rem;
 	}
 	.testimonial-card {
 		max-width: 60rem;
@@ -779,6 +784,7 @@ body {
 	.subscription {
 		max-width: 90rem;
 		padding: 0;
+		margin: 0 6.4rem;
 	}
 	.card__image {
 		max-width: 100%;
@@ -881,7 +887,7 @@ body {
 		min-height: 66.7rem;
 	}
 	.travel-point__stats {
-		gap: 2.9rem;
+		gap: 2.8rem;
 	}
 	.key-features .category {
 		max-width: 54.9rem;
@@ -983,6 +989,7 @@ body {
 	}
 	.subscription {
 		padding: 0;
+		margin: 0 12.8rem;
 	}
 	.subscription .category__sub-heading {
 		font-size: 5.5rem;
@@ -1016,18 +1023,18 @@ body {
 		flex-direction: row;
 		justify-content: space-between;
 	}
-	.footer__primary {
+	.footer__brand-info {
 		max-width: 56rem;
 		min-height: 27.9rem;
 		flex: 1;
 	}
-	.footer__second {
+	.footer__permalinks {
 		max-width: 56rem;
 		flex: 1;
 	}
-	.sub-footer__first,
-	.sub-footer__second,
-	.sub-footer__third {
+	.permalinks--company,
+	.permalinks--contact,
+	.permalinks--meet-us {
 		flex: 1;
 		display: flex;
 		gap: 1.6rem;

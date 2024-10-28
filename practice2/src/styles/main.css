@@ -756,7 +756,7 @@
 	margin-bottom: 6.4rem;
 }
 
-.footer__second {
+.footer__permalinks {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 3.2rem;
@@ -818,7 +818,7 @@
 	text-decoration: none;
 }
 
-.sub-footer__third {
+.permalinks--meet-us {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
