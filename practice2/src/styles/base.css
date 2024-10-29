@@ -1,0 +1,38 @@
+:root {
+	--black-blue: #191825;
+	--dark-blue: #222831;
+	--white: #ffffff;
+	--pink: #F85E9F;
+	--black: #000000;
+	--light-coral: #FF5722;
+	--purple: #5D50C6;
+	--yellow: #FACD49;
+  --shadow-color: #0000001A;
+
+	--font-primary: Circular Std;
+	--font-secondary: Inter;
+}
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0 auto;
+	font-size: 62.5%;
+	min-height: auto;
+}
+.wrapper {
+	max-width: 1440px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+.container {
+	max-width: 40rem;
+	max-width: 100%;
+	margin: 0 auto;
+	min-height: auto;
+	padding: 0 1.5rem;
+}

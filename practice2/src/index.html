@@ -6,107 +6,118 @@
 		<title>Travlog</title>
 		<link rel="stylesheet" href="./styles/normalize.css" />
 		<link rel="stylesheet" href="./styles/typography.css" />
+		<link rel="stylesheet" href="./styles/base.css"/>
 		<link rel="stylesheet" href="./styles/component.css" />
 		<link rel="stylesheet" href="./styles/styles.css" />
 	</head>
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<a href="#" class="logo">Travlog</a>
+				<a href="javascript:void(0)" class="logo">Travlog</a>
 				<input type="checkbox" id="menu-bar" />
 				<label for="menu-bar"
 					><img class="menu-icon" src="./assets/images/icons/navbar-menu.svg" alt="menu bar"
 				/></label>
-				<nav class="navbar">
+				<nav class="header__navbar">
 					<ul class="nav-menu">
-						<li><a class="nav-menu__item" href="#">home</a></li>
-						<li><a class="nav-menu__item" href="#">discover</a></li>
-						<li><a class="nav-menu__item" href="#">special deals</a></li>
-						<li><a class="nav-menu__item" href="#">contact</a></li>
+						<li><a class="nav-menu__item" href="javascript:void(0)">home</a></li>
+						<li><a class="nav-menu__item" href="javascript:void(0)">discover</a></li>
+						<li><a class="nav-menu__item" href="javascript:void(0)">special deals</a></li>
+						<li><a class="nav-menu__item" href="javascript:void(0)">contact</a></li>
 					</ul>
 				</nav>
-				<ul class="login-register">
-					<li><a class="button button-white" href="#">login</a></li>
-					<li><a class="button button-purple" href="#">signup</a></li>
+				<ul class="login-register-button">
+					<li><a class="button button-white" href="javascript:void(0)">login</a></li>
+					<li><a class="button button-purple" href="javascript:void(0)">signup</a></li>
 				</ul>
 			</header>
 			<section class="banner container">
 				<picture>
-					<source srcset="./assets/images/background/mobile/banner.png" media="(max-width: 468px)" />
-					<source srcset="./assets/images/background/tablet-desktop/banner.png" />
+					<source
+						srcset="./assets/images/background-images/mobile-images/banner.png"
+						media="(max-width: 468px)"
+					/>
+					<source srcset="./assets/images/background-images/tablet-desktop-images/banner.png" />
 					<img
 						class="banner__image"
-						src="./assets/images/background/tablet-desktop/banner.png"
-						alt="top destinations in thw world"
+						src="./assets/images/background-images/tablet-desktop-images/banner.png"
+						loading="lazy" alt="top destinations in thw world"
 					/>
 				</picture>
-				<div class="banner--first">
-					<a class="button button-pink" href="#"> explore the world!</a>
-					<h1 class="banner--first__header">
+				<div class="banner--content">
+					<a class="button button-pink" href="javascript:void(0)"> explore the world!</a>
+					<h1 class="banner--content__header">
 						Travel <span class="pink-txt">top destination</span> of the world
 					</h1>
-					<p class="banner-primary__desc category__desc">
+					<p class="banner--content__desc category__desc">
 						We always make our customer happy by providing<br />
 						as many choices as possible
 					</p>
-					<div class="button-area">
-						<a class="button button-purple" href="#">get started</a>
-						<a class="button button-white" href="#">watch demo</a>
+					<div class="banner__button">
+						<a class="button button-purple" href="javascript:void(0)">get started</a>
+						<a class="button button-white" href="javascript:void(0)">watch demo</a>
 					</div>
 				</div>
 			</section>
 			<article class="travel-agency container">
 				<picture>
 					<source
-						srcset="./assets/images/brand-list/tablet-desktop/tripadvisor.png"
+						srcset="./assets/images/brand-list-images/tablet-desktop-images/tripadvisor.png"
 						media="(min-width: 468px)"
 					/>
-					<source srcset="./assets/images/brand-list/mobile/tripadvisor.png" />
+					<source srcset="./assets/images/brand-list-images/mobile-images/tripadvisor.png" />
 					<img
 						class="travel-agency__img"
-						src="./assets/images/brand-list/mobile/tripadvisor.png"
-						alt="Trip Advisor"
-						style="width: auto"
+						src="./assets/images/brand-list-images/mobile-images/tripadvisor.png"
+						loading="lazy" alt="Trip Advisor"
 					/>
 				</picture>
 				<picture>
-					<source srcset="./assets/images/brand-list/tablet-desktop/expedia.png" media="(min-width: 468px)" />
-					<source srcset="./assets/images/brand-list/mobile/expedia.png" />
+					<source
+						srcset="./assets/images/brand-list-images/tablet-desktop-images/expedia.png"
+						media="(min-width: 468px)"
+					/>
+					<source srcset="./assets/images/brand-list-images/mobile-images/expedia.png" />
 					<img
 						class="travel-agency__img"
-						src="./assets/images/brand-list/mobile/expedia.png"
-						alt="Expedia"
-						style="width: auto"
+						src="./assets/images/brand-list-images/mobile-images/expedia.png"
+						loading="lazy" alt="Expedia"
 					/>
 				</picture>
 				<picture>
-					<source srcset="./assets/images/brand-list/tablet-desktop/booking.png" media="(min-width: 468px)" />
-					<source srcset="./assets/images/brand-list/mobile/booking.png" />
+					<source
+						srcset="./assets/images/brand-list-images/tablet-desktop-images/booking.png"
+						media="(min-width: 468px)"
+					/>
+					<source srcset="./assets/images/brand-list-images/mobile-images/booking.png" />
 					<img
 						class="travel-agency__img"
-						src="./assets/images/brand-list/mobile/booking.png"
-						alt="Booking.com"
-						style="width: auto"
+						src="./assets/images/brand-list-images/mobile-images/booking.png"
+						loading="lazy" alt="Booking.com"
 					/>
 				</picture>
 				<picture>
-					<source srcset="./assets/images/brand-list/tablet-desktop/airbnb.png" media="(min-width: 468px)" />
-					<source srcset="./assets/images/brand-list/mobile/airbnb.png" />
+					<source
+						srcset="./assets/images/brand-list-images/tablet-desktop-images/airbnb.png"
+						media="(min-width: 468px)"
+					/>
+					<source srcset="./assets/images/brand-list-images/mobile-images/airbnb.png" />
 					<img
 						class="travel-agency__img"
-						src="./assets/images/brand-list/mobile/airbnb.png"
-						alt="Airbnb"
-						style="width: auto"
+						src="./assets/images/brand-list-images/mobile-images/airbnb.png"
+						loading="lazy" alt="Airbnb"
 					/>
 				</picture>
 				<picture>
-					<source srcset="./assets/images/brand-list/tablet-desktop/rbitz.png" media="(min-width: 468px)" />
-					<source srcset="./assets/images/brand-list/mobile/rbitz.png" />
+					<source
+						srcset="./assets/images/brand-list-images/tablet-desktop-images/rbitz.png"
+						media="(min-width: 468px)"
+					/>
+					<source srcset="./assets/images/brand-list-images/mobile-images/rbitz.png" />
 					<img
 						class="travel-agency__img"
-						src="./assets/images/brand-list/mobile/rbitz.png"
-						alt="Rbitz"
-						style="width: auto"
+						src="./assets/images/brand-list-images/mobile-images/rbitz.png"
+						loading="lazy" alt="Rbitz"
 					/>
 				</picture>
 			</article>
@@ -116,66 +127,64 @@
 					<h3 class="category__sub-heading">Our top value categories for you</h3>
 				</div>
 				<div class="service-card">
-					<article class="service-card__item">
+					<article class="service-card--template">
 						<img
-							class="service-card__icon"
-							src="./assets/images/icons/service-icon/service-destination.svg"
-							alt="destination"
+							class="service-card--template__icon"
+							src="./assets/images/icons/service-icons/service-destination.svg"
+							loading="lazy" alt="destination"
 						/>
-						<h4 class="service-card__header">best tour guide</h4>
-						<p class="service-card__desc">What looked like a small patch of purple grass, above five feet.</p>
+						<h4 class="service-card--template__heading">best tour guide</h4>
+						<p class="service-card--template__desc">What looked like a small patch of purple grass, above five feet.</p>
 					</article>
-					<article class="service-card__item">
+					<article class="service-card--template">
 						<img
-							class="service-card__icon"
-							src="./assets/images/icons/service-icon/service-booking.svg"
-							alt="booking"
+							class="service-card--template__icon"
+							src="./assets/images/icons/service-icons/service-booking.svg"
+							loading="lazy" alt="booking"
 						/>
-						<h4 class="service-card__header">easy booking</h4>
-						<p class="service-card__desc">Square, was moving across the sand in their direction.</p>
+						<h4 class="service-card--template__heading">easy booking</h4>
+						<p class="service-card--template__desc">Square, was moving across the sand in their direction.</p>
 					</article>
-					<article class="service-card__item">
+					<article class="service-card--template">
 						<img
-							class="service-card__icon"
-							src="./assets/images/icons/service-icon/service-cloudy.svg"
-							alt="weather"
+							class="service-card--template__icon"
+							src="./assets/images/icons/service-icons/service-cloudy.svg"
+							loading="lazy" alt="weather"
 						/>
-						<h4 class="service-card__header">weather forecast</h4>
-						<p class="service-card__desc">What looked like a small patch of purple grass, above five feet.</p>
+						<h4 class="service-card--template__heading">weather forecast</h4>
+						<p class="service-card--template__desc">What looked like a small patch of purple grass, above five feet.</p>
 					</article>
 				</div>
 			</section>
-			<section class="top-destination container">
-				<div class="top-destination-header">
+			<section class="destination container">
+				<div class="destination__intro">
 					<div class="category">
 						<h2 class="category__heading">top destination</h2>
 						<h3 class="category__sub-heading">Explore top destination</h3>
 					</div>
 					<div class="arrow-button">
-						<picture class="arrow-button__left">
+						<picture class="arrow-button__left-dir">
 							<source
-								srcset="./assets/images/icons/arrow/tablet-desktop/arrow-left.svg"
+								srcset="./assets/images/icons/arrow-icons/tablet-desktop-icons/arrow-left.svg"
 								media="(min-width: 468px)"
 							/>
-							<source srcset="./assets/images/icons/arrow/mobile/arrow-left.svg" />
+							<source srcset="./assets/images/icons/arrow-icons/mobile-icons/arrow-left.svg" />
 							<img
 								class="arrow"
-								src="./assets/images/icons/arrow/mobile/arrow-left.svg"
-								alt="Trip Advisor"
-								style="width: auto"
+								src="./assets/images/icons/arrow-icons/mobile-icons/arrow-left.svg"
+								loading="lazy" alt="Left arrow"
 							/>
 						</picture>
-						<picture class="arrow-button__right">
+						<picture class="arrow-button__right-dir">
 							<source
-								srcset="./assets/images/icons/arrow/tablet-desktop/arrow-right.svg"
+								srcset="./assets/images/icons/arrow-icons/tablet-desktop-icons/arrow-right.svg"
 								media="(min-width: 468px)"
 							/>
-							<source srcset="./assets/images/icons/arrow/mobile/arrow-right.svg" />
+							<source srcset="./assets/images/icons/arrow-icons/mobile-icons/arrow-right.svg" />
 							<img
 								class="arrow"
-								src="./assets/images/icons/arrow/mobile/arrow-right.svg"
-								alt="Trip Advisor"
-								style="width: auto"
+								src="./assets/images/icons/arrow-icons/mobile-icons/arrow-right.svg"
+								loading="lazy" alt="Right arrow"
 							/>
 						</picture>
 					</div>
@@ -183,34 +192,42 @@
 
 				<div class="destination-card">
 					<article class="destination-card-content">
-						<img class="card__image" src="./assets/images/destination/beach.png" alt="Beautiful beach" />
-						<div class="card-desc">
-							<p class="card__price heading">$550.16</p>
-							<h4 class="card__info__header">Paradise Beach, Bantayan Island</h4>
-							<h5 class="card__location">Rome, Italy</h5>
-							<h5 class="card__review">4.8</h5>
-						</div>
-					</article>
-					<article class="destination-card-content">
-						<img class="card__image" src="./assets/images/destination/fish.png" alt="Beautiful Ocean" />
-						<div class="card-desc">
-							<p class="card__price heading">$20.99</p>
-							<h4 class="card__info__header">Ocean with full of Colors</h4>
-							<h5 class="card__location">Maldives</h5>
-							<h5 class="card__review">4.5</h5>
+						<img
+							class="destination-card__image"
+							src="./assets/images/destination-images/beach.png"
+							loading="lazy" alt="Beautiful beach"
+						/>
+						<div class="destination-card__desc">
+							<p class="card__desc__price">&#36;550.16</p>
+							<h4 class="card__desc__title">Paradise Beach, Bantayan Island</h4>
+							<h5 class="card__desc__location">Rome, Italy</h5>
+							<h5 class="card__desc__review">4.8</h5>
 						</div>
 					</article>
 					<article class="destination-card-content">
 						<img
-							class="card__image"
-							src="./assets/images/destination/mountain.png"
-							alt="Beautiful Mountain"
+							class="destination-card__image height-fit"
+							src="./assets/images/destination-images/fish.png"
+							loading="lazy" alt="Beautiful Ocean"
 						/>
-						<div class="card-desc">
-							<p class="card__price heading">$150.99</p>
-							<h4 class="card__info__header">Mountain View, Above the cloud</h4>
-							<h5 class="card__location">United Arab Emeries</h5>
-							<h5 class="card__review">5.0</h5>
+						<div class="destination-card__desc">
+							<p class="card__desc__price">&#36;20.99</p>
+							<h4 class="card__desc__title">Ocean with full of Colors</h4>
+							<h5 class="card__desc__location">Maldives</h5>
+							<h5 class="card__desc__review">4.5</h5>
+						</div>
+					</article>
+					<article class="destination-card-content">
+						<img
+							class="destination-card__image"
+							src="./assets/images/destination-images/mountain.png"
+							loading="lazy" alt="Beautiful Mountain"
+						/>
+						<div class="destination-card__desc">
+							<p class="card__desc__price">&#36;150.99</p>
+							<h4 class="card__desc__title">Mountain View, Above the cloud</h4>
+							<h5 class="card__desc__location">United Arab Emeries</h5>
+							<h5 class="card__desc__review">5.0</h5>
 						</div>
 					</article>
 				</div>
@@ -218,12 +235,15 @@
 
 			<section class="travel-point">
 				<picture>
-					<source srcset="./assets/images/background/mobile/travel-point.png" media="(max-width: 468px)" />
-					<source srcset="./assets/images/background/tablet-desktop/travel-point.png" />
+					<source
+						srcset="./assets/images/background-images/mobile-images/travel-point.png"
+						media="(max-width: 468px)"
+					/>
+					<source srcset="./assets/images/background-images/tablet-desktop-images/travel-point.png" />
 					<img
 						class="travel-point__image"
-						src="./assets/images/background/tablet-desktop/travel-point.png"
-						alt="top destinations in thw world"
+						src="./assets/images/background-images/tablet-desktop-images/travel-point.png"
+						loading="lazy" alt="top destinations in thw world"
 					/>
 				</picture>
 				<div class="category">
@@ -233,22 +253,22 @@
 						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
 						classical Latin literature from 45 BC.
 					</p>
-					<div class="travel-point__stats">
-						<div class="stats__item">
-							<p class="stats-number">500+</p>
-							<h5 class="stats-desc">holiday package</h5>
+					<div class="travel-point__achievement">
+						<div class="achievement--stats">
+							<p class="achievement--stats__number">500&#43;</p>
+							<h5 class="achievement--stats__desc">holiday package</h5>
 						</div>
-						<div class="stats__item">
-							<p class="stats-number">100</p>
-							<h5 class="stats-desc">luxury hotel</h5>
+						<div class="achievement--stats">
+							<p class="achievement--stats__number">100</p>
+							<h5 class="achievement--stats__desc">luxury hotel</h5>
 						</div>
-						<div class="stats__item">
-							<p class="stats-number">7</p>
-							<h5 class="stats-desc">premium airlines</h5>
+						<div class="achievement--stats">
+							<p class="achievement--stats__number">7</p>
+							<h5 class="achievement--stats__desc">premium airlines</h5>
 						</div>
-						<div class="stats__item">
-							<p class="stats-number">2k+</p>
-							<h5 class="stats-desc">happy custumer</h5>
+						<div class="achievement--stats">
+							<p class="achievement--stats__number">2k&#43;</p>
+							<h5 class="achievement--stats__desc">happy custumer</h5>
 						</div>
 					</div>
 				</div>
@@ -256,12 +276,15 @@
 
 			<section class="key-features">
 				<picture>
-					<source srcset="./assets/images/background/mobile/key-feature.png" media="(max-width: 468px)" />
-					<source srcset="./assets/images/background/tablet-desktop/key-feature.png" />
+					<source
+						srcset="./assets/images/background-images/mobile-images/key-feature.png"
+						media="(max-width: 468px)"
+					/>
+					<source srcset="./assets/images/background-images/tablet-desktop-images/key-feature.png" />
 					<img
 						class="key-features__image"
-						src="./assets/images/background/tablet-desktop/key-feature.png"
-						alt="top destinations in thw world"
+						src="./assets/images/background-images/tablet-desktop-images/key-feature.png"
+						loading="lazy" alt="top destinations in thw world"
 					/>
 				</picture>
 				<div class="category">
@@ -271,36 +294,36 @@
 						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
 						classical Latin literature from 45 BC.
 					</p>
-					<article class="key-features__list">
+					<article class="key-features--list">
 						<img
 							class="list__icon location"
-							src="./assets/images/icons/feature-icon/feature-location.svg"
-							alt="best service"
+							src="./assets/images/icons/feature-icons/feature-location.svg"
+							loading="lazy" alt="best service"
 						/>
-						<div class="list-info">
-							<h4 class="list__header sm-txt">We offer best services</h4>
+						<div class="list__info">
+							<h4 class="list__header">We offer best services</h4>
 							<p class="list__desc">Lorem Ipsum is not simply random text</p>
 						</div>
 					</article>
-					<article class="key-features__list">
+					<article class="key-features--list">
 						<img
 							class="list__icon schedule"
-							src="./assets/images/icons/feature-icon/feature-calendar.svg"
-							alt="Plan your trip"
+							src="./assets/images/icons/feature-icons/feature-calendar.svg"
+							loading="lazy" alt="Plan your trip"
 						/>
-						<div class="list-info">
+						<div class="list__info">
 							<h4 class="list__header">Schedule your trip</h4>
 							<p class="list__desc">It has roots in a piece of classical</p>
 						</div>
 					</article>
-					<article class="key-features__list">
+					<article class="key-features--list">
 						<img
 							class="list__icon discount"
-							src="./assets/images/icons/feature-icon/feature-discount.svg"
-							alt="best discount"
+							src="./assets/images/icons/feature-icons/feature-discount.svg"
+							loading="lazy" alt="best discount"
 						/>
-						<div class="list-info">
-							<h4 class="list__header sm-txt">Get discounted coupons</h4>
+						<div class="list__info">
+							<h4 class="list__header">Get discounted coupons</h4>
 							<p class="list__desc">Lorem Ipsum is not simply random text</p>
 						</div>
 					</article>
@@ -312,51 +335,49 @@
 					<h2 class="category__heading">testimonials</h2>
 					<h3 class="category__sub-heading">Trust our clients</h3>
 					<img
-						class="card__photo"
-						src="./assets/images/icons/testimonials-icon/client.png"
-						alt="Client photo"
+						class="testimonial-card__photo"
+						src="./assets/images/icons/testimonials-icons/client.png"
+						loading="lazy" alt="Client photo"
 					/>
-					<h4 class="card__name">mark smith <span class="card__hobbie">/ travel enthusiast</span></h4>
+					<h4 class="testimonial-card__name">mark smith <span class="testimonial-card__hobbie">&#47; travel enthusiast</span></h4>
 					<img
 						class="testimonials-card__review"
-						src="./assets/images/icons/testimonials-icon/client-review.svg"
-						alt="Client review"
+						src="./assets/images/icons/testimonials-icons/client-review.svg"
+						loading="lazy" alt="Client review"
 					/>
-					<p class="card__feedback">
+					<p class="testimonials-card__feedback">
 						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
 						classical Latin literature from 45 BC.
 					</p>
 					<img
 						class="swipe-icon"
-						src="./assets/images/icons/testimonials-icon/swipe.svg"
-						alt="swipe to move"
+						src="./assets/images/icons/testimonials-icons/swipe.svg"
+						loading="lazy" alt="swipe to move"
 					/>
 				</article>
 				<div class="arrow-button">
-					<picture class="arrow-button__left">
+					<picture class="arrow-button__left-dir">
 						<source
-							srcset="./assets/images/icons/arrow/tablet-desktop/arrow-left.svg"
+							srcset="./assets/images/icons/arrow-icons/tablet-desktop-icons/arrow-left.svg"
 							media="(min-width: 468px)"
 						/>
-						<source srcset="./assets/images/icons/arrow/mobile/arrow-left.svg" />
+						<source srcset="./assets/images/icons/arrow-icons/mobile-icons/arrow-left.svg" />
 						<img
 							class="arrow"
-							src="./assets/images/icons/arrow/mobile/arrow-left.svg"
-							alt="Trip Advisor"
-							style="width: auto"
+							src="./assets/images/icons/arrow-icons/mobile-icons/arrow-left.svg"
+							loading="lazy" alt="Trip Advisor"
 						/>
 					</picture>
-					<picture class="arrow-button__right">
+					<picture class="arrow-button__right-dir">
 						<source
-							srcset="./assets/images/icons/arrow/tablet-desktop/arrow-right.svg"
+							srcset="./assets/images/icons/arrow-icons/tablet-desktop-icons/arrow-right.svg"
 							media="(min-width: 468px)"
 						/>
-						<source srcset="./assets/images/icons/arrow/mobile/arrow-right.svg" />
+						<source srcset="./assets/images/icons/arrow-icons/mobile-icons/arrow-right.svg" />
 						<img
 							class="arrow"
-							src="./assets/images/icons/arrow/mobile/arrow-right.svg"
-							alt="Trip Advisor"
-							style="width: auto"
+							src="./assets/images/icons/arrow-icons/mobile-icons/arrow-right.svg"
+							loading="lazy" alt="Trip Advisor"
 						/>
 					</picture>
 				</div>
@@ -365,7 +386,9 @@
 			<section class="subscription">
 				<div class="subscription-content">
 					<h2 class="category__heading">subscribe to our newsletter</h2>
-					<h3 class="category__sub-heading">Prepare yourself & let’s explore the beauty of the world</h3>
+					<h3 class="category__sub-heading">
+						Prepare yourself &#38; let&rsquo;s explore the beauty of the world
+					</h3>
 					<div class="subscription__form">
 						<input class="form-input" type="email" name="email-address" placeholder="your email" />
 						<button class="button button-purple" type="submit">subscribe</button>
@@ -381,14 +404,14 @@
 						classical Latin literature from 45 BC.
 					</p>
 					<div class="brand-socials">
-						<a href="#" class="brand-socials__link brand-socials__link--facebook"
-							><img src="./assets/images/icons/brand-socials-icon/facebook.svg" alt="facebook icon"
+						<a href="javascript:void(0)" class="brand-socials__link brand-socials__link--facebook"
+							><img src="./assets/images/icons/brand-socials-icons/facebook.svg" loading="lazy" alt="facebook icon"
 						/></a>
-						<a href="#" class="brand-socials__link brand-socials__link--twitter"
-							><img src="./assets/images/icons/brand-socials-icon/twitter.svg" alt="twitter icon"
+						<a href="javascript:void(0)" class="brand-socials__link brand-socials__link--twitter"
+							><img src="./assets/images/icons/brand-socials-icons/twitter.svg" loading="lazy" alt="twitter icon"
 						/></a>
-						<a href="#" class="brand-socials__link brand-socials__link--instagram"
-							><img src="./assets/images/icons/brand-socials-icon/instagram.svg" alt="instagram icon"
+						<a href="javascript:void(0)" class="brand-socials__link brand-socials__link--instagram"
+							><img src="./assets/images/icons/brand-socials-icons/instagram.svg" loading="lazy" alt="instagram icon"
 						/></a>
 					</div>
 				</div>
@@ -399,32 +422,32 @@
 						<label for="company-expand"
 							><img
 								class="expand-image"
-								src="./assets/images/icons/mobile-icon/sub-footer-expand.svg"
-								alt="menu bar"
+								src="./assets/images/icons/mobile-icons/sub-footer-expand.svg"
+								loading="lazy" alt="menu bar"
 						/></label>
 						<div class="company__content">
 							<ul class="company-info">
-								<li><a class="info-link" href="#">About</a></li>
-								<li><a class="info-link" href="#">Career</a></li>
-								<li><a class="info-link" href="#">Mobile</a></li>
+								<li><a class="info-link" href="javascript:void(0)">About</a></li>
+								<li><a class="info-link" href="javascript:void(0)">Career</a></li>
+								<li><a class="info-link" href="javascript:void(0)">Mobile</a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="permalinks--contact">
-						<h4 class="permalinks--company-info">contact</h4>
+						<h4 class="permalinks--company-info">contact us</h4>
 						<input type="checkbox" id="contact-expand" />
 						<label for="contact-expand"
 							><img
 								class="expand-image"
-								src="./assets/images/icons/mobile-icon/sub-footer-expand.svg"
-								alt="menu bar"
+								src="./assets/images/icons/mobile-icons/sub-footer-expand.svg"
+								loading="lazy" alt="menu bar"
 						/></label>
 						<div class="contact__content">
 							<ul class="company-contact-info">
-								<li><a class="info-link" href="#">Why Travlog?</a></li>
-								<li><a class="info-link" href="#">Partner with us</a></li>
-								<li><a class="info-link" href="#">FAQ's</a></li>
-								<li><a class="info-link" href="#">Blog</a></li>
+								<li><a class="info-link" href="javascript:void(0)">Why Travlog&#63;</a></li>
+								<li><a class="info-link" href="javascript:void(0)">Partner with us</a></li>
+								<li><a class="info-link" href="javascript:void(0)">FAQ&rsquo;s</a></li>
+								<li><a class="info-link" href="javascript:void(0)">Blog</a></li>
 							</ul>
 						</div>
 					</div>
@@ -434,13 +457,13 @@
 						<label for="meet-us-expand"
 							><img
 								class="expand-image"
-								src="./assets/images/icons/mobile-icon/sub-footer-expand.svg"
-								alt="menu bar"
+								src="./assets/images/icons/mobile-icons/sub-footer-expand.svg"
+								loading="lazy" alt="menu bar"
 						/></label>
 						<div class="meet-us__content">
 							<ul class="content-menu">
-								<li><a class="tel" href="tel:+00 92 1234 56789">+00 92 1234 56789</a></li>
-								<li><a class="email" href="mailto:info@travlog.com">info@travlog.com</a></li>
+								<li><a class="tel" href="tel:+00 92 1234 56789">&#43;00 92 1234 56789</a></li>
+								<li><a class="email" href="mailto:info@travlog.com">info&#64;travlog.com</a></li>
 								<li>
 									<address class="mail-address">
 										<p class="address">205. R Street, New York</p>
