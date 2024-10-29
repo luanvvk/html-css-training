@@ -74,7 +74,7 @@ body {
 	min-height: 1.7rem;
 	list-style: none;
 	text-align: center;
-	margin-left: -16rem;
+	margin-left: -21rem;
 	padding-left: 0;
 }
 
@@ -107,6 +107,7 @@ body {
 	gap: 0.8rem;
 	list-style: none;
 	padding: 0;
+	margin-right: 1.6rem;
 }
 
 .button {
@@ -245,7 +246,6 @@ body {
 .travel-point__image,
 .key-features__image {
 	margin-top: 3.2rem;
-	padding: 3.2rem 0;
 	display: block;
 	margin: auto;
 }
@@ -279,10 +279,14 @@ body {
 	text-align: center;
 	text-transform: capitalize;
 	color: var(--light-coral);
+	margin-top: 6rem;
+	margin-bottom: 3rem;
 }
 
 .card__hobbie {
 	color: rgba(25, 24, 37, 0.75);
+	font-size: 2.3rem;
+	line-height: 2.76rem;
 }
 
 .card__feedback {
@@ -353,7 +357,7 @@ body {
 	margin: auto;
 	background: url("../assets/images/icons/subscription/email.svg") no-repeat left;
 	background-color: var(--white);
-	background-position-x: 3.2rem;
+	background-position-x: 4rem;
 
 	flex: 1;
 	min-height: 72px;
@@ -363,8 +367,8 @@ body {
 }
 
 .form-input::placeholder {
-	padding-left: 7.2rem;
-	margin-left: 7.2rem;
+	padding-left: 8.8rem;
+	margin-left: 8.8rem;
 	font-family: var(--font-primary);
 	font-size: 1.4rem;
 	font-weight: 700;
@@ -379,11 +383,11 @@ body {
 	flex-direction: column;
 	gap: 6.4rem;
 	min-height: 43.4rem;
-	margin-top: 12.8rem;
+	margin-top: 12rem;
 }
 
 .footer .logo {
-	margin-bottom: 3.2rem;
+	margin-bottom: 1.6rem;
 }
 
 .brand__desc {
@@ -399,7 +403,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	gap: 3.2rem;
+	gap: 3.8rem;
 }
 
 .expand-image {
@@ -841,6 +845,11 @@ body {
 		min-width: 120rem;
 		padding: 0 12.8rem;
 	}
+	.header {
+		padding: 0 12.8rem;
+		margin-top: 3.2rem;
+		margin-bottom: 1.6rem;
+	}
 	.arrow {
 		position: relative;
 		top: 38%;
@@ -850,7 +859,7 @@ body {
 	.arrow-button__right {
 		width: 10rem;
 		height: 10rem;
-		margin-top: -40rem;
+		margin-top: -44rem;
 	}
 	.destination-card {
 		flex-direction: row;
@@ -874,11 +883,13 @@ body {
 	.category__sub-heading {
 		font-size: 4.4rem;
 		line-height: 5.28rem;
+		margin-bottom: 2.4rem;
 	}
 	.category__desc {
 		padding: 0;
 		font-size: 1.8rem;
 		line-height: 2.88rem;
+		margin-bottom: 7.2rem;
 	}
 	.key-features,
 	.banner {
@@ -886,7 +897,7 @@ body {
 		flex-direction: row-reverse;
 	}
 	.travel-point {
-		margin: auto 0;
+		margin-top: 7.5rem;
 		padding: 0 12.8rem 0 0;
 		display: flex;
 		flex-direction: row;
@@ -898,9 +909,14 @@ body {
 	.stats__item {
 		min-width: 20.4rem;
 	}
+	.travel-point__image {
+		padding-top: 0;
+	
+	}
 	.travel-point .category {
 		max-width: 44.1rem;
 		min-height: 66.7rem;
+		margin-top: -2.4rem;
 	}
 	.travel-point__stats {
 		gap: 2.8rem;
@@ -908,35 +924,54 @@ body {
 	.key-features .category {
 		max-width: 54.9rem;
 	}
+	.key-features .category__desc {
+		margin-bottom: 8.8rem;
+	}
+	.key-features__image {
+		margin-top: 6.4rem;
+	}
 	.banner--first {
 		max-width: 41.2rem;
 		min-height: 57.7rem;
 		justify-content: center;
-		gap: 4.3rem;
+		margin-top: 1.6rem;
+		gap: 1.6rem;
+		
 	}
 	.banner__image,
 	.travel-point__image,
 	.key-features__image {
 		min-height: 78rem;
 	}
+	.banner__image {
+		margin-top: 6.4rem;
+	}
 	.banner--first__header {
 		font-size: 6.9rem;
 		line-height: 8.28rem;
-		margin: 0;
+		margin: 3.2rem 0 1.6rem;
 		text-align: left;
 	}
 	.button-pink {
-		margin: 0 auto;
+		margin:0;
 	}
 	.banner-primary__desc {
 		margin: 0;
 	}
 	.button-area {
 		justify-content: flex-start;
+		margin-top: 3.2rem;
 	}
 	.service-card__item {
 		max-width: 35rem;
 		min-height: 44.3rem;
+	}
+	.service-card__icon {
+		margin-top: 5.6rem;
+		margin-bottom: 7.2rem;
+	}
+	.service-card__header {
+		margin-bottom: 2.8rem;
 	}
 	.service-card__desc {
 		padding: 0.8rem 6.4rem;
@@ -947,12 +982,13 @@ body {
 		min-height: auto;
 		display: flex;
 		padding-left: 12.8rem;
-		margin: 0;
+		margin: 12rem 0;
 	}
 	.service .category {
 		width: 100%;
 		min-width: 44.4rem;
 		min-height: 15rem;
+		margin-top: 7.2rem;
 	}
 	.category__heading,
 	.category__sub-heading,
@@ -970,11 +1006,16 @@ body {
 		justify-content: flex-end;
 		gap: 3.2rem;
 		margin-bottom: 0;
+		margin-right: 1.6rem;
 	}
 	.top-destination-header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		margin-top: -7.2rem;
+	}
+	.top-destination .category__sub-heading {
+		margin-bottom: 6rem;
 	}
 	.key-features__list {
 		padding-left: 0;
@@ -992,33 +1033,52 @@ body {
 		width: 100%;
 		background: url("../assets/images/special-image/testimonials-layout.png") no-repeat;
 		background-position: 20% 50%;
-		padding: 10rem 0 0;
-		margin: 0 auto;
+		padding: 8rem 0 0;
+		margin-top: -4.8rem;
 	}
 	.testimonial-card {
 		display: block;
 		margin: auto;
 		max-width: 87.2rem;
 		min-height: 64.5rem;
-		padding: 0 25.6rem;
-	}
+		}
+
 	.testimonial .arrow-button {
 		justify-content: space-around;
-		gap: 52%;
+		gap: 48%;
 	}
 	.subscription {
 		padding: 0;
-		margin: 0 12.8rem;
+		margin: 16.8rem 12.8rem 3.2rem;
+	}
+	.testimonial .category__heading {
+		margin-top: 4rem;
 	}
 	.subscription .category__sub-heading {
 		font-size: 5.5rem;
 		line-height: 6.6rem;
 		padding: 0 12.8rem;
 	}
+	.card__photo {
+		margin-top: 4.8rem;
+	}
+	.card__feedback {
+		margin-top: 5.6rem;
+		margin-bottom: 5.2rem;
+		font-size: 2.3rem;
+		line-height: 3.68rem;
+		opacity: 0.75;
+	}
 	.subscription__form {
 		flex-direction: row;
 		gap: 3.2rem;
 		margin: 0 6.4rem;
+	}
+	.subscription .category__heading {
+		margin-bottom: 3.2rem;
+	}
+	.subscription .category__sub-heading {
+		margin-bottom: 2.4rem;
 	}
 	.subscription .button-purple {
 		width: 23.5rem;
@@ -1041,14 +1101,15 @@ body {
 	.footer {
 		flex-direction: row;
 		justify-content: space-between;
+		gap: 4.4rem;
 	}
 	.footer__brand-info {
-		max-width: 56rem;
+		max-width: 58rem;
 		min-height: 27.9rem;
 		flex: 1;
 	}
 	.footer__permalinks {
-		max-width: 56rem;
+		max-width: 58rem;
 		flex: 1;
 	}
 	.permalinks--company,
@@ -1056,12 +1117,13 @@ body {
 	.permalinks--meet-us {
 		flex: 1;
 		display: flex;
-		gap: 1.6rem;
+		gap: 0.4rem;
 	}
 	.brand__desc {
 		font-size: 2.3rem;
 		line-height: 3.68rem;
 		margin-top: 0;
+		margin-bottom: 6.4rem;
 	}
 	.company-contact-info li,
 	.company-info li,
