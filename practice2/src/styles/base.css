@@ -45,6 +45,7 @@ body {
 	.container {
 		min-width: 90rem;
 		padding: 0 6.4rem;
+		margin: 0	auto;
 	}
 }
 @media (min-width: 1026px) {
