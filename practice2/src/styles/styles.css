@@ -45,6 +45,7 @@
 	justify-content: space-between;
 	min-width: 43rem;
 	min-height: 1.7rem;
+
 	list-style: none;
 	text-align: center;
 	margin-left: -21rem;
@@ -72,42 +73,6 @@
 	text-align: center;
 	text-decoration: none;
 }
-.login-register-button {
-	display: flex;
-	gap: 0.8rem;
-	list-style: none;
-	padding: 0;
-	margin-right: 1.6rem;
-}
-.button {
-	border-radius: 10rem;
-	font-family: var(--font-primary);
-	font-size: 1.4rem;
-	font-weight: 700;
-
-	line-height: 1.68rem;
-	text-align: center;
-	text-transform: capitalize;
-	text-decoration: none;
-	padding: 1.6rem 3.2rem;
-}
-.button-white {
-	color: var(--dark-blue);
-	margin: auto;
-	width: 30%;
-}
-.button-purple {
-	position: relative;
-	margin: auto;
-	width: 30%;
-	background-color: var(--purple);
-	color: var(--white);
-}
-.button-white:hover,
-.button-purple:hover {
-	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 20px 20px 0 rgba(0, 0, 0, 0.09),
-		0 45px 27px 0 rgba(0, 0, 0, 0.05), 0 81px 32px 0 rgba(0, 0, 0, 0.01), 0 126px 35px 0 rgba(0, 0, 0, 0);
-}
 /*--------------------------Banner---------------------------*/
 .banner--content {
 	display: flex;
@@ -131,37 +96,6 @@
 .banner--content__desc {
 	padding: 0;
 	margin-top: 0.8rem;
-}
-.button-pink {
-	margin: -2.4rem 12rem 0 11rem;
-	max-width: 22.4rem;
-	padding: 1.6rem 0;
-	color: var(--pink);
-}
-.button-pink::after {
-	content: url("../assets/images/icons/banner-icons/banner-item.svg");
-	margin-left: 0.8rem;
-}
-.button-pink:hover {
-	box-shadow: 0px 0px 0px 0px #00000012, 0px 34px 75px 0px #00000012, 0px 137px 137px 0px #0000000f,
-		0px 308px 185px 0px #0000000a, 0px 548px 219px 0px #00000003, 0px 856px 240px 0px #00000000;
-}
-.banner .button-purple {
-	width: 100%;
-	margin-bottom: 2.4rem;
-	padding: 2.4rem 0;
-}
-.banner .button-white {
-	width: 100%;
-	border: 0.1rem solid #eeeeee;
-	padding: 2.4rem 0;
-}
-
-.banner .button-white::before {
-	content: url("../assets/images/icons/banner-icons/banner-button.svg");
-	width: 2.4rem;
-	height: 2.4rem;
-	margin-right: 10px;
 }
 .banner__image {
 	margin-top: 5.2rem;
@@ -193,36 +127,9 @@
 .destination .category__sub-heading {
 	margin-bottom: 3rem;
 }
-.arrow {
-	position: relative;
-	top: 38%;
-	left: 38%;
-}
-
-.arrow-button {
-	display: flex;
-	justify-content: space-between;
-	gap: 3.2rem;
-	margin-bottom: 3.2rem;
-}
-
-.arrow-button__left-dir {
-	background: var(--white);
-	min-width: 6.4rem;
-	min-height: 6.4rem;
-	border-radius: 10rem;
-	border: 1px solid rgba(25, 24, 37, 0.1);
-}
 .travel-point {
 	margin: 10rem 1.5rem;
 	padding: 0;
-}
-
-.arrow-button__right-dir {
-	min-width: 6.4rem;
-	min-height: 6.4rem;
-	border-radius: 10rem;
-	background: var(--purple);
 }
 .travel-point__image,
 .key-features__image {
@@ -250,7 +157,7 @@
 .achievement--stats__desc {
 	margin-top: 0;
 }
-/*-----------------------Testiminials-------------------------*/
+/*-----------------------Testimonials-------------------------*/
 .testimonial-card {
 	min-height: 66.6ren;
 }
@@ -291,10 +198,6 @@
 	display: block;
 	margin: auto;
 }
-.testimonial .arrow-button {
-	margin-bottom: 0;
-	margin-top: 6.4rem;
-}
 .testimonial .category__sub-heading {
 	margin-bottom: 6.4rem;
 }
@@ -327,19 +230,6 @@
 	gap: 3.2rem;
 	min-height: 17.1rem;
 }
-.subscription .button-purple {
-	display: block;
-	width: 80%;
-	padding: 2.4rem 6.4rem;
-	border-radius: 1.6rem;
-
-	font-family: var(--font-primary);
-	font-size: 1.6rem;
-	font-weight: 700;
-	line-height: 1.92rem;
-	text-align: center;
-	border: none;
-}
 .form-input {
 	width: 80%;
 	margin: auto;
@@ -359,6 +249,7 @@
 	font-family: var(--font-primary);
 	font-size: 1.4rem;
 	font-weight: 700;
+
 	color: rgba(25, 24, 37, 0.75);
 	line-height: 16.8rem;
 	text-align: left;
@@ -376,21 +267,21 @@
 	margin-top: -0.4rem;
 }
 .brand__desc {
+	margin-bottom: 3.2rem;
 	font-family: var(--font-primary);
 	font-size: 1.6rem;
 	font-weight: 450;
+
 	line-height: 2.56rem;
 	text-align: left;
 	color: var(--black-blue);
 	opacity: 0.5;
-	margin-bottom: 3.2rem;
 }
 .footer__permalinks {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
-
 .expand-image {
 	display: none;
 }
@@ -419,6 +310,7 @@
 	font-family: var(--font-primary);
 	font-size: 2.3rem;
 	font-weight: 700;
+
 	line-height: 2.76rem;
 	text-align: left;
 	text-transform: capitalize;
@@ -434,9 +326,10 @@
 	font-family: var(--font-secondary);
 	font-size: 1.8rem;
 	font-weight: 400;
+	color: var(--black-blue);
+
 	line-height: 2.88rem;
 	text-align: center;
-	color: var(--black-blue);
 	opacity: 0.75;
 	text-decoration: none;
 	cursor: pointer;
@@ -462,6 +355,7 @@
 #company-expand {
 	display: none;
 }
+/*---------------------Media queries----------------------*/
 @media (max-width: 768px) {
 	.header__navbar {
 		display: block;
@@ -469,6 +363,7 @@
 		top: 100%;
 		left: 0;
 		right: 0;
+
 		background: rgba(255, 255, 255, 0.75);
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 		display: none;
@@ -477,8 +372,7 @@
 		display: block;
 		display: none;
 	}
-	.nav-menu__item,
-	.button {
+	.nav-menu__item {
 		display: block;
 	}
 	.menu-icon {
@@ -522,9 +416,6 @@
 	.info-link {
 		display: block;
 		text-align: center;
-	}
-	.login-register-button {
-		display: none;
 	}
 	/*-------------footer expand feature------------*/
 	.content-menu,
@@ -582,58 +473,16 @@
 		height: 86.9rem;
 		height: auto;
 	}
-	.travel-point__achievement {
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		gap: 3.2rem;
-	}
-
-	.key-features--list {
-		display: flex;
-		gap: 3.2rem;
-	}
 	.list__info {
 		margin-top: 1.6rem;
-	}
-	.list__header {
-		margin: 0;
-	}
-	.list__desc {
-		margin-top: 1.6rme;
-	}
-	.banner__button {
-		display: flex;
-		gap: 0.8rem;
-		margin-bottom: 6.4rem;
-	}
-	.banner .button-purple {
-		margin: 0;
-		max-width: 14.1rem;
-		height: 4.9rem;
-		padding: 1.6rem 3.2rem;
-		text-align: center;
-	}
-	.banner .button-white {
-		margin: 0;
-		max-width: 18.1rem;
-		height: 5.6rem;
-		padding: 1.6rem 1.6rem;
 	}
 }
 /*-----tablet portrait mode--------*/
 @media (min-width: 469px) and (max-width: 768px) {
-	.container {
-		padding: 0 3.2rem;
-	}
 	.arrow {
 		position: relative;
 		top: 33%;
 		left: 33%;
-	}
-	.destination-card__image {
-		min-width: 100%;
-		height: auto;
 	}
 	.category__desc {
 		padding: 0;
@@ -641,29 +490,14 @@
 	.key-features--list {
 		padding-left: 0;
 	}
-	.list__desc {
-		margin-right: 0;
-	}
 	.form-input {
 		padding: 0;
-	}
-	.banner__button {
-		justify-content: center;
 	}
 }
 /*-----tablet lanscape mode or large tablet ----*/
 @media (min-width: 769px) and (max-width: 1025px) {
-	.container {
-		min-width: 90rem;
-		padding: 0 6.4rem;
-		overflow-x: hidden;
-		margin: auto 0;
-	}
 	.header {
 		padding: 0 6.4rem 3.2rem;
-	}
-	.banner__button {
-		justify-content: center;
 	}
 	.header__navbar {
 		display: block;
@@ -671,6 +505,7 @@
 		top: 100%;
 		left: 0;
 		right: 0;
+
 		min-height: auto;
 		background: rgba(255, 255, 255, 0.75);
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -702,45 +537,17 @@
 	.expand-image {
 		display: initial;
 	}
-	.category__heading {
-		font-size: 2.3rem;
-		line-height: 2.76rem;
-	}
-	.category__sub-heading {
-		font-size: 4rem;
-		line-height: 4.8rem;
-	}
-	.category__desc {
-		font-size: 1.8rem;
-		line-height: 2.88rem;
-	}
-	.destination-card {
-		flex-direction: row;
-	}
-	.destination .arrow-button {
-		justify-content: center;
-	}
 	.service-card {
 		flex-direction: row;
 		padding: 0 6.4rem;
 	}
-	.service-card--template__heading {
-		font-size: 2.8rem;
-		line-height: 3.36rem;
-	}
-	.service-card--template__icon {
-		margin-top: 6.4rem;
-		margin-bottom: 6.4rem;
-	}
-	.service-card--template__heading {
-		padding: 0 6.4rem;
-	}
-	.service-card--template__desc {
-		padding: 0 6.4rem 1.6rem;
-	}
 	.travel-agency {
 		gap: 2.7rem;
 		margin: 6.4rem 9.6rem;
+	}
+	.travel-point,
+	.key-features {
+		padding: 0 6.4rem;
 	}
 	.testimonial {
 		background: url("../assets/images/special-images/testimonials-layout.png") no-repeat;
@@ -758,45 +565,19 @@
 		line-height: 3.68rem;
 		opacity: 0.75;
 	}
-	.arrow {
-		top: 38%;
-		left: 38%;
-	}
-	.testimonial .arrow-button {
-		justify-content: space-between;
-	}
-	.arrow-button__left-dir,
-	.arrow-button__right-dir {
-		width: 10rem;
-		height: 10rem;
-	}
-	.testimonial .arrow-button__left-dir,
-	.testimonial .arrow-button__right-dir {
-		margin-top: -39rem;
-	}
 	.subscription__form {
 		flex-direction: row;
 		gap: 3.2rem;
 		margin: 0 6.4rem 6.4rem;
-	}
-	.subscription .button-purple {
-		width: 23.5rem;
-		min-height: 9.6rem;
-		border-radius: 3.2rem;
 	}
 	.subscription {
 		max-width: 90rem;
 		padding: 0;
 		margin: 0 6.4rem;
 	}
-	.destination-card__image {
-		max-width: 100%;
-		height: auto;
-	}
 	.subscription .category__sub-heading {
 		padding: 0 6.4rem;
 	}
-
 	.form-input {
 		min-height: 9.6rem;
 		border-radius: 3.2rem;
@@ -806,116 +587,17 @@
 		font-size: 2.3rem;
 		line-height: 2.76rem;
 	}
-	.subscription .button-purple {
-		font-size: 2.3rem;
-		line-height: 2.76rem;
-	}
 	.brand__desc {
 		font-size: 2.3rem;
 		line-height: 3.68rem;
 	}
-	.achievement--stats {
-		min-width: 40rem;
-		height: auto;
-	}
-	.travel-point,
-	.key-features {
-		padding: 0 6.4rem;
-	}
 }
 /*-----desktop and laptop--------*/
 @media (min-width: 1026px) {
-	.container {
-		min-width: 120rem;
-		padding: 0 12.8rem;
-	}
 	.header {
 		padding: 0 12.8rem;
 		margin-top: 3.2rem;
 		margin-bottom: 1.6rem;
-	}
-	.arrow {
-		position: relative;
-		top: 38%;
-		left: 38%;
-	}
-	.arrow-button__left-dir,
-	.arrow-button__right-dir {
-		width: 10rem;
-		height: 10rem;
-		margin-top: -44rem;
-	}
-	.destination-card {
-		flex-direction: row;
-		gap: 3.2rem;
-	}
-	.destination-card__image {
-		height: auto;
-	}
-	.service-card {
-		min-width: 110rem;
-		flex-direction: row;
-		gap: 2.1rem;
-	}
-	.service-card--template {
-		flex: 1;
-	}
-	.travel-agency {
-		justify-content: space-between;
-	}
-	.category__heading {
-		font-size: 2.3rem;
-		line-height: 2.76rem;
-	}
-	.category__sub-heading {
-		font-size: 4.4rem;
-		line-height: 5.28rem;
-		margin-bottom: 2.4rem;
-	}
-	.category__desc {
-		padding: 0;
-		font-size: 1.8rem;
-		line-height: 2.88rem;
-		margin-bottom: 7.2rem;
-	}
-	.key-features,
-	.banner {
-		display: flex;
-		flex-direction: row-reverse;
-	}
-	.travel-point {
-		margin-top: 7.5rem;
-		padding: 0 12.8rem 0 0;
-		display: flex;
-		flex-direction: row;
-	}
-	.key-features {
-		gap: 7rem;
-		padding: 0 0 0 12.8rem;
-	}
-	.achievement--stats {
-		min-width: 20.4rem;
-	}
-	.travel-point__image {
-		padding-top: 0;
-	}
-	.travel-point .category {
-		max-width: 44.1rem;
-		min-height: 66.7rem;
-		margin-top: -2.4rem;
-	}
-	.travel-point__achievement {
-		gap: 2.8rem;
-	}
-	.key-features .category {
-		max-width: 54.9rem;
-	}
-	.key-features .category__desc {
-		margin-bottom: 8.8rem;
-		padding-left: 0;
-	}
-	.key-features__image {
-		margin-top: 6.4rem;
 	}
 	.banner--content {
 		max-width: 41.2rem;
@@ -938,29 +620,8 @@
 		margin: 3.2rem 0 1.6rem;
 		text-align: left;
 	}
-	.button-pink {
-		margin: 0;
-	}
 	.banner--content__desc {
 		margin: 0;
-	}
-	.banner__button {
-		justify-content: flex-start;
-		margin-top: 3.2rem;
-	}
-	.service-card--template {
-		max-width: 35rem;
-		min-height: 44.3rem;
-	}
-	.service-card--template__icon {
-		margin-top: 5.6rem;
-		margin-bottom: 7.2rem;
-	}
-	.service-card--template__heading {
-		margin-bottom: 2.8rem;
-	}
-	.service-card--template__desc {
-		padding: 0.8rem 6.4rem;
 	}
 	.service {
 		max-width: 153.6rem;
@@ -970,29 +631,52 @@
 		padding-left: 12.8rem;
 		margin: 12rem 0;
 	}
+	.service-card {
+		min-width: 110rem;
+		flex-direction: row;
+		gap: 2.1rem;
+	}
 	.service .category {
 		width: 100%;
 		min-width: 44.4rem;
 		min-height: 15rem;
 		margin-top: 7.2rem;
 	}
-	.category__heading,
-	.category__sub-heading,
-	.category__desc {
-		text-align: left;
+	.travel-agency {
+		justify-content: space-between;
 	}
-	.category__sub-heading {
-		margin-top: 0;
+	.key-features,
+	.banner {
+		display: flex;
+		flex-direction: row-reverse;
 	}
-	.destination .arrow-button__left-dir,
-	.destination .arrow-button__right-dir {
-		margin-top: 0;
+	.travel-point {
+		margin-top: 7.5rem;
+		padding: 0 12.8rem 0 0;
+		display: flex;
+		flex-direction: row;
 	}
-	.destination .arrow-button {
-		justify-content: flex-end;
-		gap: 3.2rem;
-		margin-bottom: 0;
-		margin-right: 1.6rem;
+	.key-features {
+		gap: 7rem;
+		padding: 0 0 0 12.8rem;
+	}
+	.key-features__image {
+		margin-top: 6.4rem;
+	}
+	.key-features .category {
+		max-width: 54.9rem;
+	}
+	.key-features .category__desc {
+		margin-bottom: 8.8rem;
+		padding-left: 0;
+	}
+	.travel-point__image {
+		padding-top: 0;
+	}
+	.travel-point .category {
+		max-width: 44.1rem;
+		min-height: 66.7rem;
+		margin-top: -2.4rem;
 	}
 	.destination__intro {
 		display: flex;
@@ -1002,12 +686,6 @@
 	}
 	.destination .category__sub-heading {
 		margin-bottom: 6rem;
-	}
-	.key-features--list {
-		padding-left: 0;
-	}
-	.list__desc {
-		margin-right: 0;
 	}
 	.subscription .category__heading,
 	.testimonial-card .category__heading,
@@ -1028,21 +706,8 @@
 		max-width: 87.2rem;
 		min-height: 64.5rem;
 	}
-	.testimonial .arrow-button {
-		justify-content: space-around;
-		gap: 48%;
-	}
-	.subscription {
-		padding: 0;
-		margin: 16.8rem 12.8rem 3.2rem;
-	}
 	.testimonial .category__heading {
 		margin-top: 4rem;
-	}
-	.subscription .category__sub-heading {
-		font-size: 5.5rem;
-		line-height: 6.6rem;
-		padding: 0 12.8rem;
 	}
 	.testimonial-card__photo {
 		margin-top: 4.8rem;
@@ -1054,6 +719,16 @@
 		line-height: 3.68rem;
 		opacity: 0.75;
 	}
+	.subscription {
+		padding: 0;
+		margin: 16.8rem 12.8rem 3.2rem;
+	}
+	.subscription .category__sub-heading {
+		margin-bottom: 2.4rem;
+		font-size: 5.5rem;
+		line-height: 6.6rem;
+		padding: 0 12.8rem;
+	}
 	.subscription__form {
 		flex-direction: row;
 		gap: 3.2rem;
@@ -1062,24 +737,12 @@
 	.subscription .category__heading {
 		margin-bottom: 3.2rem;
 	}
-	.subscription .category__sub-heading {
-		margin-bottom: 2.4rem;
-	}
-	.subscription .button-purple {
-		width: 23.5rem;
-		min-height: 9.6rem;
-		border-radius: 3.2rem;
-	}
 	.form-input {
 		min-height: 9.6rem;
 		border-radius: 3.2rem;
 		padding: 0;
 	}
 	.form-input::placeholder {
-		font-size: 2.3rem;
-		line-height: 2.76rem;
-	}
-	.subscription .button-purple {
 		font-size: 2.3rem;
 		line-height: 2.76rem;
 	}

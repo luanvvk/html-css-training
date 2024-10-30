@@ -36,3 +36,20 @@ body {
 	min-height: auto;
 	padding: 0 1.5rem;
 }
+@media (min-width: 469px) and (max-width: 768px) {
+	.container {
+		padding: 0 3.2rem;
+	}
+}
+@media (min-width: 769px) and (max-width: 1025px) {
+	.container {
+		min-width: 90rem;
+		padding: 0 6.4rem;
+	}
+}
+@media (min-width: 1026px) {
+	.container {
+		min-width: 120rem;
+		padding: 0 12.8rem;
+	}
+}
