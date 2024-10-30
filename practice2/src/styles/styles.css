@@ -3,11 +3,6 @@
 .key-features__image {
 	width: 100%;
 }
-.banner__image {
-	display: block;
-	min-height: 36.6rem;
-	margin: auto;
-}
 /*--------------------------Header------------------------------*/
 .header {
 	position: sticky;
@@ -18,7 +13,6 @@
 	padding: 0 1.5rem;
 }
 .logo {
-	padding-right: 3.2rem;
 	display: inline-flex;
 	max-width: 14.2rem;
 	min-height: 4rem;
@@ -43,13 +37,13 @@
 .nav-menu {
 	display: flex;
 	justify-content: space-between;
-	min-width: 43rem;
+	max-width: 43rem;
 	min-height: 1.7rem;
-
+	gap: 6.4rem;
 	list-style: none;
 	text-align: center;
-	margin-left: -21rem;
 	padding-left: 0;
+	margin-top: 1.2rem;
 }
 .menu-icon {
 	display: none;
@@ -72,7 +66,12 @@
 	text-transform: capitalize;
 	text-align: center;
 	text-decoration: none;
+	cursor: pointer;
+	opacity: 0.5;
 }
+.nav-menu__item:hover {
+	opacity: 1;
+} 
 /*--------------------------Banner---------------------------*/
 .banner--content {
 	display: flex;
@@ -98,7 +97,11 @@
 	margin-top: 0.8rem;
 }
 .banner__image {
+	display: block;
+	margin: auto;
 	margin-top: 5.2rem;
+	width: 100%;
+	height: auto;
 }
 /*-----------------------travel-agency-------------------------*/
 .travel-agency {
@@ -109,7 +112,7 @@
 	margin: 6.4rem 0;
 }
 .travel-agency__img {
-	min-width: 7rem;
+	width: 100%;
 	height: auto;
 }
 /*--------service-----------*/
@@ -137,9 +140,8 @@
 	margin-top: 3.2rem;
 	display: block;
 	margin: auto;
-}
-.travel-point__image {
-	min-height: 31.9rem;
+	width: 100%;
+	height: auto;
 }
 .travel-point__achievement {
 	margin-top: 3.2rem;
@@ -150,9 +152,13 @@
 .achievement--stats__desc {
 	margin-top: 0;
 }
+.travel__decor-image {
+	display: none;
+}
 /*------key feature-------*/
 .key-features__image {
-	min-height: 43.9rem;
+	width: 100%;
+	height: auto;
 	padding: 0 3.9rem;
 }
 .key-features .category__desc {
@@ -221,7 +227,7 @@
 }
 .footer__image--curve {
 	position: absolute;
-	margin-top: -27rem;
+	margin-top: -23rem;
 	right: 0;
 	max-width: 12.8rem;
 	height: auto;
@@ -353,6 +359,10 @@
 	text-decoration: none;
 	cursor: pointer;
 }
+.info-link:hover {
+	opacity: 1;
+	font-weight: 600;
+}
 .footer__permalinks li {
 	margin-bottom: 1.6rem;
 }
@@ -368,6 +378,12 @@
 	color: rgba(25, 24, 37, 0.75);
 	font-style: normal;
 	text-decoration: none;
+}
+.tel:hover,
+.email:hover,
+.address:hover {
+	opacity: 1;
+	font-weight: 600;
 }
 #meet-us-expand,
 #contact-expand,
@@ -486,13 +502,10 @@
 	}
 	.travel-point__image {
 		width: 100%;
-		min-height: 69.7rem;
 		height: auto;
 	}
 	.key-features__image {
-		max-width: 100%;
-		width: 69.3rem;
-		height: 86.9rem;
+		width: 100%;
 		height: auto;
 	}
 	.list__info {
@@ -611,7 +624,7 @@
 			margin-top: 6.4rem;
 		}
 	.testimonial {
-		background: url("../assets/images/special-images/testimonials-layout.png") no-repeat;
+		background: url("../assets/images/special-images/desktop-images/testimonials-layout.png") no-repeat;
 		background-position: 45% 74%;
 		margin-bottom: 6.4rem;
 		padding: 4rem 8.4rem;
@@ -705,11 +718,6 @@
 		margin-top: 1.6rem;
 		gap: 1.6rem;
 	}
-	.banner__image,
-	.travel-point__image,
-	.key-features__image {
-		min-height: 78rem;
-	}
 	.banner__image {
 		margin-top: 6.4rem;
 	}
@@ -768,15 +776,18 @@
 	.key-features .category__desc {
 		margin-bottom: 8.8rem;
 		padding-left: 0;
+		padding-right: 3.8rem;
 	}
 	.travel-point__image {
 		padding-top: 0;
-		max-width: 87.1rem;
 	}
 	.travel-point .category {
 		max-width: 44.1rem;
 		min-height: 66.7rem;
 		margin-top: -2.4rem;
+	}
+	.travel-point .category__desc {
+		padding-right: 1.6rem;
 	}
 	.destination__intro {
 		display: flex;
@@ -795,7 +806,7 @@
 	.testimonial {
 		max-width: 160rem;
 		width: 100%;
-		background: url("../assets/images/special-images/testimonials-layout.png") no-repeat;
+		background: url("../assets/images/special-images/desktop-images/testimonials-layout.png") no-repeat;
 		background-position: 20% 50%;
 		padding: 8rem 0 0;
 		margin-top: -4.8rem;
@@ -884,5 +895,11 @@
 	.company-info li,
 	.content-menu li {
 		margin-bottom: 3.2rem;
+	}
+	.travel__decor-image {
+		display: initial;
+		position: absolute;
+		margin-left: 28.8rem;
+		margin-top: -14rem;
 	}
 }
