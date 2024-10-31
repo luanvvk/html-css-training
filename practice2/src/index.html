@@ -526,11 +526,19 @@
 								</li>
 							</ul>
 						</div>
-						<img
-							class="footer__image footer__image--curve"
-							src="./assets/images/special-images/desktop-images/subscribe-right.png"
-							alt="Decor image"
-						/>
+						<picture">
+							<source
+								srcset="./assets/images/special-images/desktop-images/footer-right.png"
+								media="(min-width: 1024px)"
+							/>
+							<source srcset="./assets/images/special-images/tablet-images/subscribe-right.png" />
+							<img
+								class="footer__image--curve"
+								src="./assets/images/special-images/tablet-images/subscribe-right.png"
+								loading="lazy"
+								alt="Decor image"
+							/>
+						</picture>
 					</div>
 				</div>
 			</footer>

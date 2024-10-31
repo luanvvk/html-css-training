@@ -227,8 +227,8 @@
 }
 .footer__image--curve {
 	position: absolute;
-	margin-top: -23rem;
-	right: 0;
+	margin-top: -55rem;
+	margin-left: 19.8rem;
 	max-width: 12.8rem;
 	height: auto;
 }
@@ -690,9 +690,8 @@
 		line-height: 3.68rem;
 	}
 	.footer__image--curve {
-		margin-top: -40rem;
-		width: 8rem;
-		height: 35rem;
+		margin-top: -71rem;
+		right:0;
 	}
 	.company__content, .company-contact-info, .meet-us__content {
 		min-width: 27.7rem;;
@@ -798,11 +797,6 @@
 	.destination .category__sub-heading {
 		margin-bottom: 6rem;
 	}
-	.subscription .category__heading,
-	.testimonial-card .category__heading,
-	.testimonial-card .category__sub-heading {
-		text-align: center;
-	}
 	.testimonial {
 		max-width: 160rem;
 		width: 100%;
@@ -830,10 +824,15 @@
 		line-height: 3.68rem;
 		opacity: 0.75;
 	}
+	.subscription .category__heading,
+	.testimonial-card .category__heading,
+	.testimonial-card .category__sub-heading {
+		text-align: center;
+	}
 	.subscription {
 		padding: 0;
 		margin: 16.8rem 12.8rem 3.2rem;
-	}
+		}
 	.subscription .category__heading {
 		padding-top: 0;
 		margin-top: 1.6rem;
