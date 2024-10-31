@@ -336,8 +336,8 @@
 .list__icon {
 	border-radius: 3.2rem;
 	padding: 3.2rem;
-	max-width: 100px;
-	height: auto;
+	max-width: 10rem;
+	height: 10rem;
 }
 .location {
 	background-color: var(--light-coral);
