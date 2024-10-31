@@ -757,10 +757,11 @@
 		width: 100%;
 		min-width: 44.4rem;
 		min-height: 15rem;
-		margin-top: 7.2rem;
+		margin-top: 8.2rem;
 	}
 	.travel-agency {
 		justify-content: space-between;
+		margin: 2rem 0 0;
 	}
 	.key-features,
 	.banner {
