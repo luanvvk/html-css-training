@@ -4,11 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Travlog</title>
-		<link rel="stylesheet" href="./styles/normalize.css" />
-		<link rel="stylesheet" href="./styles/typography.css" />
-		<link rel="stylesheet" href="./styles/base.css" />
-		<link rel="stylesheet" href="./styles/component.css" />
-		<link rel="stylesheet" href="./styles/styles.css" />
+		<link rel="stylesheet" href="./styles/main.css">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -26,7 +22,7 @@
 						<li><a class="nav-menu__item" href="javascript:void(0)">contact</a></li>
 					</ul>
 				</nav>
-				<ul class="login-register-button">
+				<ul class="authenticated-button">
 					<li><a class="button button-white" href="javascript:void(0)">login</a></li>
 					<li><a class="button button-purple" href="javascript:void(0)">signup</a></li>
 				</ul>
@@ -34,12 +30,12 @@
 			<section class="banner container">
 				<picture>
 					<source
-						srcset="./assets/images/background-images/mobile-images/banner.png"
-						media="(max-width: 468px)"/>
-					<source srcset="./assets/images/background-images/tablet-desktop-images/banner.png" />
+						srcset="./assets/images/background-images/tablet-desktop-images/banner.png"
+						media="(min-width: 468px)"/>
+					<source srcset="./assets/images/background-images/mobile-images/banner.png" />
 					<img
 						class="banner__image"
-						src="./assets/images/background-images/tablet-desktop-images/banner.png"
+						src="./assets/images/background-images/mobile-images/banner.png"
 						loading="lazy"
 						alt="Travel around the world"/>
 				</picture>
@@ -239,12 +235,12 @@
 			<section class="travel-point">
 				<picture>
 					<source
-						srcset="./assets/images/background-images/mobile-images/travel-point.png"
-						media="(max-width: 468px)"/>
-					<source srcset="./assets/images/background-images/tablet-desktop-images/travel-point.png" />
+						srcset="./assets/images/background-images/tablet-desktop-images/travel-point.png"
+						media="(min-width: 468px)"/>
+					<source srcset="./assets/images/background-images/mobile-images/travel-point.png" />
 					<img
 						class="travel-point__image"
-						src="./assets/images/background-images/tablet-desktop-images/travel-point.png"
+						src="./assets/images/background-images/mobile-images/travel-point.png"
 						loading="lazy"
 						alt="top destinations in thw world"/>
 				</picture>
@@ -280,12 +276,12 @@
 			<section class="key-features">
 				<picture>
 					<source
-						srcset="./assets/images/background-images/mobile-images/key-feature.png"
-						media="(max-width: 468px)"/>
-					<source srcset="./assets/images/background-images/tablet-desktop-images/key-feature.png" />
+						srcset="./assets/images/background-images/tablet-desktop-images/key-feature.png"
+						media="(min-width: 468px)"/>
+					<source srcset="./assets/images/background-images/mobile-images/key-feature.png" />
 					<img
 						class="key-features__image"
-						src="./assets/images/background-images/tablet-desktop-images/key-feature.png"
+						src="./assets/images/background-images/mobile-images/key-feature.png"
 						loading="lazy"
 						alt="top destinations in thw world"/>
 				</picture>
@@ -395,10 +391,10 @@
 					<h3 class="category__sub-heading">
 						Prepare yourself &#38; let&rsquo;s explore the beauty of the world
 					</h3>
-					<div class="subscription__form">
+					<form class="subscription__form">
 						<input class="form-input" type="email" name="email-address" placeholder="your email" />
 						<button class="button button-purple" type="submit">subscribe</button>
-					</div>
+					</form>
 				</div>
 			</section>
 

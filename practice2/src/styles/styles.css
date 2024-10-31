@@ -215,6 +215,7 @@
 .testimonials-card__review {
 	display: block;
 	margin: auto;
+	cursor: pointer;
 }
 .testimonial .category__sub-heading {
 	margin-bottom: 6.4rem;
