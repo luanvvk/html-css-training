@@ -1,8 +1,3 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 :root {
 	--black-blue: #191825;
 	--dark-blue: #222831;
@@ -12,29 +7,49 @@
 	--light-coral: #FF5722;
 	--purple: #5D50C6;
 	--yellow: #FACD49;
-    --shadow-color: #0000001A;
+  --shadow-color: #0000001A;
 
 	--font-primary: Circular Std;
 	--font-secondary: Inter;
 }
-
+* {	
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 html,
 body {
 	width: 100%;
 	overflow-x: hidden;
-	overflow-y: hidden;
 	margin: 0 auto;
-	max-width: 1440px;
 	font-size: 62.5%;
-}
-.container {
-	max-width: 120rem;
-	width: 100%;
-	margin: 0 auto;
 	min-height: auto;
 }
-.flex-box {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.wrapper {
+	max-width: 1440px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+.container {
+	max-width: 40rem;
+	max-width: 100%;
+	margin: 0 auto;
+	min-height: auto;
+	padding: 0 1.5rem;
+}
+@media (min-width: 469px) and (max-width: 768px) {
+	.container {
+		padding: 0 3.2rem;
+	}
+}
+@media (min-width: 769px) and (max-width: 1025px) {
+	.container {
+		padding: 0 6.4rem;
+	}
+}
+@media (min-width: 1026px) {
+	.container{	
+	padding: 0 12.8rem;
+	}
 }
