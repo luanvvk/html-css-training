@@ -16,7 +16,6 @@
 	display: inline-flex;
 	max-width: 14.2rem;
 	min-height: 4rem;
-	margin-right: 9.6rem;
 
 	font-family: var(--font-primary);
 	font-size: 2.4rem;
@@ -35,9 +34,13 @@
 	min-height: 4rem;
 }
 /*------------------------------header__navbar-----------------------------*/
+.header__navbar {
+	display: flex;
+	justify-content: center;
+	flex: 1;
 .nav-menu {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	max-width: 43rem;
 	min-height: 1.7rem;
 
@@ -716,7 +719,6 @@
 	}
 	.nav-menu {
 		gap: 6.4rem;
-		margin-left: -9.6rem;
 	}
 	.banner--content {
 		max-width: 41.2rem;
@@ -864,7 +866,6 @@
 		border-radius: 3.2rem;
 		padding: 0;
 		margin-top: 3.6rem;
-
 	}
 	.form-input::placeholder {
 		font-size: 2.3rem;
