@@ -12,11 +12,16 @@
 	flex-basis: auto;
 	padding: 0 1.5rem;
 }
+
 .logo {
 	display: inline-flex;
 	max-width: 14.2rem;
 	min-height: 4rem;
+	text-decoration: none;
+}
 
+.header__brand-name{
+	margin-top: 0;
 	font-family: var(--font-primary);
 	font-size: 2.4rem;
 	font-weight: 900;
@@ -24,14 +29,12 @@
 	line-height: 4rem;
 	text-align: left;
 	color: var(--black-blue);
-	text-decoration: none;
-	}
-.logo::before {
-	content: url("../assets/images/icons/logo.svg");
-	display: inline-block;
+}
+
+.header__brand-logo {
+	position: relative;
+	bottom: 1rem;
 	margin-right: 1.6rem;
-	width: 4rem;
-	min-height: 4rem;
 }
 /*------------------------------header__navbar-----------------------------*/
 .header__navbar {
@@ -39,6 +42,7 @@
 	justify-content: center;
 	flex: 1;
 }
+
 .nav-menu {
 	display: flex;
 	justify-content: center;
@@ -50,12 +54,15 @@
 	padding-left: 0;
 	margin-top: 1.2rem;
 }
+
 .menu-icon {
 	display: none;
 }
+
 #menu-bar {
 	display: none;
 }
+
 .nav-menu__item {
 	width: 100%;
 	min-height: 1.7rem;
@@ -74,6 +81,7 @@
 	cursor: pointer;
 	opacity: 0.5;
 }
+
 .nav-menu__item:hover {
 	opacity: 1;
 } 
@@ -84,6 +92,7 @@
 	justify-content: space-around;
 	gap: 1.6rem;
 }
+
 .banner--content__header {
 	font-family: var(--font-primary);
 	font-size: 4rem;
@@ -94,13 +103,16 @@
 	color: var(--black);
 	margin: 0;
 }
+
 .pink-txt {
 	color: var(--pink);
 }
+
 .banner--content__desc {
 	padding: 0;
 	margin-top: 0.8rem;
 }
+
 .banner__image {
 	display: block;
 	margin: auto;
@@ -116,23 +128,28 @@
 	gap: 2.4rem;
 	margin: 6.4rem 0;
 }
+
 .travel-agency__img {
 	width: 100%;
 	height: auto;
 }
 /*--------service-----------*/
-.service-card {
+.service-cards {
 	display: flex;
+	justify-content: space-evenly;
 	flex-direction: column;
 	gap: 1.6rem;
 }
+
 .service .category__sub-heading {
 	margin-bottom: 2.8rem;
 }
+
 /*------Destination---------*/
 .destination .category__heading {
 	margin-bottom: 1.6rem;
 }
+
 .destination .category__sub-heading {
 	margin-bottom: 3rem;
 }
@@ -141,6 +158,7 @@
 	margin: 10rem 1.5rem;
 	padding: 0;
 }
+
 .travel-point__image {
 	margin-top: 3.2rem;
 	display: block;
@@ -148,16 +166,20 @@
 	width: 100%;
 	height: auto;
 }
-.travel-point__achievement {
+
+.travel-point__achievements {
 	margin-top: 3.2rem;
 }
-.achievement--stats__number {
+
+.achievement__number {
 	margin-bottom: 0;
 }
-.achievement--stats__desc {
+
+.achievement__desc {
 	margin-top: 0;
 }
-.travel__decor-image {
+
+.travel-point__decor-image {
 	display: none;
 }
 /*------key feature-------*/
@@ -166,10 +188,12 @@
 	height: auto;
 	padding: 0 3.9rem;
 }
+
 .key-features .category__desc {
 	padding: 0 5.8rem;
 	margin-bottom: 3.2rem;
 }
+
 .key-features__image {
 	margin-top: 3.2rem;
 	display: block;
@@ -179,11 +203,15 @@
 .testimonial-card {
 	min-height: 66.6ren;
 }
+
 .testimonial-card__photo {
 	display: block;
 	margin: auto;
 }
+
 .testimonial-card__name {
+	margin-top: 6rem;
+	margin-bottom: 3rem;
 	font-family: var(--font-primary);
 	font-size: 2.8rem;
 	font-weight: 700;
@@ -192,14 +220,14 @@
 	text-align: center;
 	text-transform: capitalize;
 	color: var(--light-coral);
-	margin-top: 6rem;
-	margin-bottom: 3rem;
 }
+
 .testimonial-card__hobbie {
 	color: rgba(25, 24, 37, 0.75);
 	font-size: 2.3rem;
 	line-height: 2.76rem;
 }
+
 .testimonials-card__feedback {
 	font-family: var(--font-primary);
 	font-size: 1.8rem;
@@ -211,12 +239,17 @@
 	margin-top: 6.4rem;
 	margin-bottom: 6.4rem;
 }
+
 .swipe-icon,
 .testimonials-card__review {
 	display: block;
 	margin: auto;
+}
+
+.swipe-icon {
 	cursor: pointer;
 }
+
 .testimonial .category__sub-heading {
 	margin-bottom: 6.4rem;
 }
@@ -226,27 +259,33 @@
 	border-radius: 3.2rem;
 	background-color: rgba(250, 205, 71, 0.08);
 }
+
 .subscription__image--triangle {
 	position: relative;
 	margin-top: -6.4rem;
 	margin-left: -3.2rem;
 }
+
 .footer__image--curve {
 	position: absolute;
-	margin-top: -25rem;
+	right: 0;
+	margin-top: -16rem;
 	margin-left: 4.8rem;
 	max-width: 12.8rem;
 	height: auto;
 }
+
 .subscription__content {
 	min-height: 35.2rem;
 	flex-direction: column;
 	justify-content: space-evenly;
 }
+
 .subscription .category__heading {
 	padding: 06.4rem 4.8rem 0 4.8rem;
 	margin-top: 0;
 }
+
 .subscription .category__sub-heading {
 	min-height: 11.4rem;
 	text-align: center;
@@ -254,6 +293,7 @@
 	margin-bottom: 5.8rem;
 	margin-top: 3.2rem;
 }
+
 .subscription__form {
 	display: flex;
 	flex-direction: column;
@@ -261,6 +301,7 @@
 	gap: 3.2rem;
 	min-height: 17.1rem;
 }
+
 .form-input {
 	width: 80%;
 	margin: auto;
@@ -274,6 +315,7 @@
 	border: none;
 	font-size: 2.3rem;
 }
+
 .form-input::placeholder {
 	-moz-padding-left: 8.8rem;
 	padding-left: 8.8rem;
@@ -295,9 +337,11 @@
 	min-height: 43.4rem;
 	margin-top: 12rem;
 }
+
 .footer .logo {
 	margin-top: -0.4rem;
 }
+
 .brand__desc {
 	margin-bottom: 3.2rem;
 	font-family: var(--font-primary);
@@ -309,34 +353,41 @@
 	color: var(--black-blue);
 	opacity: 0.5;
 }
+
 .footer__permalinks {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
+
 .expand-image {
 	display: none;
 }
+
 .company-info,
 .company-contact-info,
 .content-menu {
 	padding: 0;
 }
+
 .permalinks--company,
 .permalinks--contact,
 .permalinks--meet-us {
 	display: flex;
 	flex-direction: column;
 }
+
 .brand-socials {
 	display: flex;
 	list-style-type: none;
 	gap: 3.2rem;
 }
+
 .brand-socials__link {
 	max-width: 32px;
 	height: auto;
 }
+
 .permalinks--company-info {
 	margin: 0 0 1.6rem 0;
 	font-family: var(--font-primary);
@@ -347,6 +398,7 @@
 	text-align: left;
 	text-transform: capitalize;
 }
+
 .company-info,
 .company-contact-info,
 .content-menu {
@@ -354,6 +406,7 @@
 	text-align: left;
 	padding: none;
 }
+
 .info-link {
 	font-family: var(--font-secondary);
 	font-size: 1.8rem;
@@ -366,13 +419,16 @@
 	text-decoration: none;
 	cursor: pointer;
 }
+
 .info-link:hover {
 	opacity: 1;
 	font-weight: 600;
 }
+
 .footer__permalinks li {
 	margin-bottom: 1.6rem;
 }
+
 .tel,
 .email,
 .address {
@@ -386,12 +442,14 @@
 	font-style: normal;
 	text-decoration: none;
 }
+
 .tel:hover,
 .email:hover,
 .address:hover {
 	opacity: 1;
 	font-weight: 600;
 }
+
 #meet-us-expand,
 #contact-expand,
 #company-expand {
@@ -410,48 +468,60 @@
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 		display: none;
 	}
+
 	.nav-menu {
 		display: block;
 		display: none;
 	}
+
 	.nav-menu__item {
 		display: block;
 	}
+
 	.menu-icon {
 		display: initial;
 	}
+
 	#menu-bar:checked ~ .header__navbar,
 	.nav-menu {
 		display: initial;
 	}
+
 	.testimonial,
 	.travel-point,
 	.service {
 		padding: 0;
 		margin: 6.4rem 1.5rem;
 	}
+
 	.subscription {
 		padding: 0;
 		margin: -3.2rem 1.5rem 0;
 	}
+
 	.expand-image {
 		display: initial;
 	}
+
 	.footer__permalinks {
 		flex-direction: column;
 	}
+
 	.footer {
 		margin-top: 3.2rem;
 	}
+
 	.permalinks--company-info {
 		margin-bottom: 6.4rem;
 	}
+
 	.permalinks--company,
 	.permalinks--contact,
 	.permalinks--meet-us {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+
 	.tel,
 	.email,
 	.address,
@@ -469,6 +539,7 @@
 		justify-content: space-between;
 		text-align: center;
 	}
+
 	.meet-us__content,
 	.contact__content,
 	.company__content {
@@ -480,21 +551,25 @@
 		background: rgba(255, 255, 255, 1);
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 	}
+
 	#meet-us-expand:checked ~ .meet-us__content,
 	.content-menu,
 	.content-menu li {
 		display: initial;
 	}
+
 	#contact-expand:checked ~ .contact__content,
 	.company-contact-info,
 	.company-contact-info li {
 		display: initial;
 	}
+
 	#company-expand:checked ~ .company__content,
 	.company-info,
 	.company-info li {
 		display: initial;
 	}
+
 	.footer__image--curve,
 	.subscription__image--triangle {
 		display: none;
@@ -507,15 +582,18 @@
 		height: 71.3rem;
 		height: auto;
 	}
+
 	.travel-point__image {
 		width: 100%;
 		height: auto;
 	}
+
 	.key-features__image {
 		width: 100%;
 		height: auto;
 	}
-	.list__info {
+
+	.key-feature__info {
 		margin-top: 1.6rem;
 	}
 }
@@ -524,17 +602,17 @@
 	.header {
 		padding: 0 3.2rem;
 	}
+
 	.arrow {
 		position: relative;
 		top: 33%;
 		left: 33%;
 	}
+
 	.category__desc {
 		padding: 0;
 	}
-	.key-features--list {
-		padding-left: 0;
-	}
+
 	.form-input {
 		padding: 0;
 	}
@@ -544,6 +622,7 @@
 	.header {
 		padding: 0 6.4rem 3.2rem;
 	}
+
 	.header__navbar {
 		display: block;
 		position: absolute;
@@ -556,82 +635,101 @@
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 		display: none;
 	}
+
 	.nav-menu {
 		display: block;
 		display: none;
 		gap: 3.2rem;
 	}
+
 	.nav-menu__item {
 		display: block;
 	}
+
 	.menu-icon {
 		position: absolute;
 		top: 0;
 		left: 6.4rem;
 		display: initial;
 	}
+
 	.header .logo {
 		position: absolute;
 		top: 0;
 		left: 34%;
 		margin-right: 9.6rem;
 	}
+
 	.banner__image {
 		margin-top: 7rem;
 	}
+
 	.banner--content__header {
 		padding: 0 13.2rem;
 		margin: 3rem 1.6rem 0 0;
 		font-size: 5.6rem;
 		line-height: 6.72rem;
 	}
+
 	.banner--content__desc{
 	margin-top: 2.4rem;
 	margin-right: 1.6rem;
 	}
+
 	#menu-bar:checked ~ .header__navbar,
 	.nav-menu,
 	.nav-menu li {
 		display: initial;
 	}
+
 	.expand-image {
 		display: none;
 	}
-	.service-card {
+
+	.service-cards {
 		flex-direction: row;
 		padding: 0 6.4rem;
 		margin-top: 6rem;
 		gap: 1.62rem;
 	}
+
 	.travel-agency {
 		gap: 2.7rem;
 		margin: 9.6rem 6.4rem 12.4rem;
 		padding: 0 12.8rem;
 	}
+
 	.destination {
 		margin-top: 14.2rem;
 	}
+	
 	.destination .category__sub-heading {
 		margin-bottom: 6.4rem;
 	}
+
 	.travel-point,
 	.key-features {
 		padding: 0 6.4rem;
 	}
+
 	.travel-point {
 		margin-left: 3.2rem;
 		margin-top: 13.6rem ;
 	}
+
 	.key-features {
 		margin-top: 13rem;
 		margin-left: 1.6rem;
 	}
+
 	.travel-point .category__desc {
 		margin-top: 0;
 	}
-	.travel-point__achievement {
+
+	.travel-point__achievements {
 			margin-top: 6.4rem;
-		}
+	}
+
 	.testimonial {
 		background: url("../assets/images/special-images/desktop-images/testimonials-layout.png") no-repeat;
 		background-position: 45% 74%;
@@ -640,39 +738,48 @@
 		margin-top: 2rem;
 		margin-right: -2.4rem;
 	}
+
 	.testimonial-card {
 		max-width: 60rem;
 		display: block;
 		margin: auto;
 	}
+
 	.testimonial .category__sub-heading {
 		margin-bottom: 4.8rem;
 	}
+
 	.key-features__image {
 		padding: 0;
 	}
+
 	.key-features .category__desc {
 		margin-bottom: 6.4rem;;
 	}
+
 	.testimonials-card__feedback {
 		margin: 5.6rem 0;
 		font-size: 2.3rem;
 		line-height: 3.68rem;
 		opacity: 0.75;
 	}
+
 	.subscription__form {
 		flex-direction: row;
 		gap: 3.2rem;
 		margin: 0 4.4rem 7.2rem;
 	}
+
 	.subscription {
 		max-width: 90rem;
 		padding: 0;
 		margin: 0 7.2rem;
 	}
+
 	.subscription__content {
 		margin-left: 2rem;
 	}
+
 	.subscription .category__heading{
 		padding-top: 2rem;
 	}
@@ -680,48 +787,94 @@
 		padding: 0 6.4rem;
 		margin-bottom: 4.4rem;
 	}
+
 	.form-input {
 		min-height: 9.6rem;
 		border-radius: 3.2rem;
 		padding: 0;
 		margin-top: 0;
 	}
+
 	.form-input::placeholder {
 		font-size: 2.3rem;
 		line-height: 2.76rem;
 	}
+
 	.footer {
 		margin-left: 1.2rem;
 		margin-top: 16rem;
 	}
+
 	.brand__desc {
 		font-size: 2.3rem;
 		line-height: 3.68rem;
 	}
+
 	.footer__image--curve {
-		margin-top: -43rem;
+		margin-top: -1rem;
 		right:0;
 	}
+
 	.company__content, .company-contact-info, .meet-us__content {
 		min-width: 27.7rem;;
 	}
+
 	.permalinks--company-info {
 		margin-bottom: 3.2rem;
 	}
+
 	.footer__permalinks li {
 		margin-bottom: 3.2rem;
 	}
 }
 /*-----desktop and laptop--------*/
+@media (min-width: 1026px) and (max-width: 1199px) {
+	.footer {
+		margin-left: 1.2rem;
+		margin-top: 16rem;
+	}
+
+	.footer__image--curve {
+		margin-top: -3rem;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1333px) {
+	.footer {
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 3.2rem;
+		margin-top: 9.6rem;
+	}
+
+	.footer__brand-info, .footer__permalinks {
+		max-width: 58rem;
+	}
+}
+
+@media (min-width: 1334px) {
+	.footer {
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 6.4rem;
+		margin-top: 9.6rem;
+	}
+
+	.footer__brand-info, .footer__permalinks {
+		max-width: 58rem;
+	}
+}
 @media (min-width: 1026px) {
 	.header {
 		padding: 0 12.8rem;
 		margin-top: 3.2rem;
 		margin-bottom: 1.6rem;
 	}
+
 	.nav-menu {
 		gap: 6.4rem;
 	}
+
 	.banner--content {
 		max-width: 41.2rem;
 		min-height: 57.7rem;
@@ -729,18 +882,22 @@
 		margin-top: 1.6rem;
 		gap: 1.6rem;
 	}
+
 	.banner__image {
 		margin-top: 6.4rem;
 	}
+
 	.banner--content__header {
 		font-size: 6.9rem;
 		line-height: 8.28rem;
 		margin: 3.2rem 0 1.6rem;
 		text-align: left;
 	}
+
 	.banner--content__desc {
 		margin: 0;
 	}
+
 	.service {
 		max-width: 153.6rem;
 		width: 100%;
@@ -749,67 +906,82 @@
 		padding-left: 12.8rem;
 		margin: 12rem 0;
 	}
-	.service-card {
+
+	.service-cards {
 		min-width: 110rem;
 		flex-direction: row;
 		gap: 2.1rem;
 	}
+
 	.service .category {
 		width: 100%;
 		min-width: 44.4rem;
 		min-height: 15rem;
 		margin-top: 8.2rem;
 	}
+
 	.travel-agency {
 		justify-content: space-between;
 		margin: 2rem 0 0;
 	}
+
 	.key-features,
 	.banner {
 		display: flex;
 		flex-direction: row-reverse;
 	}
+
 	.travel-point {
 		margin: 7.5rem 0 10rem;
 		padding: 0 12.8rem 0 0;
 		display: flex;
 		flex-direction: row;
 	}
+
 	.key-features {
 		gap: 7rem;
 		padding: 0 0 0 12.8rem;
 	}
+
 	.key-features__image {
 		margin-top: 6.4rem;
 	}
+
 	.key-features .category {
 		max-width: 54.9rem;
 	}
+
 	.key-features .category__desc {
 		margin-bottom: 8.8rem;
 		padding-left: 0;
 		padding-right: 3.8rem;
 	}
+
 	.travel-point__image {
 		padding-top: 0;
 	}
+
 	.travel-point .category {
 		max-width: 44.1rem;
 		min-height: 66.7rem;
 		margin-top: -2.4rem;
 	}
+
 	.travel-point .category__desc {
 		padding-right: 1.6rem;
 	}
+
 	.destination__intro {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		margin-top: -7.2rem;
 	}
+
 	.destination .category__sub-heading {
 		margin-bottom: 6rem;
 	}
+
 	.testimonial {
 		max-width: 160rem;
 		width: 100%;
@@ -818,18 +990,22 @@
 		padding: 8rem 0 0;
 		margin-top: -4.8rem;
 	}
+
 	.testimonial-card {
 		display: block;
 		margin: auto;
 		max-width: 87.2rem;
 		min-height: 64.5rem;
 	}
+
 	.testimonial .category__heading {
 		margin-top: 4rem;
 	}
+
 	.testimonial-card__photo {
 		margin-top: 4.8rem;
 	}
+
 	.testimonials-card__feedback {
 		margin-top: 5.6rem;
 		margin-bottom: 5.2rem;
@@ -837,58 +1013,57 @@
 		line-height: 3.68rem;
 		opacity: 0.75;
 	}
+
 	.subscription .category__heading,
 	.testimonial-card .category__heading,
 	.testimonial-card .category__sub-heading {
 		text-align: center;
 	}
+
 	.subscription {
 		padding: 0;
 		margin: 16.8rem 12.8rem 3.2rem;
-		}
+	}
+
 	.subscription .category__heading {
 		padding-top: 0;
 		margin-top: 1.6rem;
 	}
+
 	.subscription .category__sub-heading {
 		margin-bottom: 2.4rem;
 		font-size: 5.5rem;
 		line-height: 6.6rem;
 		padding: 0 12.8rem;
 	}
+
 	.subscription__form {
 		flex-direction: row;
 		gap: 3.2rem;
 		margin: 0 6.4rem;
 	}
+
 	.subscription .category__heading {
 		margin-bottom: 3.2rem;
 	}
+
 	.form-input {
 		min-height: 9.6rem;
 		border-radius: 3.2rem;
 		padding: 0;
 		margin-top: 3.6rem;
 	}
+
 	.form-input::placeholder {
 		font-size: 2.3rem;
 		line-height: 2.76rem;
 	}
-	.footer {
-		flex-direction: row;
-		justify-content: space-between;
-		gap: 4.4rem;
-		margin-top: 9.6rem;
-	}
-	.footer__brand-info {
-		max-width: 58rem;
-		min-height: 27.9rem;
-		flex: 1;
-	}
+
+	.footer__brand-info,
 	.footer__permalinks {
-		max-width: 58rem;
 		flex: 1;
 	}
+
 	.permalinks--company,
 	.permalinks--contact,
 	.permalinks--meet-us {
@@ -896,18 +1071,21 @@
 		display: flex;
 		gap: 0.4rem;
 	}
+
 	.brand__desc {
 		font-size: 2.3rem;
 		line-height: 3.68rem;
 		margin-top: 1.6rem;
 		margin-bottom: 6.4rem;
 	}
+
 	.company-contact-info li,
 	.company-info li,
 	.content-menu li {
 		margin-bottom: 3.2rem;
 	}
-	.travel__decor-image {
+
+	.travel-point__decor-image {
 		display: initial;
 		position: absolute;
 		margin-left: 28.8rem;
