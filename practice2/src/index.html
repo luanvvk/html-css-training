@@ -2,6 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="description" content="Author: LV, html-css practice 2: responsive design,
+    Illustrator: design from Figma">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Travlog</title>
 		<link rel="stylesheet" href="./styles/main.css" />
@@ -436,7 +438,10 @@
 						Prepare yourself &#38; let&rsquo;s explore the beauty of the world
 					</h3>
 					<form class="subscription__form">
-						<input class="form-input" type="email" name="email-address" placeholder="your email" />
+						<div class="form__input-bar">
+						<img class ="input-bar__icon" src="./assets/images/icons/subscription-icons/email.svg" alt="email">
+						<input class="input-bar__main-input" type="email" name="email-address" placeholder="your email" />
+					</div>	
 						<button class="button button-purple" type="submit">subscribe</button>
 					</form>
 				</div>
@@ -460,7 +465,7 @@
 				<div class="footer__brand-info">
 					<a href="javascript:void(0)" class="logo">
 						<img class="header__brand-logo" src="./assets/images/icons/logo.svg" alt="Brand logo" />
-						<h1 class="header__brand-name">Travlog</h1>
+						<h5 class="header__brand-name">Travlog</h5>
 					</a>
 					<p class="brand__desc">
 						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
@@ -492,7 +497,7 @@
 				</div>
 				<div class="footer__permalinks">
 					<div class="permalinks--company">
-						<h4 class="permalinks--company-info">company</h4>
+						<h5 class="permalinks--company-info">company</h5>
 						<input type="checkbox" id="company-expand" />
 						<label for="company-expand">
 							<img
@@ -511,7 +516,7 @@
 						</div>
 					</div>
 					<div class="permalinks--contact">
-						<h4 class="permalinks--company-info">contact us</h4>
+						<h5 class="permalinks--company-info">contact us</h5>
 						<input type="checkbox" id="contact-expand" />
 						<label for="contact-expand">
 							<img
@@ -531,7 +536,7 @@
 						</div>
 					</div>
 					<div class="permalinks--meet-us">
-						<h4 class="permalinks--company-info">meet us</h4>
+						<h5 class="permalinks--company-info">meet us</h5>
 						<input type="checkbox" id="meet-us-expand" />
 						<label for="meet-us-expand">
 							<img

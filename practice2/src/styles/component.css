@@ -303,7 +303,7 @@
 
 @media (min-width: 769px) and (max-width: 885px) {
 	.destination-card__desc {
-		max-width: 92%;
+		max-width: 82%;
 	}
 
 	.destination-card__image {
@@ -312,12 +312,25 @@
 	}
 
 	.destination-cards, .destination-card {
-		min-height: 46.5rem;
+		min-height: 44.5rem;
 	}
 
 	.card__desc__heading {
-		min-height: 16.6rem;
+		min-height: 14.6rem;
 	}
+
+	.card__desc__title {
+		font-size: 1.8rem;
+	}
+
+	.card__desc__location {
+		font-size: 1.6rem;
+	}
+
+	.card__desc__review, .card__desc__location {
+		margin-bottom: 1.6rem;
+	}
+
 }
 
 @media (min-width: 886px) and (max-width: 1025px) {
@@ -725,8 +738,6 @@
 		border-radius: 3.2rem;
 		font-size: 2.3rem;
 		line-height: 2.76rem;
-		margin-bottom: 16.8rem;
-		margin-top: 3.6rem;
 	}
 
 	.banner .button-purple {

@@ -1,8 +1,3 @@
-.banner__image,
-.travel-point__image,
-.key-features__image {
-	width: 100%;
-}
 /*--------------------------Header------------------------------*/
 .header {
 	position: sticky;
@@ -187,17 +182,14 @@
 	width: 100%;
 	height: auto;
 	padding: 0 3.9rem;
+	margin-top: 3.2rem;
+	display: block;
+	margin: auto;
 }
 
 .key-features .category__desc {
 	padding: 0 5.8rem;
 	margin-bottom: 3.2rem;
-}
-
-.key-features__image {
-	margin-top: 3.2rem;
-	display: block;
-	margin: auto;
 }
 /*-----------------------Testimonials-------------------------*/
 .testimonial-card {
@@ -299,26 +291,40 @@
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 3.2rem;
-	min-height: 17.1rem;
+}
+.form__input-bar {
+	width: 80%;
+	flex:1;
+	display: flex;
+	justify-content: space-between;	
+	gap: 3.2rem;
+	min-height: 7.2rem;
+	border-radius: 1.6rem;
+	border: none;
+	background-color: var(--white);
+	margin: auto;
 }
 
-.form-input {
+.input-bar__main-input {
 	width: 80%;
 	margin: auto;
-	background: url("../assets/images/icons/subscription-icons/email.svg") no-repeat left;
 	background-color: var(--white);
-	background-position-x: 4rem;
-
-	flex: 1;
+	outline: none;
+	flex: 100%;
 	min-height: 72px;
 	border-radius: 1.6rem;
 	border: none;
 	font-size: 2.3rem;
 }
+.input-bar__icon {
+	font-size: 32px;
+	position: relative;
+	left: 1.6rem;
 
-.form-input::placeholder {
+}
+
+.input-bar__main-input::placeholder {
 	-moz-padding-left: 8.8rem;
-	padding-left: 8.8rem;
 	margin-left: 8.8rem;
 	font-family: var(--font-primary);
 	font-size: 1.4rem;
@@ -583,11 +589,7 @@
 		height: auto;
 	}
 
-	.travel-point__image {
-		width: 100%;
-		height: auto;
-	}
-
+	.travel-point__image, 
 	.key-features__image {
 		width: 100%;
 		height: auto;
@@ -596,8 +598,11 @@
 	.key-feature__info {
 		margin-top: 1.6rem;
 	}
+	.form__input-bar {
+		border-radius: 3.2rem;
+	}
 }
-/*-----tablet portrait mode--------*/
+/*-----mobile landscape mode--------*/
 @media (min-width: 469px) and (max-width: 768px) {
 	.header {
 		padding: 0 3.2rem;
@@ -613,11 +618,31 @@
 		padding: 0;
 	}
 
-	.form-input {
+	.input-bar__main-input {
 		padding: 0;
 	}
 }
 /*-----tablet lanscape mode or large tablet ----*/
+@media (min-width: 769px) and (max-width: 900px) {
+	.subscription__form {
+		margin: 0 2.4rem 7.2rem;
+		gap: 1.6rem;
+	}
+	.subscription .button-purple {
+		width: 20.5rem;
+		padding: 1.6rem 3.2rem;
+		min-height: 7.6rem;
+	}
+	.input-bar__main-input {
+		min-height: 7.6rem;
+	}
+}
+@media (min-width: 901px) and (max-width: 1025px){
+	.input-bar__main-input {
+		min-height: 9.6rem;
+	}
+}
+
 @media (min-width: 769px) and (max-width: 1025px) {
 	.header {
 		padding: 0 6.4rem 3.2rem;
@@ -788,14 +813,13 @@
 		margin-bottom: 4.4rem;
 	}
 
-	.form-input {
-		min-height: 9.6rem;
+	.input-bar__main-input {
 		border-radius: 3.2rem;
 		padding: 0;
 		margin-top: 0;
 	}
 
-	.form-input::placeholder {
+	.input-bar__main-input::placeholder {
 		font-size: 2.3rem;
 		line-height: 2.76rem;
 	}
@@ -830,6 +854,7 @@
 /*-----desktop and laptop--------*/
 @media (min-width: 1026px) and (max-width: 1199px) {
 	.footer {
+		flex-direction: column;
 		margin-left: 1.2rem;
 		margin-top: 16rem;
 	}
@@ -837,27 +862,55 @@
 	.footer__image--curve {
 		margin-top: -3rem;
 	}
+	.nav-menu {
+		gap: 3.2rem;
+	}
+	.subscription .category__sub-heading {
+		margin-bottom: 2.4rem;
+		font-size: 4rem;
+		line-height: 4.8rem;
+		padding: 0 6.4rem;
+	}
+	.subscription {
+		min-height: 50rem;
+	}
 }
 
 @media (min-width: 1200px) and (max-width: 1333px) {
 	.footer {
 		flex-direction: row;
-		justify-content: space-between;
 		gap: 3.2rem;
-		margin-top: 9.6rem;
+	}
+	.nav-menu {
+		gap: 6.4rem;
+	}
+	.subscription .category__sub-heading {
+		margin-bottom: 2.4rem;
+		font-size: 4rem;
+		line-height: 4.8rem;
+		padding: 0 12.8rem;
 	}
 
 	.footer__brand-info, .footer__permalinks {
 		max-width: 58rem;
+	}
+	.subscription {
+		min-height: 50rem;
 	}
 }
 
 @media (min-width: 1334px) {
 	.footer {
 		flex-direction: row;
-		justify-content: space-between;
+	}
+	.nav-menu {
 		gap: 6.4rem;
-		margin-top: 9.6rem;
+	}
+	.subscription .category__sub-heading {
+		margin-bottom: 4.4rem;
+		font-size: 5rem;
+		line-height: 5.6rem;
+		padding: 0 12.8rem;
 	}
 
 	.footer__brand-info, .footer__permalinks {
@@ -865,14 +918,14 @@
 	}
 }
 @media (min-width: 1026px) {
+	.footer {
+		gap: 6.4rem;
+		margin-top: 9.6rem;
+	}
 	.header {
 		padding: 0 12.8rem;
 		margin-top: 3.2rem;
 		margin-bottom: 1.6rem;
-	}
-
-	.nav-menu {
-		gap: 6.4rem;
 	}
 
 	.banner--content {
@@ -1000,6 +1053,7 @@
 
 	.testimonial .category__heading {
 		margin-top: 4rem;
+		text-align: center;
 	}
 
 	.testimonial-card__photo {
@@ -1014,8 +1068,6 @@
 		opacity: 0.75;
 	}
 
-	.subscription .category__heading,
-	.testimonial-card .category__heading,
 	.testimonial-card .category__sub-heading {
 		text-align: center;
 	}
@@ -1027,14 +1079,9 @@
 
 	.subscription .category__heading {
 		padding-top: 0;
+		margin-bottom: 3.2rem;
 		margin-top: 1.6rem;
-	}
-
-	.subscription .category__sub-heading {
-		margin-bottom: 2.4rem;
-		font-size: 5.5rem;
-		line-height: 6.6rem;
-		padding: 0 12.8rem;
+		text-align: center;
 	}
 
 	.subscription__form {
@@ -1043,20 +1090,14 @@
 		margin: 0 6.4rem;
 	}
 
-	.subscription .category__heading {
-		margin-bottom: 3.2rem;
-	}
-
-	.form-input {
+	.input-bar__main-input {
 		min-height: 9.6rem;
 		border-radius: 3.2rem;
 		padding: 0;
-		margin-top: 3.6rem;
 	}
 
-	.form-input::placeholder {
+	.input-bar__main-input::placeholder {
 		font-size: 2.3rem;
-		line-height: 2.76rem;
 	}
 
 	.footer__brand-info,
