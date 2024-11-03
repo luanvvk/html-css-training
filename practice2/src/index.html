@@ -2,8 +2,11 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Author: LV, html-css practice 2: responsive design,
-    Illustrator: design from Figma">
+		<meta
+			name="description"
+			content="Author: LV, html-css practice 2: responsive design,
+    Illustrator: design from Figma"
+		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Travlog</title>
 		<link rel="stylesheet" href="./styles/main.css" />
@@ -31,6 +34,17 @@
 					<li><a class="button button-white" href="javascript:void(0)">login</a></li>
 					<li><a class="button button-purple" href="javascript:void(0)">signup</a></li>
 				</ul>
+				<div class="dropdown-menu">
+					<li><a class="nav-menu__item" href="javascript:void(0)">home</a></li>
+					<li><a class="nav-menu__item" href="javascript:void(0)">discover</a></li>
+					<li><a class="nav-menu__item" href="javascript:void(0)">special deals</a></li>
+					<li><a class="nav-menu__item" href="javascript:void(0)">contact</a></li>
+					<ul class="dropdown-button">
+					<li><a class="button button-white" href="javascript:void(0)">login</a></li>
+					<li><a class="button button-purple" href="javascript:void(0)">signup</a></li>
+					</ul>
+				</div>
+				<div class="overlay"></div>
 			</header>
 			<section class="banner container">
 				<picture>
@@ -142,9 +156,7 @@
 							alt="destination"
 						/>
 						<h4 class="service-card__heading">best tour guide</h4>
-						<p class="service-card__desc">
-							What looked like a small patch of purple grass, above five feet.
-						</p>
+						<p class="service-card__desc">What looked like a small patch of purple grass, above five feet.</p>
 					</article>
 					<article class="service-card">
 						<img
@@ -164,9 +176,7 @@
 							alt="weather"
 						/>
 						<h4 class="service-card__heading">weather forecast</h4>
-						<p class="service-card__desc">
-							What looked like a small patch of purple grass, above five feet.
-						</p>
+						<p class="service-card__desc">What looked like a small patch of purple grass, above five feet.</p>
 					</article>
 				</div>
 			</section>
@@ -439,9 +449,18 @@
 					</h3>
 					<form class="subscription__form">
 						<div class="form__input-bar">
-						<img class ="input-bar__icon" src="./assets/images/icons/subscription-icons/email.svg" alt="email">
-						<input class="input-bar__main-input" type="email" name="email-address" placeholder="your email" />
-					</div>	
+							<img
+								class="input-bar__icon"
+								src="./assets/images/icons/subscription-icons/email.svg"
+								alt="email"
+							/>
+							<input
+								class="input-bar__main-input"
+								type="email"
+								name="email-address"
+								placeholder="your email"
+							/>
+						</div>
 						<button class="button button-purple" type="submit">subscribe</button>
 					</form>
 				</div>
@@ -559,7 +578,6 @@
 							</ul>
 						</div>
 					</div>
-					
 				</div>
 			</footer>
 		</div>
