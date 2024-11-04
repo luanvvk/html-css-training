@@ -1,11 +1,16 @@
 /*--------------------------Header------------------------------*/
-.header {
+header {
 	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	left: 0;
+	right: 0;
 	display: flex;
 	justify-content: space-between;
 	margin-top: 3.2rem;
 	flex-basis: auto;
 	padding: 0 1.5rem;
+	background: var(--white);
 }
 
 .logo {
@@ -318,8 +323,7 @@
 }
 .input-bar__icon {
 	font-size: 32px;
-	position: relative;
-	left: 1.6rem;
+	margin-left: 1.6rem;
 }
 
 .input-bar__main-input::placeholder {
@@ -548,6 +552,9 @@
 	.subscription {
 		padding: 0;
 		margin: -3.2rem 1.5rem 0;
+	}
+	.subscription__image--triangle, .footer__image--curve {
+		display: none;
 	}
 
 	.expand-image {

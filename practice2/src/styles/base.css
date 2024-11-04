@@ -19,7 +19,6 @@
 html,
 body {
 	width: 100%;
-	overflow-x: hidden;
 	margin: 0 auto;
 	font-size: 62.5%;
 	min-height: auto;
