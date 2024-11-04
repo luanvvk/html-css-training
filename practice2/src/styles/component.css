@@ -269,6 +269,9 @@
 }
 
 .card__desc__review {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
 	margin: 3.2rem 0;
 	font-family: var(--font-primary);
 	font-size: 2.3rem;
@@ -280,9 +283,7 @@
 }
 
 .card__desc__review::after {
-	position: relative;
 	content: url("../assets/images/icons/destination-icons/destination-rating.svg");
-	top: 4px;
 	width: 2rem;
 	height: 1.9rem;
 	margin-left: 0.8rem;

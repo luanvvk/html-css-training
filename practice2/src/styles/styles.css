@@ -16,7 +16,7 @@ header {
 .logo {
 	display: inline-flex;
 	max-width: 14.2rem;
-	min-height: 4rem;
+	min-height: 5.6rem;
 	text-decoration: none;
 }
 
@@ -118,7 +118,7 @@ header {
 	margin: auto;
 	margin-top: 5.2rem;
 	width: 100%;
-	width: 39.6rem;
+	max-width: 39.6rem;
 	min-height: 36.6rem;
 	height: auto;
 }
@@ -166,7 +166,7 @@ header {
 	display: block;
 	margin: auto;
 	width: 100%;
-	width: 39.8rem;
+	max-width: 39.8rem;
 	min-height: 31.9rem;
 	height: auto;
 }
@@ -189,7 +189,7 @@ header {
 /*------key feature-------*/
 .key-features__image {
 	width: 100%;
-	width: 35rem;
+	max-width: 35rem;
 	min-height: 43.9rem;
 	height: auto;
 	padding: 0 3.9rem;
@@ -355,6 +355,9 @@ header {
 
 .footer .logo {
 	margin-top: -0.4rem;
+}
+.footer .header__brand-name {
+	margin-bottom: 0;
 }
 
 .brand__desc {
@@ -792,7 +795,7 @@ header {
 		margin-top: 3.2rem;
 		opacity: 1;
 	}
-	
+
 	.dropdown-button {
 		display: flex;
 		justify-content: space-evenly;
@@ -1040,10 +1043,10 @@ header {
 		display: inherit;
 	}
 	.banner--content {
+		margin-top: 16.8rem;
 		max-width: 41.2rem;
 		height: 57.7rem;
 		justify-content: center;
-		margin-top: 1.6rem;
 		gap: 1.6rem;
 	}
 
