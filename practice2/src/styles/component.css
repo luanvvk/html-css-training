@@ -31,8 +31,7 @@
 
 	line-height: 25.6px;
 	text-align: center;
-	opacity: 0.5;
-	color: var(--black-blue);
+	color: var(--black-05);
 }
 
 @media (min-width: 769px) and (max-width: 1025px) {
@@ -115,8 +114,7 @@
 
 	padding: 0.8rem 4.8rem;
 	margin-bottom: 2.4rem;
-	color: var(--black-blue);
-	opacity: 0.5;
+	color: var(--black-05);
 }
 
 @media (min-width: 469px) and (max-width: 768px) {
@@ -265,7 +263,7 @@
 
 	line-height: 28.8px;
 	text-align: left;
-	opacity: 0.75;
+	color: var(--black-075);
 }
 
 .card__desc__review {
@@ -513,8 +511,7 @@
 
 	line-height: 2.88rem;
 	text-align: left;
-	color: var(--black-blue);
-	opacity: 0.5;
+	color: var(--black-075);
 }
 
 @media (min-width: 468px) {
@@ -528,7 +525,7 @@
 	}
 
 	.key-feature__desc {
-		margin-top: 1.6rme;
+		margin-top: 1.6rem;
 	}
 }
 
@@ -552,15 +549,13 @@
 		margin-right: 0;
 	}
 }
-
 /*---------------Button---------------------*/
 .authenticated-button {
 	display: flex;
 	gap: 0.8rem;
 	list-style: none;
 	padding: 0;
-	margin-right: 1.6rem;
-	margin: 1.2rem 1.6rem 0 0;
+	margin-top: 1.2rem;
 }
 
 .button {
@@ -636,7 +631,7 @@
 
 .banner .button-white {
 	width: 100%;
-	border: 0.1rem solid #eeeeee;
+	border: 0.1rem solid var(--white);
 	padding: 2.4rem 0;
 	display: flex;
 	justify-content: center;
@@ -702,11 +697,6 @@
 		font-size: 2.3rem;
 		line-height: 2.76rem;
 		margin-top: 0;
-	}
-
-	.authenticated-button {
-		margin-right: 2rem;
-		margin-top: 1.2rem;
 	}
 
 	.button-pink {

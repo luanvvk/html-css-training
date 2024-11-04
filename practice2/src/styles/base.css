@@ -8,7 +8,8 @@
 	--purple: #5D50C6;
 	--yellow: #FACD49;
   --shadow-color: #0000001A;
-
+	--black-05: rgba(25, 24, 37, 0.5);
+	--black-075: rgba(25, 24, 37, 0.75);
 	--font-primary: Circular Std;
 	--font-secondary: Inter;
 }

@@ -226,7 +226,7 @@ header {
 }
 
 .testimonial-card__hobbie {
-	color: rgba(25, 24, 37, 0.75);
+	color: var(--black-075);
 	font-size: 2.3rem;
 	line-height: 2.76rem;
 }
@@ -238,7 +238,7 @@ header {
 
 	line-height: 2.88rem;
 	text-align: center;
-	color: rgba(25, 24, 37, 0.75);
+	color: var(--black-075);
 	margin-top: 6.4rem;
 	margin-bottom: 6.4rem;
 }
@@ -308,7 +308,7 @@ header {
 	flex: 1;
 	display: flex;
 	justify-content: space-between;
-	gap: 3.2rem;
+	gap: 1.6rem;
 	min-height: 7.2rem;
 	border-radius: 1.6rem;
 	border: none;
@@ -339,7 +339,7 @@ header {
 	font-size: 1.4rem;
 	font-weight: 700;
 
-	color: rgba(25, 24, 37, 0.75);
+	color: var(--black-075);
 	line-height: 16.8rem;
 	text-align: left;
 	text-transform: capitalize;
@@ -367,9 +367,7 @@ header {
 	font-weight: 450;
 
 	line-height: 2.56rem;
-	text-align: left;
-	color: var(--black-blue);
-	opacity: 0.5;
+	color: var(--black-075);
 }
 
 .footer__permalinks {
@@ -380,12 +378,6 @@ header {
 
 .expand-image {
 	display: none;
-}
-
-.company-info,
-.company-contact-info,
-.content-menu {
-	padding: 0;
 }
 
 .permalinks--company,
@@ -420,6 +412,7 @@ header {
 .company-info,
 .company-contact-info,
 .content-menu {
+	padding: 0;
 	list-style: none;
 	text-align: left;
 	padding: none;
@@ -456,7 +449,7 @@ header {
 
 	line-height: 2.88rem;
 	text-align: left;
-	color: rgba(25, 24, 37, 0.75);
+	color: var(--black-075);
 	font-style: normal;
 	text-decoration: none;
 }
@@ -536,10 +529,7 @@ header {
 	.dropdown-button .button-white {
 		background: #9cf3a7;
 	}
-	.nav-menu {
-		display: block;
-	}
-
+	
 	.nav-menu__item {
 		display: block;
 	}
@@ -552,11 +542,9 @@ header {
 		display: initial;
 		left: 0;
 	}
+
 	#menu-bar:checked ~ .overlay {
 		display: initial;
-	}
-	.banner--content__desc {
-		opacity: 1;
 	}
 
 	.testimonial,
@@ -706,10 +694,20 @@ header {
 	.input-bar__main-input {
 		min-height: 7.6rem;
 	}
+	.travel-agency {
+		gap: 2.7rem;
+		margin: 9.6rem 6.4rem 12.4rem;
+		padding: 0 3.8rem;
+	}
 }
 @media (min-width: 901px) and (max-width: 1025px) {
 	.input-bar__main-input {
 		min-height: 9.6rem;
+	}
+	.travel-agency {
+		gap: 2.7rem;
+		margin: 9.6rem 6.4rem 12.4rem;
+		padding: 0 10.8rem;
 	}
 }
 
@@ -824,12 +822,6 @@ header {
 		padding: 0 6.4rem;
 		margin-top: 6rem;
 		gap: 1.62rem;
-	}
-
-	.travel-agency {
-		gap: 2.7rem;
-		margin: 9.6rem 6.4rem 12.4rem;
-		padding: 0 12.8rem;
 	}
 
 	.destination {
