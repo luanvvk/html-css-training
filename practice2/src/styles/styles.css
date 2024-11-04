@@ -118,7 +118,6 @@ header {
 	margin: auto;
 	margin-top: 5.2rem;
 	width: 100%;
-	max-width: 39.6rem;
 	min-height: 36.6rem;
 	height: auto;
 }
@@ -777,6 +776,7 @@ header {
 		z-index: 100;
 		display: block;
 		position: absolute;
+
 		top: 5.2rem;
 		width: 40%;
 		height: 100vh;
