@@ -118,6 +118,8 @@ header {
 	margin: auto;
 	margin-top: 5.2rem;
 	width: 100%;
+	width: 39.6rem;
+	min-height: 36.6rem;
 	height: auto;
 }
 /*-----------------------travel-agency-------------------------*/
@@ -164,6 +166,8 @@ header {
 	display: block;
 	margin: auto;
 	width: 100%;
+	width: 39.8rem;
+	min-height: 31.9rem;
 	height: auto;
 }
 
@@ -185,6 +189,8 @@ header {
 /*------key feature-------*/
 .key-features__image {
 	width: 100%;
+	width: 35rem;
+	min-height: 43.9rem;
 	height: auto;
 	padding: 0 3.9rem;
 	margin-top: 3.2rem;
@@ -472,15 +478,20 @@ header {
 }
 .overlay {
 	position: absolute;
-	top: 56px;
+	top: 58px;
 	left: 0;
 	z-index: 10;
 	width: 100vw;
 	height: 100vh;
+
 	background-color: #000;
 	opacity: 0.5;
 	display: none;
 	transition: 0.5s ease;
+}
+.dropdown-menu__item {
+	padding-left: 0;
+	list-style: none;
 }
 /*---------------------Media queries----------------------*/
 @media (max-width: 768px) {
@@ -488,10 +499,12 @@ header {
 		z-index: 100;
 		display: block;
 		position: absolute;
-		top: 100%;
+		top: 89%;
 		width: 100%;
 		height: 100vh;
 		left: -100%;
+
+		padding-left: 0;
 		background: var(--white);
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 		list-style: none;
@@ -516,6 +529,7 @@ header {
 	.dropdown-button li {
 		list-style: none;
 	}
+
 	.dropdown-button .button-white {
 		background: #9cf3a7;
 	}
@@ -638,7 +652,9 @@ header {
 
 	.travel-point__image,
 	.key-features__image {
-		width: 100%;
+		max-width: 100%;
+		width: 87.1rem;
+		height: 69.7rem;
 		height: auto;
 	}
 
@@ -760,10 +776,12 @@ header {
 		z-index: 100;
 		display: block;
 		position: absolute;
-		top: 5.6rem;
+		top: 5.2rem;
 		width: 40%;
 		height: 100vh;
 		left: -100%;
+		padding-left: 0;
+	
 		background: #ffffff;
 		list-style: none;
 		transition: 0.5s ease;
@@ -774,6 +792,7 @@ header {
 		margin-top: 3.2rem;
 		opacity: 1;
 	}
+	
 	.dropdown-button {
 		display: flex;
 		justify-content: space-evenly;
@@ -928,7 +947,7 @@ header {
 	.company__content,
 	.company-contact-info,
 	.meet-us__content {
-		min-width: 27.7rem;
+		min-width: 20rem;
 	}
 
 	.permalinks--company-info {
@@ -1022,7 +1041,7 @@ header {
 	}
 	.banner--content {
 		max-width: 41.2rem;
-		min-height: 57.7rem;
+		height: 57.7rem;
 		justify-content: center;
 		margin-top: 1.6rem;
 		gap: 1.6rem;
