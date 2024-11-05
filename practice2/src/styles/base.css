@@ -20,22 +20,16 @@
 html,
 body {
 	width: 100%;
-	margin: 0 auto;
 	font-size: 62.5%;
 	min-height: auto;
 }
 
 .wrapper {
 	max-width: 1440px;
-	width: 100%;
-	height: auto;
 	margin: 0 auto;
 }
 
 .container {
-	max-width: 100%;
-	margin: 0 auto;
-	min-height: auto;
 	padding: 0 1.5rem;
 }
 

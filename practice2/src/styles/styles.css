@@ -3,8 +3,6 @@ header {
 	position: sticky;
 	position: -webkit-sticky;
 	top: 0;
-	left: 0;
-	right: 0;
 	display: flex;
 	justify-content: space-between;
 	margin-top: 3.2rem;
@@ -15,8 +13,6 @@ header {
 
 .logo {
 	display: inline-flex;
-	max-width: 14.2rem;
-	min-height: 5.6rem;
 	text-decoration: none;
 }
 
@@ -46,8 +42,6 @@ header {
 .nav-menu {
 	display: flex;
 	justify-content: center;
-	max-width: 43rem;
-	min-height: 1.7rem;
 
 	list-style: none;
 	text-align: center;
@@ -55,19 +49,14 @@ header {
 	margin-top: 1.2rem;
 }
 
-.menu-icon {
-	display: none;
-}
-
-#menu-bar {
+.menu-icon,
+#menu-bar,
+.dropdown-menu,
+.header__navbar {
 	display: none;
 }
 
 .nav-menu__item {
-	width: 100%;
-	min-height: 1.7rem;
-	min-width: 8.7rem;
-
 	font-family: var(--font-primary);
 	font-size: 1.4rem;
 	font-weight: 700;
@@ -84,6 +73,25 @@ header {
 
 .nav-menu__item:hover {
 	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	top: 58px;
+	left: 0;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+
+	background-color: var(--black);
+	opacity: 0.5;
+	display: none;
+	transition: 0.5s ease;
+}
+
+.dropdown-menu__item {
+	padding-left: 0;
+	list-style: none;
 }
 /*--------------------------Banner---------------------------*/
 .banner--content {
@@ -117,8 +125,7 @@ header {
 	display: block;
 	margin: auto;
 	margin-top: 5.2rem;
-	width: 100%;
-	min-height: 36.6rem;
+	max-width: 100%;
 	height: auto;
 }
 /*-----------------------travel-agency-------------------------*/
@@ -165,8 +172,6 @@ header {
 	display: block;
 	margin: auto;
 	width: 100%;
-	max-width: 39.8rem;
-	min-height: 31.9rem;
 	height: auto;
 }
 
@@ -188,12 +193,9 @@ header {
 /*------key feature-------*/
 .key-features__image {
 	width: 100%;
-	max-width: 35rem;
-	min-height: 43.9rem;
 	height: auto;
 	padding: 0 3.9rem;
 	margin-top: 3.2rem;
-	display: block;
 	margin: auto;
 }
 
@@ -279,8 +281,6 @@ header {
 
 .subscription__content {
 	min-height: 35.2rem;
-	flex-direction: column;
-	justify-content: space-evenly;
 }
 
 .subscription .category__heading {
@@ -292,8 +292,7 @@ header {
 	min-height: 11.4rem;
 	text-align: center;
 	padding: 0 4.8rem;
-	margin-bottom: 5.8rem;
-	margin-top: 3.2rem;
+	margin: 3.2rem 0 5.8rem;
 }
 
 .subscription__form {
@@ -308,7 +307,6 @@ header {
 	display: flex;
 	justify-content: space-between;
 	gap: 1.6rem;
-	min-height: 7.2rem;
 	border-radius: 1.6rem;
 	border: none;
 	background-color: var(--white);
@@ -317,7 +315,6 @@ header {
 
 .input-bar__main-input {
 	width: 80%;
-	margin: auto;
 	background-color: var(--white);
 	outline: none;
 	flex: 100%;
@@ -332,8 +329,7 @@ header {
 }
 
 .input-bar__main-input::placeholder {
-	-moz-padding-left: 8.8rem;
-	margin-left: 8.8rem;
+	margin-left: 1.6rem;
 	font-family: var(--font-primary);
 	font-size: 1.4rem;
 	font-weight: 700;
@@ -356,7 +352,7 @@ header {
 	margin-top: -0.4rem;
 }
 .footer .header__brand-name {
-	margin-bottom: 0;
+	margin-bottom: 1.6rem;
 }
 
 .brand__desc {
@@ -465,29 +461,6 @@ header {
 #company-expand {
 	display: none;
 }
-.dropdown-menu {
-	display: none;
-}
-.header__navbar {
-	display: none;
-}
-.overlay {
-	position: absolute;
-	top: 58px;
-	left: 0;
-	z-index: 10;
-	width: 100vw;
-	height: 100vh;
-
-	background-color: #000;
-	opacity: 0.5;
-	display: none;
-	transition: 0.5s ease;
-}
-.dropdown-menu__item {
-	padding-left: 0;
-	list-style: none;
-}
 /*---------------------Media queries----------------------*/
 @media (max-width: 768px) {
 	.dropdown-menu {
@@ -528,7 +501,7 @@ header {
 	.dropdown-button .button-white {
 		background: #9cf3a7;
 	}
-	
+
 	.nav-menu__item {
 		display: block;
 	}
@@ -557,7 +530,8 @@ header {
 		padding: 0;
 		margin: -3.2rem 1.5rem 0;
 	}
-	.subscription__image--triangle, .footer__image--curve {
+	.subscription__image--triangle,
+	.footer__image--curve {
 		display: none;
 	}
 
@@ -634,7 +608,7 @@ header {
 }
 @media (min-width: 468px) {
 	.banner__image {
-		max-width: 100%;
+		width: 100%;
 		width: 77.2rem;
 		height: 71.3rem;
 		height: auto;
@@ -782,7 +756,7 @@ header {
 		height: 100vh;
 		left: -100%;
 		padding-left: 0;
-	
+
 		background: #ffffff;
 		list-style: none;
 		transition: 0.5s ease;
