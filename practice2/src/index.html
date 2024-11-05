@@ -9,7 +9,6 @@
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Travlog</title>
-		<link rel="preload" as="image" href="./assets/images/background-images/mobile-images/banner.jpg" fetchpriority="high">
 		<link rel="stylesheet" href="./styles/main.css" />
 	</head>
 	<body>
@@ -221,12 +220,23 @@
 
 				<div class="destination-cards">
 					<article class="destination-card">
-						<img
-							class="destination-card__image"
-							src="./assets/images/destination-images/beach.png"
-							loading="lazy"
-							alt="Beautiful beach"
-						/>
+						<picture>
+							<source
+								srcset="./assets/images/destination-images/desktop/beach.jpg"
+								media="(min-width: 1026px)"
+							/>
+							<source
+								srcset="./assets/images/destination-images/tablet/beach.jpg"
+								media="(min-width: 769px) and (max-width: 1025px)"
+							/>
+							<source srcset="./assets/images/destination-images/mobile/beach.jpg" />
+							<img
+								class="destination-card__image"
+								src="./assets/images/destination-images/mobile/beach.jpg"
+								loading="lazy"
+								alt="Beautiful beach"
+							/>
+						</picture>
 						<div class="destination-card__desc">
 							<div class="card__desc__heading">
 								<p class="card__desc__price">&#36;550.16</p>
@@ -237,13 +247,24 @@
 						</div>
 					</article>
 					<article class="destination-card">
-						<img
-							class="destination-card__image height-fit"
-							src="./assets/images/destination-images/fish.png"
-							loading="lazy"
-							alt="Beautiful Ocean"
-						/>
-						<div class="destination-card__desc">
+						<picture>
+							<source
+								srcset="./assets/images/destination-images/desktop/fish.jpg"
+								media="(min-width: 1026px)"
+							/>
+							<source
+								srcset="./assets/images/destination-images/tablet/fish.jpg"
+								media="(min-width: 769px) and (max-width: 1025px)"
+							/>
+							<source srcset="./assets/images/destination-images/mobile/fish.jpg" />
+							<img
+								class="destination-card__image"
+								src="./assets/images/destination-images/mobile/fish.jpg"
+								loading="lazy"
+								alt="Beautiful Ocean"
+							/>
+						</picture>
+							<div class="destination-card__desc">
 							<div class="card__desc__heading">
 								<p class="card__desc__price">&#36;20.99</p>
 								<h4 class="card__desc__title">Ocean with full of Colors</h4>
@@ -253,12 +274,23 @@
 						</div>
 					</article>
 					<article class="destination-card">
-						<img
-							class="destination-card__image"
-							src="./assets/images/destination-images/mountain.png"
-							loading="lazy"
-							alt="Beautiful Mountain"
-						/>
+						<picture>
+							<source
+								srcset="./assets/images/destination-images/desktop/mountain.jpg"
+								media="(min-width: 1026px)"
+							/>
+							<source
+								srcset="./assets/images/destination-images/tablet/mountain.jpg"
+								media="(min-width: 769px) and (max-width: 1025px)"
+							/>
+							<source srcset="./assets/images/destination-images/mobile/mountain.jpg" />
+							<img
+								class="destination-card__image"
+								src="./assets/images/destination-images/mobile/mountain.jpg"
+								loading="lazy"
+								alt="Beautiful Mountain"
+							/>
+						</picture>
 						<div class="destination-card__desc">
 							<div class="card__desc__heading">
 								<p class="card__desc__price">&#36;150.99</p>
