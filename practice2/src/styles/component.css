@@ -113,7 +113,7 @@
 	line-height: 2.88rem;
 	text-align: center;
 
-	padding: 0.8rem 4.8rem;
+	padding: 0.8rem 2.6rem;
 	margin-bottom: 2.4rem;
 	color: var(--black-05);
 }
@@ -177,8 +177,8 @@
 	}
 
 	.service-card__icon {
-		margin-top: 5.6rem;
-		margin-bottom: 7.2rem;
+		margin-top: 6.6rem;
+		margin-bottom: 6.6rem;
 	}
 
 	.service-card__heading {
@@ -204,7 +204,7 @@
 .destination-card {
 	width: 100%;
 	border-radius: 0 0 3.2rem 3.2rem;
-	min-height: 57.5rem;
+	min-height: 56rem;
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.05), 0 32px 71px 0 rgba(0, 0, 0, 0.05),
 		0 128px 128px 0 rgba(0, 0, 0, 0.04), 0 288px 173px 0 rgba(0, 0, 0, 0.03),
 		0 513px 205px 0 rgba(0, 0, 0, 0.01), 0 801px 224px 0 rgba(0, 0, 0, 0);
@@ -453,9 +453,6 @@
 }
 
 @media (min-width: 1026px) {
-	.travel-point__achievements {
-		gap: 2.8rem;
-	}
 	.travel-point__achievement {
 		min-width: 20.4rem;
 	}
@@ -542,7 +539,8 @@
 
 @media (min-width: 1026px) {
 	.key-feature {
-		margin-left: 1.6rem;
+		margin-left: 0;
+		margin-top: -0.8rem;
 	}
 	.key-feature__desc {
 		margin-right: 0;
@@ -736,11 +734,10 @@
 }
 /*----------------Arrow button---------*/
 .arrow {
-	position: relative;
 	width: 1.6rem;
 	height: 1.6rem;
-	top: 38%;
-	left: 38%;
+	margin-top: 38%;
+	margin-left: 38%;
 }
 
 .arrow-button {
@@ -778,9 +775,8 @@
 	.arrow {
 		width: 2.4rem;
 		height: 2.4rem;
-		position: relative;
-		top: 33%;
-		left: 33%;
+		margin-top: 33%;
+		margin-left: 33%;
 	}
 }
 
@@ -788,8 +784,8 @@
 	.arrow {
 		width: 2.4rem;
 		height: 2.4rem;
-		top: 38%;
-		left: 38%;
+		margin-top: 38%;
+		margin-left: 38%;
 	}
 
 	.destination .arrow-button {
@@ -817,9 +813,8 @@
 	.arrow {
 		width: 2.4rem;
 		height: 2.4rem;
-		position: relative;
-		top: 38%;
-		left: 38%;
+		margin-top: 38%;
+		margin-left: 38%;
 	}
 
 	.arrow-button__left-dir,

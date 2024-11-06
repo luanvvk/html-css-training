@@ -30,7 +30,6 @@ header {
 .header__brand-logo {
 	width: 4rem;
 	height: 4rem;
-	position: relative;
 	margin-right: 1.6rem;
 }
 /*------------------------------header__navbar-----------------------------*/
@@ -50,8 +49,8 @@ header {
 	margin-top: 1.2rem;
 }
 .menu-icon {
-	width: 4.8rem;
-	height: 4.8rem;
+	width: 4rem;
+	height: 4rem;
 }
 
 .menu-icon,
@@ -130,6 +129,7 @@ header {
 	display: block;
 	margin: auto;
 	margin-top: 5.2rem;
+	margin-bottom: 0.8rem;
 	width: 39.6rem;
 	max-width: 100%;
 	height: 36.6rem;
@@ -141,13 +141,13 @@ header {
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 2.4rem;
-	margin: 6.4rem 0;
+	margin: 5.6rem 0;
 }
 
 .travel-agency__img {
 	width: 100%;
 	min-width: 6.4rem;
-	height: 2rem ;
+	height: 2rem;
 	height: auto;
 }
 /*--------service-----------*/
@@ -179,15 +179,23 @@ header {
 .travel-point__image {
 	margin-top: 3.2rem;
 	display: block;
-	margin: auto;
+	margin: -0.8rem auto 0;
 	width: 100%;
 	max-width: 39.8rem;
 	height: 31.9rem;
 	height: auto;
 }
-
+.travel-point .category__heading {
+	margin-top: 5.8rem;
+}
+.travel-point .category__sub-heading {
+	margin-bottom: 2.8rem;
+}
+.travel-point .category__desc {
+	padding: 0;
+}
 .travel-point__achievements {
-	margin-top: 3.2rem;
+	margin-top: 2.8rem;
 }
 
 .achievement__number {
@@ -286,7 +294,6 @@ header {
 }
 
 .subscription__image--triangle {
-	position: relative;
 	margin-top: -6.4rem;
 	margin-left: -3.2rem;
 }
@@ -441,11 +448,10 @@ header {
 	font-family: var(--font-secondary);
 	font-size: 1.8rem;
 	font-weight: 400;
-	color: var(--black-blue);
+	color: var(--black-075);
 
 	line-height: 2.88rem;
 	text-align: center;
-	opacity: 0.75;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -880,7 +886,6 @@ header {
 		margin: 5.6rem 0;
 		font-size: 2.3rem;
 		line-height: 3.68rem;
-		opacity: 0.75;
 	}
 
 	.subscription__form {
@@ -969,13 +974,30 @@ header {
 		line-height: 4.8rem;
 		padding: 0 6.4rem;
 	}
-	
+
 	.subscription {
 		min-height: 50rem;
 	}
+	.banner--content__header {
+		font-size: 5.6rem;
+		margin: 0;
+		line-height: 6.72rem;
+		text-align: left;
+	}
+	.banner--content {
+		margin-top: 0.8rem;
+		min-height: 40.7rem;
+	}
 }
-
 @media (min-width: 1200px) and (max-width: 1333px) {
+	.banner--content__header {
+		font-size: 6.9rem;
+		line-height: 8.28rem;
+		text-align: left;
+	}
+	.banner--content {
+		margin-top: 8.8rem;
+	}
 	.footer {
 		flex-direction: row;
 		gap: 3.2rem;
@@ -1009,23 +1031,36 @@ header {
 	.nav-menu {
 		gap: 6.4rem;
 	}
+	.banner__image {
+		min-width: 77.2rem;
+	}
+	.banner--content {
+		margin-top: 16.8rem;
+	}
 	.subscription .category__sub-heading {
-		margin-bottom: 4.4rem;
-		font-size: 5rem;
-		line-height: 5.6rem;
+		margin-bottom: 6.4rem;
+		font-size: 5.5rem;
+		line-height: 6.6rem;
 		padding: 0 12.8rem;
 	}
-
+	.travel-agency {
+		justify-content: space-between;
+	}
 	.footer__brand-info,
 	.footer__permalinks {
 		max-width: 58rem;
 	}
+	.banner--content__header {
+		font-size: 6.9rem;
+		line-height: 8.28rem;
+		margin: 3.2rem 0 1.6rem;
+		text-align: left;
+	}
+	.destination .category__heading {
+		margin-top: 8.2rem;
+}
 }
 @media (min-width: 1026px) {
-	.footer {
-		gap: 6.4rem;
-		margin-top: 9.6rem;
-	}
 	.header {
 		padding: 0 12.8rem;
 		margin-top: 3.2rem;
@@ -1035,7 +1070,6 @@ header {
 		display: inherit;
 	}
 	.banner--content {
-		margin-top: 16.8rem;
 		max-width: 41.2rem;
 		height: 57.7rem;
 		justify-content: center;
@@ -1043,14 +1077,8 @@ header {
 	}
 
 	.banner__image {
-		margin-top: 6.4rem;
-	}
-
-	.banner--content__header {
-		font-size: 6.9rem;
-		line-height: 8.28rem;
-		margin: 3.2rem 0 1.6rem;
-		text-align: left;
+		margin-top: 7rem;
+		margin-bottom: 0;
 	}
 
 	.banner--content__desc {
@@ -1076,12 +1104,11 @@ header {
 		width: 100%;
 		min-width: 44.4rem;
 		min-height: 15rem;
-		margin-top: 8.2rem;
+		margin-top: 9rem;
 	}
 
 	.travel-agency {
-		justify-content: space-between;
-		margin: 2rem 0 0;
+		margin: 2.6rem 0 0;
 	}
 
 	.key-features,
@@ -1091,7 +1118,7 @@ header {
 	}
 
 	.travel-point {
-		margin: 7.5rem 0 10rem;
+		margin: 11.4rem 0 10rem;
 		padding: 0 12.8rem 0 0;
 		display: flex;
 		flex-direction: row;
@@ -1103,15 +1130,19 @@ header {
 	}
 
 	.key-features__image {
-		margin-top: 6.4rem;
+		padding: 0;
+		margin-top: 2.4rem;
 	}
 
 	.key-features .category {
 		max-width: 54.9rem;
 	}
+	.key-features .category__heading {
+		margin-top: 2.6rem;
+	}
 
 	.key-features .category__desc {
-		margin-bottom: 8.8rem;
+		margin-bottom: 7.8rem;
 		padding-left: 0;
 		padding-right: 3.8rem;
 	}
@@ -1128,6 +1159,10 @@ header {
 
 	.travel-point .category__desc {
 		padding-right: 1.6rem;
+		margin-bottom: 6.4rem;
+	}
+	.travel-point__achievements {
+		margin-top: 3.2rem;
 	}
 
 	.destination__intro {
@@ -1145,9 +1180,9 @@ header {
 		max-width: 160rem;
 		width: 100%;
 		background: url("../assets/images/special-images/desktop-images/testimonials-layout.png") no-repeat;
-		background-position: 20% 50%;
+		background-position: 20% 49%;
 		padding: 8rem 0 0;
-		margin-top: -4.8rem;
+		margin-top: -4rem;
 	}
 
 	.testimonial-card {
@@ -1171,16 +1206,18 @@ header {
 		margin-bottom: 5.2rem;
 		font-size: 2.3rem;
 		line-height: 3.68rem;
-		opacity: 0.75;
+		padding: 0 2.6rem;
 	}
 
 	.testimonial-card .category__sub-heading {
 		text-align: center;
+		margin-bottom: 5rem;
 	}
 
 	.subscription {
 		padding: 0;
-		margin: 16.8rem 12.8rem 3.2rem;
+		margin: 10.4rem 12.8rem 3.2rem;
+		min-height: 60.8rem;
 	}
 
 	.subscription .category__heading {
@@ -1193,7 +1230,7 @@ header {
 	.subscription__form {
 		flex-direction: row;
 		gap: 3.2rem;
-		margin: 0 6.4rem;
+		margin: 0 5.4rem;
 	}
 
 	.input-bar__main-input {
@@ -1201,7 +1238,9 @@ header {
 		border-radius: 3.2rem;
 		padding: 0;
 	}
-
+	.input-bar__icon {
+		margin-left: 4.4rem;
+	}
 	.input-bar__main-input::placeholder {
 		font-size: 2.3rem;
 	}
@@ -1209,6 +1248,7 @@ header {
 	.footer__brand-info,
 	.footer__permalinks {
 		flex: 1;
+		gap: 3rem;
 	}
 
 	.permalinks--company,
@@ -1237,5 +1277,9 @@ header {
 		position: absolute;
 		margin-left: 28.8rem;
 		margin-top: -14rem;
+	}
+	.footer {
+		gap: 6.4rem;
+		margin-top: 12.8rem;
 	}
 }
