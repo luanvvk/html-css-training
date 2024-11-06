@@ -1,4 +1,4 @@
-# [Luan Vu] HTML/CSS Practice 1
+# [Luan Vu] HTML/CSS Practice 2
 
 ## Overview
 
@@ -21,12 +21,16 @@ The ultimate objective of this project: end product needs to be rendered and dis
 - Getting the code to work cross browser latest version (Chrome, MS Edge, Firefox)
 - Test on multiple real devices to ensure web page to be rendered correctly
 - Code needs to be validated by using tools: https://validator.w3.org/
-
+  
 ## Prerequisite
 - Visual Studio Code latest version
 - Google Chrome/ Firefox/ MS Edge browser latest version
 - Vercel
 - Extensions: editorconfig, Pixel Perfect, Live Server, Prettier.
+
+## Tested on:
+- MS Edge, Mozilla Firefox and Chrome the last 2 versions.
+- Devices: Ipad Air, Ipad Air 4, Iphone 13, Iphone 15 Plus, MS Surface 6 pro.
 
 ## How to run
 
@@ -39,17 +43,21 @@ git clone https://github.com/luanvvk/HTML-CSS-training.git
 - Git checkout
 
 ```
-git checkout draft/practice2
+git checkout feat/practice2
 ```
 
 ```
 cd practice2
 ```
 
-- Run index file
-
+- Install node module:
 ```
-./index.html
+npm install
+```
+
+- Run the website
+```
+npm run start
 ```
 
 
