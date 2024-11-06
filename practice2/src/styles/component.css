@@ -214,9 +214,9 @@
 	border-radius:3.2rem 3.2rem 0 0;
 	max-width: 100%;
 	width: 39.8rem;
-	min-height: 31.4rem;
 	display: block;
 	margin: auto;
+	height: auto;
 }
 
 .destination-card__desc {
