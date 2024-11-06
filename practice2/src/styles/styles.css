@@ -345,8 +345,8 @@ header {
 	font-size: 2.3rem;
 }
 .input-bar__icon {
-	width: 3.2rem;
-	height: 3.2rem;
+	width: 2.7rem;
+	min-height: 2.4rem;
 	margin-left: 1.6rem;
 }
 
@@ -394,8 +394,8 @@ header {
 }
 
 .expand-image {
-	width: 0.9rem;
-	height: 0.5rem;
+	width: 2.4rem;
+	height: 2.4rem;
 	display: none;
 }
 
@@ -692,6 +692,9 @@ header {
 	}
 }
 @media (min-width: 901px) and (max-width: 1025px) {
+	.banner--content__header {
+		padding: 0 13.2rem;
+	}
 	.input-bar__main-input {
 		min-height: 9.6rem;
 	}
@@ -753,7 +756,6 @@ header {
 	}
 
 	.banner--content__header {
-		padding: 0 13.2rem;
 		margin: 3rem 1.6rem 0 0;
 		font-size: 5.6rem;
 		line-height: 6.72rem;
