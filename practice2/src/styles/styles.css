@@ -518,6 +518,9 @@ header {
 		margin-top: 3.2rem;
 		opacity: 1;
 	}
+	.nav-menu__item:hover {
+		color: var(--light-coral);
+	}
 	.dropdown-button {
 		display: flex;
 		justify-content: center;
@@ -753,7 +756,9 @@ header {
 	.nav-menu__item {
 		display: block;
 	}
-
+	.nav-menu__item:hover {
+		color: var(--light-coral);
+	}
 	.menu-icon {
 		position: absolute;
 		top: 0;
@@ -996,6 +1001,15 @@ header {
 		gap: 3.2rem;
 	}
 
+	.travel-point .category__desc,
+	.travel-point__achievements,
+	.travel-point .category__heading,
+	.travel-point .category__sub-heading {
+		margin: 1.2rem 0 1.2rem;
+	}
+	.travel-point .category__desc {
+		padding-right: 6.8rem;
+	}
 	.subscription .category__sub-heading {
 		margin-bottom: 2.4rem;
 		font-size: 4rem;
@@ -1016,6 +1030,13 @@ header {
 		margin-top: 0.8rem;
 		min-height: 40.7rem;
 	}
+	.key-features .category__heading,
+	.key-features .category__desc {
+		margin: 0;
+	}
+	.key-feature {
+		padding: 1.8rem 0 1.8rem 3.2rem;
+	}
 }
 @media (min-width: 1200px) and (max-width: 1333px) {
 	.banner--content__header {
@@ -1035,6 +1056,18 @@ header {
 		gap: 6.4rem;
 	}
 
+	.travel-point .category {
+		margin-top: -1.2rem;
+	}
+
+	.travel-point .category__desc {
+		margin-bottom: 3.2rem;
+		padding-right: 6.8rem;
+	}
+	.travel-point__achievements {
+		margin-top: 1.6rem;
+	}
+
 	.subscription .category__sub-heading {
 		margin-bottom: 2.4rem;
 		font-size: 4rem;
@@ -1049,6 +1082,14 @@ header {
 
 	.subscription {
 		min-height: 50rem;
+	}
+	.key-features .category__heading {
+		margin-top: 1.3rem;
+	}
+
+	.key-features .category__desc {
+		margin-bottom: 3rem;
+		margin-top: 1.6rem;
 	}
 }
 
@@ -1086,6 +1127,27 @@ header {
 	}
 	.destination .category__heading {
 		margin-top: 9.2rem;
+}
+.travel-point .category {
+	margin-top: -2.4rem;
+}
+
+.travel-point .category__desc {
+	margin-bottom: 6.4rem;
+}
+.travel-point__achievements {
+	margin-top: 3.2rem;
+}
+.travel-point .category__desc {
+	padding-right: 1.6rem;
+}
+.key-features .category__heading {
+	margin-top: 2.6rem;
+}
+
+.key-features .category__desc {
+	margin-bottom: 7.8rem;
+	margin-top: 3.2rem;
 }
 }
 @media (min-width: 1026px) {
@@ -1161,6 +1223,10 @@ header {
 	.key-features__image {
 		padding: 0;
 		margin-top: 2.4rem;
+		max-width: 100%;
+		width: 69.3rem;
+		height: 86.9rem;
+		height: auto;
 	}
 
 	.key-features .category {
@@ -1171,10 +1237,8 @@ header {
 	}
 
 	.key-features .category__desc {
-		margin-bottom: 7.8rem;
 		padding-left: 0;
 		padding-right: 3.8rem;
-		margin-top: 3.2rem;
 	}
 
 	.travel-point__image {
@@ -1184,15 +1248,6 @@ header {
 	.travel-point .category {
 		max-width: 44.1rem;
 		min-height: 66.7rem;
-		margin-top: -2.4rem;
-	}
-
-	.travel-point .category__desc {
-		padding-right: 1.6rem;
-		margin-bottom: 6.4rem;
-	}
-	.travel-point__achievements {
-		margin-top: 3.2rem;
 	}
 
 	.destination__intro {
