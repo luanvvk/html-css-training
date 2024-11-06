@@ -497,10 +497,11 @@
 	line-height: 2.76rem;
 	text-align: left;
 	margin-bottom: 0;
+	margin-top: 3.2rem;
 }
 
 .key-feature__desc {
-	margin: 0.8rem 3.2rem 0 0;
+	margin: 1.6rem 3.2rem 0 0;
 	font-family: var(--font-secondary);
 	font-size: 1.8rem;
 	font-weight: 400;
@@ -533,17 +534,20 @@
 
 @media (min-width: 769px) and (max-width: 1025px) {
 	.key-feature {
-		margin: 0 2.4rem;
+		margin: 0 3.6rem;
+		padding: 3.2rem 0 2.6rem 3.2rem;
 	}
+	.key-feature__desc {
+		margin-top: 0.6rem;
 }
-
+}
 @media (min-width: 1026px) {
 	.key-feature {
 		margin-left: 0;
 		margin-top: -0.8rem;
 	}
 	.key-feature__desc {
-		margin-right: 0;
+		margin-right: 2.6rem;
 	}
 }
 /*---------------Button---------------------*/
@@ -582,7 +586,7 @@
 
 .subscription .button-purple {
 	display: block;
-	width: 80%;
+	width: 85%;
 	padding: 2.4rem 6.4rem;
 	border-radius: 1.6rem;
 
@@ -769,7 +773,7 @@
 
 .testimonial .arrow-button {
 	margin-bottom: 0;
-	margin-top: 6.4rem;
+	margin-top: 6.8rem;
 }
 @media (min-width: 469px) and (max-width: 768px) {
 	.arrow {
@@ -833,8 +837,7 @@
 	.destination .arrow-button {
 		justify-content: flex-end;
 		gap: 3.2rem;
-		margin-bottom: 0;
-		margin-right: 1.6rem;
+		margin-bottom: -2.4rem;
 	}
 
 	.testimonial .arrow-button {

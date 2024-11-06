@@ -211,13 +211,16 @@ header {
 }
 /*------key feature-------*/
 .key-features__image {
-	width: 100%;
+	display: block;
 	max-width: 35rem;
+	width: 100%;
 	height: 43.9rem;
 	height: auto;
-	padding: 0 3.9rem;
 	margin-top: 3.2rem;
-	margin: auto;
+	margin: 0 auto;
+}
+.key-features .category__heading {
+	margin-top: 6.6rem;
 }
 
 .key-features .category__desc {
@@ -228,7 +231,9 @@ header {
 .testimonial-card {
 	min-height: 66.6ren;
 }
-
+.testimonial .category__sub-heading {
+	margin-bottom: 7.2rem;
+}
 .testimonial-card__photo {
 	width: 12.8rem;
 	height: 12.8rem;
@@ -237,7 +242,7 @@ header {
 }
 
 .testimonial-card__name {
-	margin-top: 6rem;
+	margin-top: 7rem;
 	margin-bottom: 3rem;
 	font-family: var(--font-primary);
 	font-size: 2.8rem;
@@ -264,7 +269,7 @@ header {
 	text-align: center;
 	color: var(--black-075);
 	margin-top: 6.4rem;
-	margin-bottom: 6.4rem;
+	margin-bottom: 6.8rem;
 }
 .testimonials-card__review {
 	width: 22.4rem;
@@ -281,10 +286,6 @@ header {
 	width: 12rem;
 	height: 2.4rem;
 	cursor: pointer;
-}
-
-.testimonial .category__sub-heading {
-	margin-bottom: 6.4rem;
 }
 /*--------------------Subscription--------------------*/
 .subscription {
@@ -312,7 +313,7 @@ header {
 }
 
 .subscription .category__heading {
-	padding: 06.4rem 4.8rem 0 4.8rem;
+	padding: 6.8rem 4.8rem 0 4.8rem;
 	margin-top: 0;
 }
 
@@ -320,7 +321,7 @@ header {
 	min-height: 11.4rem;
 	text-align: center;
 	padding: 0 4.8rem;
-	margin: 3.2rem 0 5.8rem;
+	margin: 3.6rem 0 6.8rem;
 }
 
 .subscription__form {
@@ -330,7 +331,7 @@ header {
 	gap: 3.2rem;
 }
 .form__input-bar {
-	width: 80%;
+	width: 85%;
 	flex: 1;
 	display: flex;
 	justify-content: space-between;
@@ -354,7 +355,7 @@ header {
 .input-bar__icon {
 	width: 2.7rem;
 	min-height: 2.4rem;
-	margin-left: 1.6rem;
+	margin-left: 3.2rem;
 }
 
 .input-bar__main-input::placeholder {
@@ -558,7 +559,7 @@ header {
 
 	.subscription {
 		padding: 0;
-		margin: -3.2rem 1.5rem 0;
+		margin: -3.2rem 1.5rem 6rem;
 	}
 	.subscription__image--triangle,
 	.footer__image--curve {
@@ -578,7 +579,7 @@ header {
 	}
 
 	.permalinks--company-info {
-		margin-bottom: 6.4rem;
+		margin-bottom: 7.2rem;
 	}
 
 	.permalinks--company,
@@ -644,8 +645,7 @@ header {
 		height: auto;
 	}
 
-	.travel-point__image,
-	.key-features__image {
+	.travel-point__image{
 		max-width: 100%;
 		width: 87.1rem;
 		height: 69.7rem;
@@ -696,6 +696,10 @@ header {
 		margin: 9.6rem 6.4rem 12.4rem;
 		padding: 0 3.8rem;
 	}
+	.footer__permalinks {
+		justify-content: start;
+		gap: 6.4rem;
+	}
 }
 @media (min-width: 901px) and (max-width: 1025px) {
 	.banner--content__header {
@@ -708,6 +712,10 @@ header {
 		gap: 2.7rem;
 		margin: 9.6rem 6.4rem 12.4rem;
 		padding: 0 10.8rem;
+	}
+	.footer__permalinks {
+		justify-content: start;
+		gap: 11.4rem;
 	}
 }
 
@@ -729,6 +737,9 @@ header {
 		background: rgba(255, 255, 255, 0.75);
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 		display: none;
+	}
+	.authenticated-button {
+		margin-right: 0.8rem;
 	}
 	.dropdown-button .button {
 		padding: 1.6rem 4.8rem;
@@ -838,28 +849,36 @@ header {
 	}
 
 	.travel-point {
-		margin-left: 3.2rem;
-		margin-top: 13.6rem;
+		margin: 13.6rem 0 10rem 3.2rem;
 	}
 
 	.key-features {
 		margin-top: 13rem;
-		margin-left: 1.6rem;
 	}
-
+	
+	.travel-point .category {
+		margin-right: 3.4rem;
+	}
+	.travel-point .category__heading {
+		margin-top: 7rem;
+	}
 	.travel-point .category__desc {
 		margin-top: 0;
 	}
 
 	.travel-point__achievements {
 		margin-top: 6.4rem;
+		gap: 3rem;
+	}
+	.achievement__desc {
+		margin-bottom: 3.2rem;
 	}
 
 	.testimonial {
 		background: url("../assets/images/special-images/desktop-images/testimonials-layout.png") no-repeat;
-		background-position: 45% 74%;
+		background-position: 45% 72%;
 		margin-bottom: 6.4rem;
-		padding: 4rem 8.4rem;
+		padding: 4rem 7.2rem;
 		margin-top: 2rem;
 		margin-right: -2.4rem;
 	}
@@ -871,11 +890,19 @@ header {
 	}
 
 	.testimonial .category__sub-heading {
-		margin-bottom: 4.8rem;
+		margin-bottom: 5.8rem;
+	}
+	.testimonial-card__name {
+		margin-top: 6.2rem;
 	}
 
 	.key-features__image {
 		padding: 0;
+		max-width: 69.3rem;
+		width: 100%;
+		height: 86.9rem;
+		height: auto;
+		margin: 1.6rem 10.2rem 0 10.2rem;
 	}
 
 	.key-features .category__desc {
@@ -898,6 +925,7 @@ header {
 		max-width: 90rem;
 		padding: 0;
 		margin: 0 7.2rem;
+		min-height: 58.7rem;
 	}
 
 	.subscription__content {
@@ -924,8 +952,8 @@ header {
 	}
 
 	.footer {
-		margin-left: 1.2rem;
-		margin-top: 16rem;
+		margin-left: 0.4rem;
+		margin-top: 13.8rem;
 	}
 
 	.brand__desc {
@@ -1057,7 +1085,7 @@ header {
 		text-align: left;
 	}
 	.destination .category__heading {
-		margin-top: 8.2rem;
+		margin-top: 9.2rem;
 }
 }
 @media (min-width: 1026px) {
@@ -1118,7 +1146,7 @@ header {
 	}
 
 	.travel-point {
-		margin: 11.4rem 0 10rem;
+		margin: 13.4rem 0 10rem;
 		padding: 0 12.8rem 0 0;
 		display: flex;
 		flex-direction: row;
@@ -1127,6 +1155,7 @@ header {
 	.key-features {
 		gap: 7rem;
 		padding: 0 0 0 12.8rem;
+		margin-top: 10.6rem;
 	}
 
 	.key-features__image {
@@ -1145,6 +1174,7 @@ header {
 		margin-bottom: 7.8rem;
 		padding-left: 0;
 		padding-right: 3.8rem;
+		margin-top: 3.2rem;
 	}
 
 	.travel-point__image {
@@ -1248,7 +1278,7 @@ header {
 	.footer__brand-info,
 	.footer__permalinks {
 		flex: 1;
-		gap: 3rem;
+		gap: 3.6rem;
 	}
 
 	.permalinks--company,
