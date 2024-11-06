@@ -89,7 +89,8 @@
 .service-card__icon {
 	display: block;
 	margin: 3.2rem auto;
-	min-width: 6.4rem;
+	width: 6.4rem;
+	height: 6.4rem;
 	height: auto;
 }
 
@@ -211,7 +212,9 @@
 
 .destination-card__image {
 	border-radius:3.2rem 3.2rem 0 0;
-	width: 100%;
+	max-width: 100%;
+	width: 39.8rem;
+	min-height: 31.4rem;
 	display: block;
 	margin: auto;
 }
