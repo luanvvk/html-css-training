@@ -211,10 +211,7 @@ header {
 	margin-top: 3.2rem;
 	margin: auto;
 }
-.key-features__icon {
-	width: 4.8rem;
-	height: 4.8rem;
-}
+
 .key-features .category__desc {
 	padding: 0 5.8rem;
 	margin-bottom: 3.2rem;
@@ -225,6 +222,8 @@ header {
 }
 
 .testimonial-card__photo {
+	width: 12.8rem;
+	height: 12.8rem;
 	display: block;
 	margin: auto;
 }
@@ -259,6 +258,10 @@ header {
 	margin-top: 6.4rem;
 	margin-bottom: 6.4rem;
 }
+.testimonials-card__review {
+	width: 22.4rem;
+	height: 3.2rem;
+}
 
 .swipe-icon,
 .testimonials-card__review {
@@ -267,6 +270,8 @@ header {
 }
 
 .swipe-icon {
+	width: 12rem;
+	height: 2.4rem;
 	cursor: pointer;
 }
 
@@ -340,7 +345,8 @@ header {
 	font-size: 2.3rem;
 }
 .input-bar__icon {
-	font-size: 32px;
+	width: 3.2rem;
+	height: 3.2rem;
 	margin-left: 1.6rem;
 }
 
@@ -407,8 +413,8 @@ header {
 }
 
 .brand-socials__link {
-	max-width: 32px;
-	height: auto;
+	width: 3.2rem;
+	height: 3.2rem;
 }
 
 .permalinks--company-info {
@@ -651,12 +657,6 @@ header {
 @media (min-width: 469px) and (max-width: 768px) {
 	.header {
 		padding: 0 3.2rem;
-	}
-
-	.arrow {
-		position: relative;
-		top: 33%;
-		left: 33%;
 	}
 
 	.category__desc {
