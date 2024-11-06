@@ -214,7 +214,7 @@
 	border-radius:3.2rem 3.2rem 0 0;
 	max-width: 100%;
 	width: 39.8rem;
-	height: 31.4rem;
+	min-height: 31.4rem;
 	display: block;
 	margin: auto;
 }
@@ -281,11 +281,6 @@
 	width: 2rem;
 	height: 1.9rem;
 	margin-left: 0.8rem;
-}
-@media (max-width: 468px) {
-	.height-fit {
-		height: 34.2rem;
-	}
 }
 
 @media (min-width: 469px) and (max-width: 768px) {
