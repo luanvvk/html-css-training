@@ -537,6 +537,9 @@
 		margin: 0 3.6rem;
 		padding: 3.2rem 0 2.6rem 3.2rem;
 	}
+	.key-feature:hover {
+		padding: 3.2rem 0 2.6rem 3.2rem;
+	}
 	.key-feature__desc {
 		margin-top: 0.6rem;
 }
@@ -632,7 +635,7 @@
 
 .banner .button-white {
 	width: 100%;
-	border: 0.1rem solid var(--white);
+	border: 0.1rem solid rgba(238, 238, 238, 1);
 	padding: 2.4rem 0;
 	display: flex;
 	justify-content: center;
@@ -644,6 +647,9 @@
 	width: 2.4rem;
 	height: 2.4rem;
 	margin-right: 10px;
+}
+.header .button-white:hover {
+	background-color: #9cf3a7;
 }
 
 @media (max-width: 768px) {
@@ -700,7 +706,21 @@
 		margin: -4.2rem auto 0;
 	}
 }
-
+@media (min-width: 1026px) and (max-width: 1199px) {
+	.banner__button {
+		margin-top: 1.6rem;
+}
+}
+@media (min-width: 1200px) and (max-width: 1333px) {
+	.banner__button {
+		margin-top: 2.4rem;
+}
+}
+@media (min-width: 1334px){
+	.banner__button {
+		margin-top: 3.2rem;
+}
+}
 @media (min-width: 1026px) {
 	.button-pink {
 		margin: 0;
@@ -715,7 +735,6 @@
 
 	.banner__button {
 		justify-content: flex-start;
-		margin-top: 3.2rem;
 	}
 
 	.subscription .button-purple {
