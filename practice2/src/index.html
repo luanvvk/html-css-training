@@ -18,8 +18,8 @@
 					<img class="header__brand-logo" src="./assets/images/icons/logo.svg" alt="Brand logo" />
 					<h1 class="header__brand-name">Travlog</h1>
 				</a>
-				<input type="checkbox" id="menu-bar" />
-				<label for="menu-bar">
+				<input type="checkbox" id="menu-mobile-icon" />
+				<label for="menu-mobile-icon">
 					<img class="menu-icon" src="./assets/images/icons/navbar-menu.svg" alt="menu bar" />
 				</label>
 				<nav class="header__navbar">
@@ -31,8 +31,8 @@
 					</ul>
 				</nav>
 				<ul class="authenticated-button">
-					<li><a class="button button-white" href="javascript:void(0)">login</a></li>
-					<li><a class="button button-purple" href="javascript:void(0)">signup</a></li>
+					<li><button class="button button-white" href="javascript:void(0)">login</button></li>
+					<li><button class="button button-purple" href="javascript:void(0)">signup</button></li>
 				</ul>
 				<div class="dropdown-menu">
 					<ul class="dropdown-menu__item">
@@ -42,8 +42,8 @@
 						<li><a class="nav-menu__item" href="javascript:void(0)">contact</a></li>
 					</ul>
 					<ul class="dropdown-button">
-						<li><a class="button button-white" href="javascript:void(0)">login</a></li>
-						<li><a class="button button-purple" href="javascript:void(0)">signup</a></li>
+						<li><button class="button button-white" href="javascript:void(0)">login</button></li>
+						<li><button class="button button-purple" href="javascript:void(0)">signup</button></li>
 					</ul>
 				</div>
 				<div class="overlay"></div>
@@ -75,8 +75,8 @@
 						as many choices as possible
 					</p>
 					<div class="banner__button">
-						<a class="button button-purple" href="javascript:void(0)">get started</a>
-						<a class="button button-white" href="javascript:void(0)">watch demo</a>
+						<button class="button button-purple" href="javascript:void(0)">get started</button>
+						<button class="button button-white" href="javascript:void(0)">watch demo</button>
 					</div>
 				</div>
 			</section>
@@ -557,6 +557,13 @@
 					<div class="permalinks--company">
 						<p class="permalinks--company-info">company</p>
 						<input type="checkbox" id="company-expand" />
+						<div class="company__content">
+							<ul class="company-info">
+								<li><a class="info-link" href="javascript:void(0)">About</a></li>
+								<li><a class="info-link" href="javascript:void(0)">Career</a></li>
+								<li><a class="info-link" href="javascript:void(0)">Mobile</a></li>
+							</ul>
+						</div>
 						<label for="company-expand">
 							<img
 								class="expand-image"
@@ -565,25 +572,10 @@
 								alt="menu bar"
 							/>
 						</label>
-						<div class="company__content">
-							<ul class="company-info">
-								<li><a class="info-link" href="javascript:void(0)">About</a></li>
-								<li><a class="info-link" href="javascript:void(0)">Career</a></li>
-								<li><a class="info-link" href="javascript:void(0)">Mobile</a></li>
-							</ul>
-						</div>
 					</div>
 					<div class="permalinks--contact">
 						<p class="permalinks--company-info">contact us</p>
 						<input type="checkbox" id="contact-expand" />
-						<label for="contact-expand">
-							<img
-								class="expand-image"
-								src="./assets/images/icons/mobile-icons/sub-footer-expand.svg"
-								loading="lazy"
-								alt="menu bar"
-							/>
-						</label>
 						<div class="contact__content">
 							<ul class="company-contact-info">
 								<li><a class="info-link" href="javascript:void(0)">Why Travlog&#63;</a></li>
@@ -592,11 +584,7 @@
 								<li><a class="info-link" href="javascript:void(0)">Blog</a></li>
 							</ul>
 						</div>
-					</div>
-					<div class="permalinks--meet-us">
-						<p class="permalinks--company-info">meet us</p>
-						<input type="checkbox" id="meet-us-expand" />
-						<label for="meet-us-expand">
+						<label for="contact-expand">
 							<img
 								class="expand-image"
 								src="./assets/images/icons/mobile-icons/sub-footer-expand.svg"
@@ -604,6 +592,10 @@
 								alt="menu bar"
 							/>
 						</label>
+					</div>
+					<div class="permalinks--meet-us">
+						<p class="permalinks--company-info">meet us</p>
+						<input type="checkbox" id="meet-us-expand" />
 						<div class="meet-us__content">
 							<ul class="content-menu">
 								<li><a class="tel" href="tel:+0092123456789">&#43;00 92 1234 56789</a></li>
@@ -616,6 +608,14 @@
 								</li>
 							</ul>
 						</div>
+						<label for="meet-us-expand">
+							<img
+								class="expand-image"
+								src="./assets/images/icons/mobile-icons/sub-footer-expand.svg"
+								loading="lazy"
+								alt="menu bar"
+							/>
+						</label>
 					</div>
 				</div>
 			</footer>

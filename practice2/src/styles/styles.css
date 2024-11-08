@@ -57,7 +57,7 @@ header {
 }
 
 .menu-icon,
-#menu-bar,
+#menu-mobile-icon,
 .header__navbar {
 	display: none;
 }
@@ -563,12 +563,12 @@ header {
 		display: initial;
 	}
 
-	#menu-bar:checked ~ .dropdown-menu {
+	#menu-mobile-icon:checked ~ .dropdown-menu {
 		display: initial;
 		left: 0;
 	}
 
-	#menu-bar:checked ~ .overlay {
+	#menu-mobile-icon:checked ~ .overlay {
 		display: initial;
 	}
 
@@ -602,6 +602,7 @@ header {
 
 	.permalinks--company-info {
 		margin-bottom: 7.2rem;
+		flex: 1;
 	}
 
 	.permalinks--company,
@@ -617,6 +618,7 @@ header {
 	.info-link {
 		display: block;
 		text-align: center;
+		margin-bottom: 1.6rem;
 	}
 	/*-------------footer expand feature------------*/
 	.content-menu,
@@ -632,13 +634,11 @@ header {
 	.meet-us__content,
 	.contact__content,
 	.company__content {
-		position: absolute;
+		min-width: 20rem;
+		margin-right: 19vw;
 		margin-top: 3.2rem;
-		left: 0;
-		right: 0;
 
 		background: rgba(255, 255, 255, 1);
-		border-top: 1px solid rgba(0, 0, 0, 0.1);
 		display: none;
 	}
 
@@ -647,7 +647,7 @@ header {
 	.content-menu li {
 		display: initial;
 	}
-
+	
 	#contact-expand:checked ~ .contact__content,
 	.company-contact-info,
 	.company-contact-info li {
@@ -659,8 +659,9 @@ header {
 	.company-info li {
 		display: initial;
 	}
-}
-@media (min-width: 468px) {
+}		
+
+@media (min-width: 469px) {
 	.banner__image {
 		width: 100%;
 		width: 77.2rem;
@@ -768,7 +769,7 @@ header {
 		padding: 0 6.4rem 3.2rem;
 	}
 
-	#menu-bar:checked ~ .overlay {
+	#menu-mobile-icon:checked ~ .overlay {
 		display: initial;
 	}
 
@@ -863,7 +864,7 @@ header {
 		background: #9cf3a7;
 	}
 
-	#menu-bar:checked ~ .dropdown-menu {
+	#menu-mobile-icon:checked ~ .dropdown-menu {
 		left: 0;
 		display: initial;
 	}
@@ -1048,7 +1049,7 @@ header {
 	}
 
 	.travel-point .category__sub-heading {
-		font-size: 3.4rem;
+		font-size: 3.56rem;
 		line-height: 4.28rem;
 	}
 
@@ -1072,7 +1073,7 @@ header {
 	}
 
 	.banner--content__header {
-		font-size: 5.6rem;
+		font-size: 4.67rem;
 		margin: 0;
 		line-height: 5.72rem;
 		text-align: left;
@@ -1092,7 +1093,7 @@ header {
 
 	.key-features .category__sub-heading {
 		margin: 0.6rem 0;
-		font-size: 3.4rem;
+		font-size: 3.56rem;
 		line-height: 4.28rem;
 	}
 
