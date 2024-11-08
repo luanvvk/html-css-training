@@ -602,7 +602,6 @@ header {
 
 	.permalinks--company-info {
 		margin-bottom: 7.2rem;
-		flex: 1;
 	}
 
 	.permalinks--company,
@@ -635,7 +634,6 @@ header {
 	.contact__content,
 	.company__content {
 		min-width: 20rem;
-		margin-right: 19vw;
 		margin-top: 3.2rem;
 
 		background: rgba(255, 255, 255, 1);
@@ -1050,7 +1048,7 @@ header {
 
 	.travel-point .category__sub-heading {
 		font-size: 3.56rem;
-		line-height: 4.28rem;
+		line-height: normal;
 	}
 
 	.travel-point__achievements {
@@ -1075,7 +1073,7 @@ header {
 	.banner--content__header {
 		font-size: 4.67rem;
 		margin: 0;
-		line-height: 5.72rem;
+		line-height: normal;
 		text-align: left;
 	}
 
@@ -1094,7 +1092,7 @@ header {
 	.key-features .category__sub-heading {
 		margin: 0.6rem 0;
 		font-size: 3.56rem;
-		line-height: 4.28rem;
+		line-height: normal;
 	}
 
 	.key-feature,

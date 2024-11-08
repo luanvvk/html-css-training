@@ -9,6 +9,7 @@
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Travlog</title>
+		<link rel="icon" href="./assets/images/icons/logo.svg" type="image/x-icon" />
 		<link rel="stylesheet" href="./styles/main.css" />
 	</head>
 	<body>
@@ -19,7 +20,7 @@
 					<h1 class="header__brand-name">Travlog</h1>
 				</a>
 				<input type="checkbox" id="menu-mobile-icon" />
-				<label for="menu-mobile-icon">
+				<label for="menu-mobile-icon" tabindex="0">
 					<img class="menu-icon" src="./assets/images/icons/navbar-menu.svg" alt="menu bar" />
 				</label>
 				<nav class="header__navbar">
@@ -193,7 +194,7 @@
 						<h3 class="category__sub-heading">Explore top destination</h3>
 					</div>
 					<div class="arrow-button">
-						<picture class="arrow-button__left-dir">
+						<picture class="arrow-button__left-dir" tabindex="0" >
 							<source
 								srcset="./assets/images/icons/arrow-icons/tablet-desktop-icons/arrow-left.svg"
 								media="(min-width: 468px)"
@@ -206,7 +207,7 @@
 								alt="Click to move to the left"
 							/>
 						</picture>
-						<picture class="arrow-button__right-dir">
+						<picture class="arrow-button__right-dir" tabindex="0">
 							<source
 								srcset="./assets/images/icons/arrow-icons/tablet-desktop-icons/arrow-right.svg"
 								media="(min-width: 468px)"
@@ -334,19 +335,19 @@
 						alt="Decor image"
 					/>
 					<div class="travel-point__achievements">
-						<div class="travel-point__achievement">
+						<div class="travel-point__achievement" tabindex="0">
 							<p class="achievement__number">500&#43;</p>
 							<h4 class="achievement__desc">holiday package</h4>
 						</div>
-						<div class="travel-point__achievement">
+						<div class="travel-point__achievement" tabindex="0">
 							<p class="achievement__number">100</p>
 							<h4 class="achievement__desc">luxury hotel</h4>
 						</div>
-						<div class="travel-point__achievement">
+						<div class="travel-point__achievement" tabindex="0">
 							<p class="achievement__number">7</p>
 							<h4 class="achievement__desc">premium airlines</h4>
 						</div>
-						<div class="travel-point__achievement">
+						<div class="travel-point__achievement" tabindex="0">
 							<p class="achievement__number">2k&#43;</p>
 							<h4 class="achievement__desc">happy custumer</h4>
 						</div>
@@ -375,7 +376,7 @@
 						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
 						classical Latin literature from 45 BC.
 					</p>
-					<article class="key-feature">
+					<article class="key-feature" tabindex="0">
 						<img
 							class="key-feature__icon location"
 							src="./assets/images/icons/feature-icons/feature-location.svg"
@@ -387,7 +388,7 @@
 							<p class="key-feature__desc">Lorem Ipsum is not simply random text</p>
 						</div>
 					</article>
-					<article class="key-feature">
+					<article class="key-feature" tabindex="0">
 						<img
 							class="key-feature__icon schedule"
 							src="./assets/images/icons/feature-icons/feature-calendar.svg"
@@ -399,7 +400,7 @@
 							<p class="key-feature__desc">It has roots in a piece of classical</p>
 						</div>
 					</article>
-					<article class="key-feature">
+					<article class="key-feature" tabindex="0">
 						<img
 							class="key-feature__icon discount"
 							src="./assets/images/icons/feature-icons/feature-discount.svg"
@@ -445,7 +446,7 @@
 					/>
 				</article>
 				<div class="arrow-button">
-					<picture class="arrow-button__left-dir">
+					<picture class="arrow-button__left-dir" tabindex="0">
 						<source
 							srcset="./assets/images/icons/arrow-icons/tablet-desktop-icons/arrow-left.svg"
 							media="(min-width: 468px)"
@@ -458,7 +459,7 @@
 							alt="Click to move to the left"
 						/>
 					</picture>
-					<picture class="arrow-button__right-dir">
+					<picture class="arrow-button__right-dir" tabindex="0">
 						<source
 							srcset="./assets/images/icons/arrow-icons/tablet-desktop-icons/arrow-right.svg"
 							media="(min-width: 468px)"
@@ -495,6 +496,7 @@
 							/>
 							<input
 								class="input-bar__main-input"
+								aria-label="search"
 								type="email"
 								name="email-address"
 								placeholder="your email"
@@ -564,12 +566,13 @@
 								<li><a class="info-link" href="javascript:void(0)">Mobile</a></li>
 							</ul>
 						</div>
-						<label for="company-expand">
+						<label for="company-expand" >
 							<img
 								class="expand-image"
 								src="./assets/images/icons/mobile-icons/sub-footer-expand.svg"
 								loading="lazy"
 								alt="menu bar"
+								tabindex="0"
 							/>
 						</label>
 					</div>
@@ -590,6 +593,7 @@
 								src="./assets/images/icons/mobile-icons/sub-footer-expand.svg"
 								loading="lazy"
 								alt="menu bar"
+								tabindex="0"
 							/>
 						</label>
 					</div>
@@ -614,6 +618,7 @@
 								src="./assets/images/icons/mobile-icons/sub-footer-expand.svg"
 								loading="lazy"
 								alt="menu bar"
+								tabindex="0"
 							/>
 						</label>
 					</div>
