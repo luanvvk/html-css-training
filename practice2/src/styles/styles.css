@@ -645,7 +645,7 @@ header {
 	.content-menu li {
 		display: initial;
 	}
-	
+
 	#contact-expand:checked ~ .contact__content,
 	.company-contact-info,
 	.company-contact-info li {
@@ -657,7 +657,7 @@ header {
 	.company-info li {
 		display: initial;
 	}
-}		
+}
 
 @media (min-width: 469px) {
 	.banner__image {
@@ -686,11 +686,22 @@ header {
 	.header {
 		padding: 0 3.2rem;
 	}
+	.banner--content__header {
+		text-wrap: balance;
+	}
+
+	.travel-point .category__sub-heading,
+	.travel-point .category__desc,
+	.key-feature .category__desc,
+	.testimonials-card__feedback, .subscription .category__sub-heading {
+		text-wrap: balance;
+	}
 
 	.category__desc {
 		padding: 0;
 	}
 
+	
 	.input-bar__main-input {
 		padding: 0;
 	}
@@ -701,10 +712,14 @@ header {
 }
 /*-----tablet lanscape mode or large tablet ----*/
 @media (min-width: 769px) and (max-width: 900px) {
+	.banner--content__header {
+		text-wrap: balance;
+	}
+
 	.dropdown-menu {
 		width: 45%;
 	}
-	
+
 	.travel-agency {
 		gap: 2.7rem;
 		margin: 9.6rem 6.4rem 12.4rem;
@@ -713,6 +728,9 @@ header {
 
 	.key-features__image {
 		margin: 1.6rem 0 0;
+	}
+	.subscription .category__sub-heading, .brand__desc {
+		text-wrap: balance;
 	}
 
 	.subscription__form {
